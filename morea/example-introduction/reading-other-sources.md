@@ -8,30 +8,28 @@ morea_labels:
 morea_start_date: "2023-08-21"
 ---
 
-Probability and Statistics are fundamentally important, but also
-subtle and very misunderstood. This combination provides a market for
-a lot of material online. There are YouTube videos, which admittedly
-can be way more slick than your millennial, GenX or boomer professor
-can do in class.
+Linear algebra is fundamentally important, but also subtle and very
+misunderstood. This combination provides a market for a lot of
+material online. There are YouTube videos, which admittedly can be way
+more slick than your millennial, GenX or boomer professor can do in
+class.
 
 I watch Number Blocks with my toddler, and I know how useful these can
-be. Past students have told me about 3blue1brown, Zach Star (though
-this is more for EE 345), Khan Academy and I am sure there are many
-other resources. It is hard to give an overview of all resources since
-there are so many of them. But I did watch all the 3blue1brown and
-Khan Academy videos on probability so I could tell you how to best use
-these resources.
+be. Past students have told me about 3blue1brown, Zach Star, Khan
+Academy and I am sure there are many other resources. It is hard to
+give an overview of all resources since there are so many of them. But
+I did watch all the above videos on linear algebra so I could tell you
+how to best use these resources.
 
-The short (and unfortunately unkind) answer is that these (3blue1brown
-or Khan Academy) are videos you must see _before_ you start the
-material in class. They are at high school, not an undergraduate
-level. High school level is where _you_ think you
-understand, but your teacher (or the person making these videos) also
-knows you have been gently lulled into thinking so. You aren't really
-expected to generalize, but redo what you have been shown (maybe by
-changing a few numbers, etc). It has its utility, because at that
-stage of development, giving you the confidence you can do something
-is often more important than the content.
+The short (and unfortunately unkind) answer is that these are videos
+you must see _before_ you start the material in class. They are at
+high school, not an undergraduate level. High school level is where
+_you_ think you understand, but your teacher (or the person making
+these videos) also knows you have been gently lulled into thinking
+so. You aren't really expected to generalize, but redo what you have
+been shown (maybe by changing a few numbers, etc). It has its utility,
+because at that stage of development, giving you the confidence you
+can do something is often more important than the content.
 
 The answer is also unkind because high school instruction is very
 variable. It is not your fault if you haven't seen this before in high
