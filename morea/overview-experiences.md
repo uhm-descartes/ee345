@@ -7,4 +7,7 @@ published: true
 
 This page collects together all of the "experiences" associated with individual modules. 
 
-In this site, experiences represent "active" learning opportunities, as opposed to readings, which represent "passive" learning opportunities.  In many courses, readings and experiences together constitute the "assignments". 
+The experiences sometimes give you a different perspective on the
+material than lectures and problems.  Sometimes they take you beyond
+the course syllabus. Not all are mandatory, I will indicate which ones
+are.

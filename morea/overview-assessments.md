@@ -1,10 +1,13 @@
 ---
-title: "Ignored"
+title: "Assessments"
 morea_id: morea_overview_assessments
 morea_type: overview_assessments
-published: true
+published: 
 ---
 
-This page collects together the "assessments" associated with individual modules.   
+This page collects together all of the "assessments" associated with
+individual modules. Some part of the assessments are quizzes that you
+do, others are problems we solve together in class.
 
-Assessments enable both students and instructors to determine if the students have achieved the learning objectives associated with the module. 
+
+

@@ -5,34 +5,34 @@ morea_type: home
 published: true
 ---
 
-## Welcome to ICS 199, Fall 2021
+## Welcome to EE 342, Fall 2023
 
-<div class="alert alert-danger" role="alert" markdown="1">
+EE 342 is an undergraduate level introduction to Probability and Statistics
+for Electrical and Computer Engineering students.
 
-  <i class="fa-solid fa-circle-exclamation fa-xl"></i> **Warning: this is not a website for a real course.**
-  <hr/>
-  
-  It is actually the "demo" site for the Morea Framework. 
-
-  See the <a href="https://morea-framework.github.io">Morea Framework Project Site</a> for details.
-</div>
-
-ICS 199 is a four week overview of selected topics in computer science, including Javascript, Open Source Software, and Ethics.
 
 ## Who should take this course
 
-This course is intended for undergraduates in computer science or computer engineering who have a working knowledge of at least one programming language and who want to get a taste of important topics in the field.
+This course is intended for undergraduates in ECE, or graduate
+students in ICS, Economics, or Business with a basic working
+knowledge of python.
 
 ## Pedagogy
 
-ICS 199 is structured as a sequential series of [modules](/modules), each taking approximately a week to complete. Each module has the following structure:
+EE 342 is structured as a series of [modules](https://uhm-descartes.github.io/ee342/modules), each taking
+approximately a week to complete. The course will operate in partially
+flipped mode. We will spend class time partly in lectures, and partly
+to do problems. The setup of the course assumes that you are
+responsible for the readings/experiences as assigned before you come
+to class. We reserve the class time for the harder or the more
+important parts. Modules have:
 
-  * [Prerequisites](/prerequisites), describing skills you should have prior to starting the module.
-  * [Learning outcomes](/outcomes), describing the major goals for the module.
-  * [Readings and other online resources](/readings), providing background material.
-  * [Experiential learning activities](/experiences), providing a structured set of challenges enabling you to acquire mastery of material.
-  * [Assessments](/assessments), which help you determine if you have acquired mastery of the material.
+  * [Prerequisites](https://uhm-descartes.github.io/ee342/prerequisites), describing skills you should have prior to starting the module.
+  * [Learning outcomes](https://uhm-descartes.github.io/ee342/outcomes), describing the major goals for the module.
+  * [Readings and other online resources](https://uhm-descartes.github.io/ee342/readings), providing background material.
+  * [Experiential learning activities](https://uhm-descartes.github.io/ee342/experiences), providing a structured set of challenges enabling you to acquire mastery of material.
+  * [Assessments](https://uhm-descartes.github.io/ee342/assessments), which help you determine if you have acquired mastery of the material.
 
 ## About the instructor
 
-[Philip Johnson](https://philipmjohnson.org) is a Professor of Information and Computer Sciences at the University of Hawaii. His research interests include climate change, educational technology, software engineering, and serious games. He is currently an active developer of [RadGrad](https://radgrad.org), an open source software system based on Javascript, Typescript, React, and Meteor.
+[Narayana Prasad Santhanam](https://ee.hawaii.edu/faculty/profile?usr=63) is a Professor of Electrical and Computer Engineering at the University of Hawaii. My research interests are at the intersection of machine learning, information theory and statistics. A particular focus is on high dimensional and complex problems, that are not amenable to traditional statistical methods and guarantees.
