@@ -68,7 +68,7 @@ it meant to be. But it will be wonderful if you have the attitude that
 you have to figure these things out. If you do that, by the
 undergraduate/beginning graduate level, you would have rewired your
 thinking to include these topics.
-
+	
 
 
 
