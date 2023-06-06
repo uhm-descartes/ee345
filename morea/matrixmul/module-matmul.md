@@ -5,9 +5,10 @@ morea_coming_soon: false
 morea_id: module-CHANGE-ME
 morea_prerequisites:
 morea_outcomes:
-#   - outcome-matmul
+   - outcome-matmul
 morea_readings:
 #   - reading-text
+#   - reading-graph
 morea_experiences:
 #   - experience-matmul
 morea_assessments:
