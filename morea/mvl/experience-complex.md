@@ -73,7 +73,7 @@ $${\bf x}{\bf y} = (x_1y_1 -x_2y_2 ){\bf e} + (x_2y_1+x_1y_2){\bf i}.$$
 
 If you are familiar with complex numbers, the above is the exact
 analog of the development of complex numbers, a proof of the existence
-of $\sqrt{-1}$, and the development of the complex product. Now you
+of $$\sqrt{-1}$$, and the development of the complex product. Now you
 know why we represent complex numbers in the Argand/Gauss
 plane---another way to see complex numbers is to think about how to
 introduce an algebraic product on vectors with two coordinates.
