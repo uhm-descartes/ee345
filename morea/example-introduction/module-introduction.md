@@ -24,6 +24,7 @@ morea_labels:
 morea_sort_order: 01
 ---
 
-Overview of EE 345/L, and some simple initial tasks to get oriented and ready for the course.
+Overview of EE 345/L, and some simple initial tasks to get oriented
+and ready for the course.
 
 Add syllabus here
