@@ -1,7 +1,7 @@
 ---
 title: "Guide to Text"
 published: true
-morea_id: reading-text
+morea_id: reading-text-matmul
 morea_summary: "Section 2.4"
 morea_type: reading
 morea_labels:

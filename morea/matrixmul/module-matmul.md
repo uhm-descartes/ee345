@@ -7,7 +7,7 @@ morea_prerequisites:
 morea_outcomes:
    - outcome-matmul
 morea_readings:
-   - reading-text
+   - reading-text-matmul
 #   - reading-graph
 morea_experiences:
 #   - experience-matmul
