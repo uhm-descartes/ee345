@@ -9,11 +9,9 @@ This page collects together all of the "outcomes" associated with individual mod
 
 ### Course-level outcomes
 
-Students mastering the material in this course will achieve the following student learning outcomes for the ICS undergraduate degree program:
+TBD
 
-  * [A] Students can apply knowledge of computing and mathematics appropriate to the discipline.
-  * [B] Students can analyze a problem, and identify and define the computing requirements appropriate to its solution.
-  * [C] Students can design, implement, and evaluate a computer-based system, process, component, or program to meet desired needs.
+
 
   
 
