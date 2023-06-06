@@ -8,9 +8,10 @@ morea_outcomes:
    - outcome-matmul
 morea_readings:
    - reading-text
-   - reading-graph
+#   - reading-graph
 morea_experiences:
 #   - experience-matmul
+#   - experience-graph
 morea_assessments:
 #   - assessment-matmul
 morea_type: module

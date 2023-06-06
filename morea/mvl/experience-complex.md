@@ -33,8 +33,7 @@ is also a real number).
 1. The "algebraic product" must be commutative, that is $${\bf x} {\bf y} = {\bf y}
    {\bf x}$$ for all $${\bf x}$$ and $${\bf y}$$.
 2. The "algebraic product" is linear in each factor, namely
-   $$({\bf x}_1+{\bf x}_2){\bf y} = {\bf x}_1 {\bf y} + {\bf x}_2 {\bf y}$$ and $${\bf x} ({\bf y}_1+{\bf y}_2) = {\bf x}{\bf y}_1
-   +{\bf x}{\bf y}_2$, as well as for any real $$c$$, $$(c{\bf x}){\bf y} = c({\bf x}{\bf y})$$ and
+   $$({\bf x}_1+{\bf x}_2){\bf y} = {\bf x}_1 {\bf y} + {\bf x}_2 {\bf y}$$ and $${\bf x} ({\bf y}_1+{\bf y}_2) = {\bf x}{\bf y}_1+{\bf x}{\bf y}_2$$, as well as for any real $$c$$, $$(c{\bf x}){\bf y} = c({\bf x}{\bf y})$$ and
    $${\bf x}(c{\bf y})=c({\bf x}{\bf y})$$.
 3. The "algebraic product" is associative, that is $${\bf x}({\bf y}{\bf z}) = ({\bf x}{\bf y}){\bf z}$$ (so
    even though the product was a binary operator, we can actually
@@ -60,14 +59,17 @@ but much harder) that there will be a vector $${\bf i}$$ such that
 
 $${\bf i}{\bf i} = (-{\bf i})(-{\bf i}) = -{\bf e}.$$
 
-These vectors $${\bf e}$$ and $${\bf i}$$ will not be scalings of each other
-(since if $${\bf i} = c {\bf e}$$, then $${\bf i}{\bf i} = c^2 {\bf e}$$ and can never equal
-$$-{\bf e}$$ for any real $$c$$. Therefore, the set of all linear
-combinations of $${\bf e}$$ and $${\bf i}$$ is the entire plane $${\mathbb R}^2$$ of
-all vectors with 2 coordinates. We can therefore represent any vector
-$${\bf x} as x_1 {\bf e} + x_2 {\bf i}$$. Say $${\bf y}=y_1{\bf e} +y_2{\bf i}$$ in the same coordinate
-system. Then the 4 axioms imply that the product must assign (this you
-can prove if you believe the narrative till now):
+These vectors $${\bf e}$$ and $${\bf i}$$ will not be scalings of each
+other.  This is because if $${\bf i} = c {\bf e}$$, then the linearity
+axiom implies $${\bf i}{\bf i} = c^2 {\bf e}{\bf e} = c^2{\bf e}$$;
+but $$c^2{\bf e}$$ can never equal $$-{\bf e}$$ for any real
+$$c$$. Therefore, the set of all linear combinations of $${\bf e}$$
+and $${\bf i}$$ is the entire plane $${\mathbb R}^2$$ of all vectors
+with 2 coordinates. We can therefore represent any vector $${\bf x}$$ as
+$$x_1 {\bf e} + x_2 {\bf i}$$. Say $${\bf y}=y_1{\bf e} +y_2{\bf i}$$ in
+the same coordinate system. Then the 4 axioms imply that the product
+must assign (this you can prove if you believe the narrative till
+now):
 
 $${\bf x}{\bf y} = (x_1y_1 -x_2y_2 ){\bf e} + (x_2y_1+x_1y_2){\bf i}.$$
 
@@ -85,11 +87,12 @@ however (but the cross product is neither associative nor
 commutative).
 
 Turns out there is a remarkable theorem called the **Frobenius
-theorem** that states that only $${\mathbb R}$$, $${\mathbb R}^2$$
-satisfy the 4 properties above. If we compromise on commutativity,
-then $${\mathbb R}^4$$ (vectors with 4 coordinates) have an "algebraic
-product" satisfying all but the commutative property. Just like
-$${\mathbb R}^2$$ are called complex numbers, $${\mathbb R}^4$$ are
-called quaternions.  Just as complex numbers are all over electrical
+theorem** that states that only real multiplication on $${\mathbb R}$$
+and the complex multiplication above on $${\mathbb R}^2$$ satisfy the 4
+properties above. If we compromise on commutativity, then $${\mathbb
+R}^4$$ (vectors with 4 coordinates) have an "algebraic product"
+satisfying all but the commutative property. Just like $${\mathbb
+R}^2$$ are called complex numbers, $${\mathbb R}^4$$ are called
+quaternions.  Just as complex numbers are all over electrical
 engineering, quaternions are all over computer vision, 3-d graphics,
 not to mention the equations of Einstein's General Relativity.
