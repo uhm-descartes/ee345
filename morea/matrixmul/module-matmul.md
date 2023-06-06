@@ -1,6 +1,6 @@
 ---
 title: "Matrix Multiplication"
-published: false
+published: true
 morea_coming_soon: false
 morea_id: module-CHANGE-ME
 morea_prerequisites:
