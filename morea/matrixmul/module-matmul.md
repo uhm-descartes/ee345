@@ -7,8 +7,8 @@ morea_prerequisites:
 morea_outcomes:
    - outcome-matmul
 morea_readings:
-#   - reading-text
-#   - reading-graph
+   - reading-text
+   - reading-graph
 morea_experiences:
 #   - experience-matmul
 morea_assessments:
@@ -21,4 +21,7 @@ morea_labels:
 morea_sort_order: 31
 ---
 
-Matrix Multiplication in all its forms.
+Photo: Josh Alman and Virginia Williams, record holders for fastest
+matrix multiplication algorithm. Our hope is to find a multiplication
+algorithm essentially as fast as just writing out the matrices that go
+into the product.
