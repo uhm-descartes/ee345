@@ -1,5 +1,5 @@
 ---
-title: "Guide to Text"
+title: "Guide for the Text"
 published: true
 morea_id: reading-text
 morea_summary: "Chapter 1"
