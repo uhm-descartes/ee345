@@ -12,8 +12,9 @@ strictly following the order in the text. This is because this course
 has a companion lab, and it allows us to use class time in more
 effective ways. In class we will streamline the treatment of linear
 equations, and in the lab you will see linear equations in lot more
-detail. The text is encyclopedic, but focus on the following amidst
-the mechanics of matrix mulitplication:
+detail. The text is encyclopedic. While going through the material,
+focus on the following amidst the myriad mechanics of matrix
+mulitplication:
 
 * the ability to identify which linear combinations are happening
 * in the subsection "Rows and Columns of $$AB$$", note that each
