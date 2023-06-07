@@ -1,7 +1,7 @@
 ---
 title: "Norms and Dot Products"
 published: true
- morea_id: experience-norm
+morea_id: experience-norm
 morea_type: experience
 morea_summary: "The many ways to measure"
 morea_start_date: "2023-08-24"
