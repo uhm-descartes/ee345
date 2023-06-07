@@ -11,7 +11,7 @@ morea_readings:
 #   - reading-graph
 morea_experiences:
    - experience-matmul
-   - experience-graph
+   - experience-graphs
 morea_assessments:
 #   - assessment-matmul
 morea_type: module
