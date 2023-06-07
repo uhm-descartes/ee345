@@ -11,6 +11,7 @@ morea_readings:
 morea_experiences:
    - experience-vl
    - experience-complex
+   - experience-norm
 morea_assessments:
    - assessment-vl
 morea_type: module
