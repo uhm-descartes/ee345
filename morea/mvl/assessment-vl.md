@@ -18,9 +18,8 @@ combinations, dot products and orthogonality).
 
 # Problems in class
 
-1. Parallelogram Law: Prove that for any two vectors $${\bf x}$$ and $${\bf y}$$,
-
-$$||{\bf x}+{\bf y}||^2 + ||{\bf x}-{\bf y}||^2 = 2 \Bigl(||{\bf x}||^2 + ||{\bf y}||^2\Bigr). $$
+1. Parallelogram Law: Prove that for any two vectors $${\bf x}$$ and $${\bf y}$$, 
+    $$||{\bf x}+{\bf y}||^2 + ||{\bf x}-{\bf y}||^2 = 2 \Bigl(||{\bf x}||^2 + ||{\bf y}||^2\Bigr). $$
 
 2. Show that if $${\bf x}$$ and $${\bf y}$$ are both orthogonal to
    $$\bf z$$, then so is any linear combination of $${\bf x}$$ and
