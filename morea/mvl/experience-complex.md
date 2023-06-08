@@ -44,7 +44,7 @@ Note that real multiplication satisfies all these. The dot product
 doesn't output a vector (so point 3 is meaningless), and does not
 satisfy 4 (the dot product of non-zero orthogonal vectors is 0. The
 outer product again doesn't output a vector (so point 3 is again
-meaningless), but satisfies 1, 2, and 4.
+meaningless), does not satisfy 1, but satisfies 2 and 4.
 
 So what form can this "algebraic product" take? First it turns out
 that the 4 axioms above imply (proof withheld but accessible) there
@@ -55,21 +55,25 @@ $${\bf x}{\bf e} = {\bf e}{\bf x} = {\bf x}.$$
 
 
 Then it turns out the 4 axioms above also imply that (proof withheld,
-but much harder) that there will be a vector $${\bf i}$$ such that
+but you need to finish at least the first half of EE 345 to follow)
+that there exists a vector $${\bf i}\in{\mathbb R}^2$$ such that
 
 $${\bf i}{\bf i} = (-{\bf i})(-{\bf i}) = -{\bf e}.$$
 
 These vectors $${\bf e}$$ and $${\bf i}$$ will not be scalings of each
-other.  This is because if $${\bf i} = c {\bf e}$$, then the linearity
-axiom implies $${\bf i}{\bf i} = c^2 {\bf e}{\bf e} = c^2{\bf e}$$;
-but $$c^2{\bf e}$$ can never equal $$-{\bf e}$$ for any real
-$$c$$. Therefore, the set of all linear combinations of $${\bf e}$$
-and $${\bf i}$$ is the entire plane $${\mathbb R}^2$$ of all vectors
-with 2 coordinates. We can therefore represent any vector $${\bf x}$$ as
-$$x_1 {\bf e} + x_2 {\bf i}$$. Say $${\bf y}=y_1{\bf e} +y_2{\bf i}$$ in
-the same coordinate system. Then the 4 axioms imply that the product
-must assign (this you can prove if you believe the narrative till
-now):
+other.  This is because if they were, ie $${\bf i} = c {\bf e}$$, then
+the linearity axiom implies 
+
+$$-{\bf e} = {\bf i}{\bf i} = c^2 {\bf e}{\bf e} = c^2{\bf e}.$$ 
+
+But $$c^2{\bf e}$$ can never equal $$-{\bf e}$$ for any real
+$$c$$. Since $$\bf i$$ and $$\bf e$$ are not colinear, the set of all
+linear combinations of $${\bf e}$$ and $${\bf i}$$ is the entire plane
+$${\mathbb R}^2$$ of all vectors with 2 coordinates. We can therefore
+represent any vector $${\bf x}$$ as $$x_1 {\bf e} + x_2 {\bf
+i}$$. Similarly, say $${\bf y}=y_1{\bf e} +y_2{\bf i}$$ in the same
+coordinate system. Then the 4 axioms imply that the product must
+assign (this you can prove using axiom 2. above):
 
 $${\bf x}{\bf y} = (x_1y_1 -x_2y_2 ){\bf e} + (x_2y_1+x_1y_2){\bf i}.$$
 
