@@ -35,7 +35,7 @@ $$\lim_{p\to\infty} ||{\bf x}||_p = ||{\bf x}||_\infty$$. These need not be the 
 
 1. Only the $$\bf 0$$ vector has norm 0
 
-2. The norm of $$\lambda {\bf x}$$ is $$|\lambda |$$ times the norm of $${\bf x}$$
+2. The norm of $$\lambda {\bf x}$$ is $$\mid\lambda\mid$$ times the norm of $${\bf x}$$
 
 3. For any vectors $${\bf x}$$ and $${\bf y}
 $$, the norm of $${\bf x}+{\bf y}
