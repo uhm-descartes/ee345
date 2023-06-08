@@ -1,8 +1,8 @@
 ---
-title: "Lab: Matrices, Vectors, Linear combinations"
+title: "Quizzes and Problems"
 published: true
 morea_id: assessment-vl
-morea_summary: "Python/numpy implementations"
+morea_summary: "Linear combinations"
 morea_outcomes_assessed:
  # - outcome-CHANGE-ME
 morea_type: assessment
@@ -18,6 +18,13 @@ combinations, dot products and orthogonality).
 
 # Problems in class
 
+1. Parallelogram Law: Prove that for any two vectors $$\x$$ and $$\y$$,
+
+$$||\x+\y||^2 + ||\x-\y||^2 = 2 \Bigl(||\x||^2 + ||\y||^2\Bigr). $$
+
+2. Show that if $$\x$$ and $$\y$$ are both orthogonal to $$\z$$, so is any linear combination of $$\x$$ and $$\y$$.
+
+3. Is $$\begin{bmatrix} 2 \\ 3\\ 1\end{bmatrix}$$ a 
 
 
 
