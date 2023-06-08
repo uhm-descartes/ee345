@@ -24,7 +24,16 @@ $$||\x+\y||^2 + ||\x-\y||^2 = 2 \Bigl(||\x||^2 + ||\y||^2\Bigr). $$
 
 2. Show that if $$\x$$ and $$\y$$ are both orthogonal to $$\z$$, so is any linear combination of $$\x$$ and $$\y$$.
 
-3. Is $$\begin{bmatrix} 2 \\ 3\\ 1\end{bmatrix}$$ a 
+3. Is $$\begin{bmatrix} 2 \\ 3\\ 1\end{bmatrix}$$ a linear combination of 
+$$\begin{bmatrix} -1 \\ 0\\ 1\end{bmatrix}$$ and $$\begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix}$$?
+
+4. Prove Cauchy-Schwartz inequality: $$\x^T\y \le ||\x|| \,||\y||$$.
+
+5. Let $$\w\in\reals^3$$. From your previous experience in geometry,
+all points $$\x\in\reals^3$$ satisfying $$\w^T\x=0$$ form a ___? What
+is the smallest possible distance of a point $$\z \in \reals^3$$ from
+any point $$\x$$ satisfying $$\w^T\x = 0$$?
+
 
 
 
