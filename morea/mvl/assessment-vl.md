@@ -30,12 +30,12 @@ $$\begin{bmatrix} -1 \\ 0\\ 1\end{bmatrix}$$ and $$\begin{bmatrix} 1 \\ 2 \\ 1 \
 
 4. Prove Cauchy-Schwartz inequality: 
 
-$${\bf x}^T{\bf y} \le ||{\bf x}|| {\|\|{\bf y}\|\|}.$$
+$${\bf x}^T{\bf y} \le ||{\bf x}|| \,||\bf y}||.$$
 
 5. Let $${\bf w}\in{\mathbb R}^3$$. From your previous experience in geometry,
-all points $${\bf x}\in{\mathbb R}^3$$ satisfying $${\bf w}^T{\bf x}=0$$ form a ___? What
-is the smallest possible distance of a point $${\bf z} \in {\mathbb R}^3$$ from
-any point $${\bf x}$$ satisfying $${\bf w}^T{\bf x} = 0$$?
+all points $${\bf x}\in{\mathbb R}^3$$ satisfying $${\bf w}^T{\bf x}=0$$ form a ___? 
+  
+   What is the smallest possible distance of a point $${\bf z} \in {\mathbb R}^3$$ from any point $${\bf x}$$ satisfying $${\bf w}^T{\bf x} = 0$$?
 
 
 
