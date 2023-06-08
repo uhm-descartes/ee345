@@ -28,7 +28,9 @@ combinations, dot products and orthogonality).
 3. Is $$\begin{bmatrix} 2 \\ 3\\ 1\end{bmatrix}$$ a linear combination of 
 $$\begin{bmatrix} -1 \\ 0\\ 1\end{bmatrix}$$ and $$\begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix}$$?
 
-4. Prove Cauchy-Schwartz inequality: $${\bf x}^T{\bf y} \le {\|\|{\bf x}\|\|}{\|\|{\bf y}\|\|}$$.
+4. Prove Cauchy-Schwartz inequality: 
+
+$${\bf x}^T{\bf y} \le ||{\bf x}|| {\|\|{\bf y}\|\|}.$$
 
 5. Let $${\bf w}\in{\mathbb R}^3$$. From your previous experience in geometry,
 all points $${\bf x}\in{\mathbb R}^3$$ satisfying $${\bf w}^T{\bf x}=0$$ form a ___? What
