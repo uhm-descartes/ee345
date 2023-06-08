@@ -30,11 +30,11 @@ We also define the $$\ell_\infty$$ norm as
 
 $$ ||{\bf x}||_\infty = \max_{1\le i \le n} x_i, $$
 
-and you can convince yourself that $$\lim_{p\to\infty} ||{\bf x}||_p =
-||{\bf x}||_\infty$$. These need not be the only way to measure vectors either. We can use any non-negative real-valued function of vectors (which we will call a _norm_) to measure them---as long as the norm function satisfies the axioms.
+and you can convince yourself that 
+$$\lim_{p\to\infty} ||{\bf x}||_p = ||{\bf x}||_\infty$$. These need not be the only way to measure vectors either. We can use any non-negative real-valued function of vectors (which we will call a _norm_) to measure them---as long as the norm function satisfies the axioms.
 
 1. Only the $$\bf 0$$ vector has norm 0
-2. The norm of $$\lambda {\bf x}$$ is $$|\lambda |$$ times the norm of $${\bf x}$$
+2. The norm of $$\lambda {\bf x}$$ $$|\lambda |$$ times the norm of $${\bf x}$$
 3. For any vectors $${\bf x}$$ and $${\bf y}
 $$, the norm of $${\bf x}+{\bf y}
 $$ is $$\le$$ the norm of $${\bf x}$$ plus the norm of $${\bf y}
