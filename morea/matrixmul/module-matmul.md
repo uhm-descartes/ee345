@@ -2,7 +2,7 @@
 title: "Matrix Multiplication"
 published: true
 morea_coming_soon: false
-morea_id: module-CHANGE-ME
+morea_id: module-matmul
 morea_prerequisites:
 morea_outcomes:
    - outcome-matmul

@@ -2,7 +2,7 @@
 title: "Linear Equations"
 published: true
 morea_coming_soon: false
-morea_id: module-CHANGE-ME
+morea_id: module-eq
 morea_prerequisites:
 morea_outcomes:
    - outcome-eq

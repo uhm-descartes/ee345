@@ -1,6 +1,6 @@
 ---
 title: "Problems in class"
-published: false
+published: true
 morea_id: assessment-matmul
 morea_summary: "Matrix mulitiplication"
 morea_outcomes_assessed:
