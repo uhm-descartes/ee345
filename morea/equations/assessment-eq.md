@@ -37,6 +37,10 @@ pivots?
    far deeper into the elimination algorithm than is apparent. It is a
    simple procedure no doubt, but with stunningly deep ramifications.
    
-4. Write a $$3\times 3$$ matrix $$C$$ such that 
-   
+4. Find one $$4\times 3$$ matrix $$C$$ (the same matrix must be used
+   for both parts below), and two vectors $$\bf b$$ and $$\bf w$$ such that
+    * $$C{\bf x} = {\bf b}$$ has a unique solution;
+    * $$C{\bf x} = {\bf w}$$ has no solutions
+    * Is it possible to find a vector $$\bf z$$ such that $$C{\bf x} = {\bf z}$$ has infinite solutions?
+	* Can you find a matrix $$D$$ such that both equations $$D{\bf x} = {\bf b}$$ and $$D{\bf x}={\bf w}$$ have infinite solutions?
    
