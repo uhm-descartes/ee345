@@ -10,8 +10,9 @@ morea_readings:
    - reading-text-eq
 morea_experiences:
    - experience-lab-eq
+   - problems-eq
 morea_assessments:
-   - assessment-eq
+  # - quiz-eq
 morea_type: module
 morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
 morea_start_date: "2023-09-05"
