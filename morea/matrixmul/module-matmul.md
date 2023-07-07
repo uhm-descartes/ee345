@@ -13,11 +13,11 @@ morea_experiences:
    - experience-matmul
    - experience-graphs
 morea_assessments:
-#   - assessment-matmul
+   - assessment-matmul
 morea_type: module
 morea_icon_url: /morea/matrixmul/matmul.png
 morea_start_date: "2023-08-30"
-morea_end_date: "2023-09-06"
+morea_end_date: "2023-09-05"
 morea_labels:
 morea_sort_order: 31
 ---
