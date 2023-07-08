@@ -10,7 +10,7 @@ morea_labels:
 
 # Problems in class
 
-1. Write a $$5\times 3$$ matrix with all non-zero entries, such that
+1. Write a $$3\times 5$$ matrix such that
    * the first, second and fifth columns are pivot columns, rest free, call this $$A$$
    * the first, third and fifth columns are pivot columns, rest free, call this $$B$$
    * You cannot always get an answer to the second part above by swapping the second and third columns. Why?
