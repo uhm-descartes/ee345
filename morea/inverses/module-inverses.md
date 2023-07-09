@@ -5,9 +5,9 @@ morea_coming_soon: false
 morea_id: module-inverses
 morea_prerequisites:
 morea_outcomes:
-  # - outcome-inverses
+   - outcome-inverses
 morea_readings:
-  # - reading-text-inverses
+   - reading-text-inverses
 morea_experiences:
   # - prob-inverses
   # - lab-inverses
@@ -16,7 +16,7 @@ morea_assessments:
 morea_type: module
 morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
 morea_start_date: "2023-09-13"
-morea_end_date: "2021-09-20"
+morea_end_date: "2023-09-21"
 morea_labels:
 morea_sort_order: 51
 ---
