@@ -23,6 +23,29 @@ morea_labels:
 pivots?
 	* What is the matrix you have after you have worked through the first $$m$$ columns, just before you start looking for the $$m+1$$'th pivot?
 
+4. Find one $$4\times 3$$ matrix $$C$$ (the same matrix must be used
+   for both parts below), and two vectors $$\bf b$$ and $$\bf w$$ such that
+    * $$C{\bf x} = {\bf b}$$ has a unique solution;
+    * $$C{\bf x} = {\bf w}$$ has no solutions
+    * Is it possible to find a vector $$\bf z$$ such that $$C{\bf x} = {\bf z}$$ has infinite solutions?
+	* Can you find a matrix $$D$$ such that both equations $$D{\bf x} = {\bf b}$$ and $$D{\bf x}={\bf w}$$ have infinite solutions?
+
+3. Let $$A$$ be a $$n\times k$$ matrix with $$r$$ pivots (rank $$r$$).
+   Let $$P$$ be the $$n\times r$$ matrix whose columns are the pivot
+   columns of $$A$$. Let $$R$$ be the reduced row echelon form of $$A$$,
+   and let $${\tilde R}$$ be the $$r\times m$$ matrix whose rows are
+   the non-zero rows of $$R$$.
+   
+   * Show that $$A= P{\tilde R}$$. Thus a rank $$r$$ matrix $$A$$ can
+     be written as a $$n\times r$$ matrix multiplied by a $$r\times k$$ matrix.
+   * Show that if a $$n\times k$$ matrix $$B$$ is a product of 
+	 a $$n\times r$$ matrix and a $$r\times k$$ matrix, then the rank of $$B$$
+	 is $$\le r$$.
+   * (Follows from prior parts, but maybe a little subtle) Show that
+     $$A^T$$ has the same number of pivots as $$A$$.
+   
+
+
 3. Pick $$\bf v$$ to be a vector with 3 coordinates. Perform
    elimination on $$I_3 + {\bf v}{\bf v}^T$$, and multiply all the
    pivots. Find the product of all the pivots, and verify the product
@@ -34,10 +57,4 @@ pivots?
    One reason we are doing this problem is to illustrate that you can think
    far deeper into the elimination algorithm than is apparent.
       
-4. Find one $$4\times 3$$ matrix $$C$$ (the same matrix must be used
-   for both parts below), and two vectors $$\bf b$$ and $$\bf w$$ such that
-    * $$C{\bf x} = {\bf b}$$ has a unique solution;
-    * $$C{\bf x} = {\bf w}$$ has no solutions
-    * Is it possible to find a vector $$\bf z$$ such that $$C{\bf x} = {\bf z}$$ has infinite solutions?
-	* Can you find a matrix $$D$$ such that both equations $$D{\bf x} = {\bf b}$$ and $$D{\bf x}={\bf w}$$ have infinite solutions?
    
