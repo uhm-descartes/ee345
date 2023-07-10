@@ -1,6 +1,6 @@
 ---
 title: "Inverses"
-published: false
+published: true
 morea_id: outcome-inverses
 morea_type: outcome
 morea_sort_order: 50
