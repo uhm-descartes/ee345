@@ -20,10 +20,22 @@ pivots. In that case, the primary insight is that the action of $$A$$
 can be undone elegantly, by means of what is called the _inverse_ of
 $$A$$, denoted by $$A^{-1}$$.
 
-The development in the text is standard, but we have a more direct 
-approach in class. 
+## Textbook approach
+In the text, you will find a prophetic and mysterious definition of
+the inverse in the beginning of Section 2.5. But why should there be
+such a matrix? What if only $$AA^{-1}=I$$ and not $$A^{-1}A$$ (or the
+other way around)? What is the point of such a matrix? Where does it
+come from? Only the last subsection (Singular and Invertible) resolves
+the mysteries. Instead, in class, we let inverses follow naturally
+from our previous module, Elimination.
 
-## $$A$$ is $$n\times n$$ matrix with $$n$$ pivots iff there is a matrix $$B$$ such that $$AB=I$$
+
+## Class approach
+There is no reason for a detective novel approach. The idea of an
+inverse follows naturally from Elimination, as do its properties. Here
+is how we approached this in class.
+
+### $$A$$ is $$n\times n$$ matrix with $$n$$ pivots iff there is a matrix $$B$$ such that $$AB=I$$
 
 We only prove that if $$A$$ is a $$n\times n$$ matrix with $$n$$
 pivots, there is a matrix $$B$$ such that $$AB=I$$ in this
@@ -59,7 +71,7 @@ $$\begin{align*}
 	A{\bf x}_i &= {\bf e}_i\\		
 		\vdots\\
 	A{\bf x}_n &= {\bf e}_n\\
-$$\end{align*}
+\end{align*}$$
 
 Therefore, there is a _unique_ matrix $$B$$
 
@@ -79,7 +91,7 @@ statement than given: if there is a matrix $$B$$ satisfying $$AB=I$$
 for a $$n\times n $$ matrix $$A$$, then both $$A$$ and $$B$$ must have
 $$n$$ pivots each.
 
-## For all $$n\times n$$ matrices $$A$$ with $$n$$ pivots, there is a matrix $$C$$ such that $$CA=I$$
+### For all $$n\times n$$ matrices $$A$$ with $$n$$ pivots, there is a matrix $$C$$ such that $$CA=I$$
 
 This follows from one of the problems in the prior module. Recall that if $$A$$
 is square with $$n$$ pivots, Gaussian elimination (row operations) allows us
@@ -100,7 +112,7 @@ $$ C = U_1\cdots U_1 D L_n\cdots L_1. $$
 
 Thus $$CA = I$$.
 
-## Every $$n\times n$$ square $$A$$ with $$n$$ pivots has a unique inverse $$A^{-1}$$ satisfying $$AA^{-1} = A^{-1}A = I$$.
+### Every $$n\times n$$ square $$A$$ with $$n$$ pivots has a unique inverse $$A^{-1}$$ satisfying $$AA^{-1} = A^{-1}A = I$$.
 
 We will show that the matrices $$B$$ and $$C$$ of the prior sections must
 be equal. To see this, note that
@@ -115,14 +127,6 @@ so that $$CAB = B = C$$, or $$B=C$$. Recall also that we observed
 $$B$$ was unique, so $$C$$ must be as well. We call this unique matrix
 $$B= C= A^{-1}$$ as the _inverse_ of $$A$$.
 
-## Textbook approach
-There is no mystery of "existence" in our development, and there is no
-mystery why we "require" both $$AA^{-1} =I$$ and $$A^{-1}A =
-I$$. Other the other hand, in the text, you will find a prophetic and
-mysterious definition in the beginning of Section 2.5, and only the
-last subsection (Singular and Invertible) resolves the mysteries. There
-is no reason for the roundabout approach, instead we adopt the direct
-route in class.
 
 
 
