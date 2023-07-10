@@ -24,11 +24,11 @@ pivots?
 	* What is the matrix you have after you have worked through the first $$m$$ columns, just before you start looking for the $$m+1$$'th pivot?
 
 4. Find one $$4\times 3$$ matrix $$C$$ (the same matrix must be used
-   for both parts below), and two vectors $$\bf b$$ and $$\bf w$$ such that
+   for all relevant parts below), and two vectors $$\bf b$$ and $$\bf w$$ such that
     * $$C{\bf x} = {\bf b}$$ has a unique solution;
     * $$C{\bf x} = {\bf w}$$ has no solutions
     * Is it possible to find a vector $$\bf z$$ such that $$C{\bf x} = {\bf z}$$ has infinite solutions?
-	* Can you find a matrix $$D$$ such that both equations $$D{\bf x} = {\bf b}$$ and $$D{\bf x}={\bf w}$$ have infinite solutions?
+	* Can you find a different matrix $$D$$ such that both equations $$D{\bf x} = {\bf b}$$ and $$D{\bf x}={\bf w}$$ have infinite solutions?
 
 3. Let $$A$$ be a $$n\times k$$ matrix with $$r$$ pivots (rank $$r$$).
    Let $$P$$ be the $$n\times r$$ matrix whose columns are the pivot
@@ -44,7 +44,21 @@ pivots?
    * (Follows from prior parts, but maybe a little subtle) Show that
      $$A^T$$ has the same number of pivots as $$A$$.
    
-
+   The observation that $$A = P{\tilde R}$$ tells you the information
+   the reduced row echelon form provides: (i) it tells you which
+   columns are pivot columns and (ii) how to get the free columns from
+   the pivot columns as linear combinations. Writing $$A = P{\tilde
+   R}$$ is an example of matrix factorization. 
+   
+   Suppose $$A$$ is a matrix with only non-negative entries. Many
+   applications, in astronomy, computer vision, bioinformatics,
+   recommender systems, signal processing and natural language
+   processing, require factors of $$A$$ whose entries are also all
+   non-negative, and in addition with as small a rank as possible.
+   The above alone will not cut it, since the entries of $$\tilde R$$
+   can be negative even if all the entries of $$A$$ are
+   non-negative. But the above proves a lower bound on the rank of
+   the factors for exact factorization, which is $$r$$.
 
 3. Pick $$\bf v$$ to be a vector with 3 coordinates. Perform
    elimination on $$I_3 + {\bf v}{\bf v}^T$$, and multiply all the
