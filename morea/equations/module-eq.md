@@ -1,5 +1,5 @@
 ---
-title: "Linear Equations"
+title: "Gaussian Elimination"
 published: true
 morea_coming_soon: false
 morea_id: module-eq
@@ -21,4 +21,4 @@ morea_labels:
 morea_sort_order: 41
 ---
 
-Elimination, Solutions of linear equations
+Gaussian Elimination, Solutions of linear equations

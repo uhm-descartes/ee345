@@ -56,10 +56,10 @@ pivots?
    recommender systems, signal processing and natural language
    processing, require factors of $$A$$ whose entries are also all
    non-negative, and in addition with as small a rank as possible.
-   The above alone will not cut it, since the entries of $$\tilde R$$
-   can be negative even if all the entries of $$A$$ are
-   non-negative. But the above proves a lower bound on the rank of
-   the factors for exact factorization, which is $$r$$.
+   The above factorization into rank $$r$$ matrices will not cut it,
+   since the entries of $$\tilde R$$ can be negative even if all the
+   entries of $$A$$ are non-negative. But $$r$$ remains a lower bound
+   on the rank of the factors for exact non-negative factorization.
 
 3. Pick $$\bf v$$ to be a vector with 3 coordinates. Perform
    elimination on $$I_3 + {\bf v}{\bf v}^T$$, and multiply all the
