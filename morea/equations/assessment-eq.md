@@ -44,12 +44,13 @@ pivots?
    * (Follows from prior parts, but maybe a little subtle) Show that
      $$A^T$$ has the same number of pivots as $$A$$.
    
-   The observation that $$A = P{\tilde R}$$ tells you the information
-   the reduced row echelon form provides: (i) it tells you which
-   columns are pivot columns and (ii) how to get the free columns from
-   the pivot columns as linear combinations. Writing $$A = P{\tilde
-   R}$$ is an example of matrix factorization. 
+   The observation that $$A = P{\tilde R}$$ captures the information
+   the reduced row echelon form provides: 
+     * it tells you which columns are pivot columns, and 
+	 * how to get the free columns from the pivot columns as linear
+   combinations. 
    
+   Writing $$A = P{\tilde R}$$ is an example of matrix factorization.
    Suppose $$A$$ is a matrix with only non-negative entries. Many
    applications, in astronomy, computer vision, bioinformatics,
    recommender systems, signal processing and natural language
