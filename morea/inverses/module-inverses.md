@@ -9,7 +9,7 @@ morea_outcomes:
 morea_readings:
    - reading-text-inverses
 morea_experiences:
-  # - prob-inverses
+   - experience-prob-inverses
   # - lab-inverses
 morea_assessments:
   # - quiz-inverses
