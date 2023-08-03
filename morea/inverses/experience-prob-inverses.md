@@ -40,16 +40,27 @@ morea_labels:
    * $$I+YX$$ also has an inverse 
    * Show that $$(I+XY)^{-1}X = X(I+YX)^{-1}$$
    * Show that $$(I+Z)^{-1} = I - (I+Z)^{-1} Z$$
-   * $$(I+XY)^{-1} = I - X(I+YX)^{-1}Y $$
+   * Using the above, show that
    
-   These may seem like gymnastics, but consider the case where $$X$$
-   is a column vector and $$Y$$ a row vector, both with the same
-   number of coordinates. Then $$I+XY$$ is a square matrix. But $$YX$$
-   is just a number and so $$I+YX$$ is just $$1+YX$$, another number,
-   whose inverse is just its regular real number
-   reciprocal. Therefore, we get $$(I+XY)^{-1}$$ simply as $$I -
-   XY/(1+ YX)$$, a simple update that does not require a whole lot of
-   calculations. 
+      $$(I+XY)^{-1} = I - X(I+YX)^{-1}Y $$
+   
+   These may seem like pointless gymnastics, but the above is surprisingly
+   useful in a very wide range of applications. It shows up from
+    * Kernel methods (a powerful but computationally intensive state
+   of the art machine learning approach) to
+    * Traditional and widely used algorithms you use all the time such
+   as the Kalman filter (well you may not know you used it, but if you
+   have ever used a GPS unit to navigate, you have used Kalman
+   filters). You know the first time Kalman filters were used? On the 
+   Apollo Guidance computer for the moon landings. 
+   
+   Consider the case where $$X$$ is a column vector and
+   $$Y$$ a row vector, both with the same number of coordinates. Then
+   $$I+XY$$ is a square matrix. But $$YX$$ is just a number and so
+   $$I+YX$$ is just $$1+YX$$, another number, whose inverse is just
+   its regular real number reciprocal. Therefore, we get
+   $$(I+XY)^{-1}$$ simply as $$I - XY/(1+ YX)$$, a simple update that
+   does not require a whole lot of calculations.
    
    The last one, which combines the prior few identities, is the
    essence of the Woodbury-Morrison formula/matrix inversion lemma,
