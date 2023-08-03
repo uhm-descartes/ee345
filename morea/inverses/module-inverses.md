@@ -14,11 +14,13 @@ morea_experiences:
 morea_assessments:
   # - quiz-inverses
 morea_type: module
-morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
+morea_icon_url: https://www.flaticon.com/free-icons/undo
 morea_start_date: "2023-09-13"
 morea_end_date: "2023-09-21"
 morea_labels:
 morea_sort_order: 51
 ---
 
-Inverses
+Inverses, an undo operation for matrices
+
+(Icon created by Creatype - Flaticon)
