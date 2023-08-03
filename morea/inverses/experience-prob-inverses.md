@@ -29,14 +29,15 @@ morea_labels:
 
 3. Show that for any square $$A$$, $$(A^T)^{-1} = (A^{-1})^T$$.
 
-4. These problems anticipate a future topic. In all problems below,
-   we are only talking of square matrices $$A$$.
+4. **Determinants** These problems anticipate a future topic,
+   determinants. In all problems below, we are only talking of square
+   matrices $$A$$.
    * Show that if any row of $$A$$ is all zero, $$A$$ has no inverse
    * Show that if any two rows are equal in $$A$$, $$A$$ has no inverse
    * Show that if any row of $$A$$ is a linear combination of other rows
 	 of $$A$$, then $$A$$ has no inverse
 	 
-5. Show that if $$I+XY$$ is square and has an inverse, 
+5. **Matrix Inversion Lemma* Show that if $$I+XY$$ is square and has an inverse, 
    * $$I+YX$$ also has an inverse 
    * Show that $$(I+XY)^{-1}X = X(I+YX)^{-1}$$
    * Show that $$(I+Z)^{-1} = I - (I+Z)^{-1} Z$$
