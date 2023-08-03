@@ -38,9 +38,9 @@ morea_labels:
 	 
 5. Show that if $$I+XY$$ is square and has an inverse, 
    * $$I+YX$$ also has an inverse 
-   * $$(I+XY)^{-1}X = X(I+YX)^{-1}$$
-   * (I+Z)^{-1} = I - (I+Z)^{-1} Z
-   * $$(I+XY)^{-1} = I - X(I+YX)^{-1}Y 
+   * Show that $$(I+XY)^{-1}X = X(I+YX)^{-1}$$
+   * Show that $$(I+Z)^{-1} = I - (I+Z)^{-1} Z$$
+   * $$(I+XY)^{-1} = I - X(I+YX)^{-1}Y $$
    
    These may seem like gymnastics, but consider the case where $$X$$
    is a column vector and $$Y$$ a row vector, both with the same
