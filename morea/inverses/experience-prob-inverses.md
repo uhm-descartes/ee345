@@ -44,8 +44,24 @@ morea_labels:
    
       $$(I+XY)^{-1} = I - X(I+YX)^{-1}Y $$
    
-   These may seem like pointless gymnastics, but the above is surprisingly
-   useful in a very wide range of applications. It shows up from
+   Consider the case where $$X$$ is a column vector and $$Y$$ a row
+   vector, both with the same number of coordinates. Then $$I+XY$$ is
+   a square matrix. But $$YX$$ is just a number and so $$I+YX$$ is
+   just $$1+YX$$, another number, whose inverse is just its regular
+   real number reciprocal (if $$1+YX\ne 0$$). Therefore, if $$YX\ne
+   -1$$, we know that $$I+XY$$ is invertible (from first part), and
+   that 
+   
+   $$(I+XY)^{-1} = I - XY/(1+ YX),$$ 
+   
+   a simple update that does not require computing any matrix inverse
+   explicitly!
+   
+   The last identity is the essence of the Woodbury-Morrison
+   formula/matrix inversion lemma (though it is usually phrased in a
+   more complex form).  All of the above may seem like pointless
+   gymnastics at this point. But the matrix-inversion lemma is
+   surprisingly useful and shows up from
     * Kernel methods (a powerful but computationally intensive state
    of the art machine learning approach) to
     * Traditional and widely used algorithms you use all the time such
@@ -54,17 +70,3 @@ morea_labels:
    filters). You know the first time Kalman filters were used? On the 
    Apollo Guidance computer for the moon landings. 
    
-   Consider the case where $$X$$ is a column vector and
-   $$Y$$ a row vector, both with the same number of coordinates. Then
-   $$I+XY$$ is a square matrix. But $$YX$$ is just a number and so
-   $$I+YX$$ is just $$1+YX$$, another number, whose inverse is just
-   its regular real number reciprocal. Therefore, we get
-   $$(I+XY)^{-1}$$ simply as $$I - XY/(1+ YX)$$, a simple update that
-   does not require a whole lot of calculations.
-   
-   The last one, which combines the prior few identities, is the
-   essence of the Woodbury-Morrison formula/matrix inversion lemma,
-   and shows up everywhere in engineering (Kalman Filters, Recursive
-   Least Squares, and many other places). It is usually phrased in a
-   little more complicated form, but the last identity above captures
-   its essence.
