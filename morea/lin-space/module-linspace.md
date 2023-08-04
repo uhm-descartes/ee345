@@ -5,11 +5,11 @@ morea_coming_soon: false
 morea_id: module-linspace
 morea_prerequisites:
 morea_outcomes:
-  # - outcome-linspace
+   - outcome-linspace
 morea_readings:
-  # - reading-text-linspace
+   - reading-text-linspace
 morea_experiences:
-  # - experience-linspace-prob
+   - experience-linspace-prob
 morea_assessments:
   # - assessment-linspace
 morea_type: module

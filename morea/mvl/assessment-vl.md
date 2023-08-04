@@ -32,7 +32,7 @@ $$\begin{bmatrix} -1 \\ 0\\ 1\end{bmatrix}$$ and $$\begin{bmatrix} 1 \\ 2 \\ 1 \
 
     $${\bf x}^T{\bf y} \le ||{\bf x}|| \,||{\bf y}||.$$
 
-5. Let $${\bf w}\in{\mathbb R}^3$$. From your previous experience in geometry,
+5. **Distance of a point from a plane** Let $${\bf w}\in{\mathbb R}^3$$. From your previous experience in geometry,
 all points $${\bf x}\in{\mathbb R}^3$$ satisfying $${\bf w}^T{\bf x}=0$$ form a ___ (fill up the blank).
   
    What is the smallest possible distance of a point $${\bf z} \in {\mathbb R}^3$$ from any point $${\bf x}$$ satisfying $${\bf w}^T{\bf x} = 0$$?
