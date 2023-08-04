@@ -1,23 +1,26 @@
 ---
-title: "CHANGE ME"
-published: false
+title: "Linear Independence"
+published: true
 morea_coming_soon: false
-morea_id: module-CHANGE-ME
+morea_id: module-linind
 morea_prerequisites:
 morea_outcomes:
-  # - outcome-CHANGE-ME
+  # - outcome-linind
 morea_readings:
-  # - reading-CHANGE-ME
+  # - reading-linind
 morea_experiences:
-  # - experience-CHANGE-ME
+  # - experience-linind-prob
 morea_assessments:
-  # - assessment-CHANGE-ME
+  # - assessment-linind
 morea_type: module
-morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
-morea_start_date: "2021-07-12"
-morea_end_date: "2021-07-16"
+morea_icon_url: /morea/linind/Fano_plane.svg.png
+morea_start_date: "2023-10-03"
+morea_end_date: "2023-10-10"
 morea_labels:
-morea_sort_order: 21
+morea_sort_order: 71
 ---
 
-CHANGE ME
+Linear independence. This crucial property generalizes into matroids,
+which is the structure underlying every greedy algorithm. The picture
+is a Fano matroid.
+
