@@ -16,12 +16,12 @@ Say there are $$k$$ pivots in $$A$$, therefore $$P$$ is a $$m\times k$$ matrix.
 Factorize $$A = P W$$, where $$W$$ is a $$k\times n$$ matrix. 
 
 2. Use your insights into linear independence to
-    * Construct $$A=\begin{bmatrix}\a_1 &\a_2&\a_3&\a_4&
-\a_5\end{bmatrix}$$, a $$4\times 5$$ matrix with pivots in the
-first, second and fourth column. such that the matrix $$\begin{bmatrix}\a_1 &\a_3&\a_2&\a_4& \a_5\end{bmatrix}$$ has pivots in the first, second and fourth columns and
-    * Construct $$B=\begin{bmatrix}\b_1 &\b_2&\b_3&\b_4&
-\b_5\end{bmatrix}$$, a $$4\times 5$$ matrix with pivots in the
-first, second and fourth column. such that the matrix $$\begin{bmatrix}\b_1 &\b_3&\b_2&\b_4& \b_5\end{bmatrix}$$ has pivots in the first, third and fourth columns.
+    * Construct $$A=\begin{bmatrix}{\bf a}_1 &{\bf a}_2&{\bf a}_3&{\bf a}_4&
+{\bf a}_5\end{bmatrix}$$, a $$4\times 5$$ matrix with pivots in the
+first, second and fourth column. such that the matrix $$\begin{bmatrix}{\bf a}_1 &{\bf a}_3&{\bf a}_2&{\bf a}_4& {\bf a}_5\end{bmatrix}$$ has pivots in the first, second and fourth columns and
+    * Construct $$B=\begin{bmatrix}{\bf b}_1 &{\bf b}_2&{\bf b}_3&{\bf b}_4&
+{\bf b}_5\end{bmatrix}$$, a $$4\times 5$$ matrix with pivots in the
+first, second and fourth column. such that the matrix $$\begin{bmatrix}{\bf b}_1 &{\bf b}_3&{\bf b}_2&{\bf b}_4& {\bf b}_5\end{bmatrix}$$ has pivots in the first, third and fourth columns.
 
    As you see, free and pivot columns need not retain their identities
    as free/pivot under a reordering of the columns. But the number of
@@ -75,7 +75,7 @@ first, second and fourth column. such that the matrix $$\begin{bmatrix}\b_1 &\b_
 	   each column of $$N$$ is in the right null space of $$A$$.
 	   
 	   Hint: move all the pivot columns of $$R$$ to the left to get
-	   $$\begin{bmatrix} I_k & F_{k,n-k}$$ and all the corresponding
+	   $$\begin{bmatrix} I_k & F_{k,n-k} \end{bmatrix}$$ and all the corresponding
 	   rows of $$N$$$ to the top to get $$\begin{bmatrix} -F_{k,n-k}\\
 	   I_{n-k} \end{bmatrix}$$.  Argue that this rearrangement of columns
 	   in $$R$$ simultaneously with the rows of $$N$$ does not change the
@@ -90,6 +90,18 @@ first, second and fourth column. such that the matrix $$\begin{bmatrix}\b_1 &\b_
 	   
 	 Therefore the set of all solutions for $$A{\bf x} ={\bf 0}$$ is the column
 	 space of $$N$$, ie $$ \{ N {\bf z} : {\bf z} \in {\mathbb R}^{n-k}\}$$ and
-	 the dimension of the right null space is $$n-k$$.
+	 the dimension of the right null space is $$n-k$$. 
+	 
+	 * Can you make similar sequence of statements about the left null
+       space and the column space of $$A$$?
 
 
+The last two problems actually segue into the next topic, and the
+workhorse application in machine learning: Linear Regression. In
+particular, one of the consequences is that if $$X$$ is a $$n\times
+p$$ matrix, $${\bf y}$$ is any $$n\times 1$$ vector, then $${\bf y}$$
+can be written uniquely as a sum $${\bf x} + {\bf e}$$, where $$\bf
+x$$ is in the column space of $$X$$ and $$\bf e$$ is in the left null
+space of $$X$$. This is the primary geometric insight into linear
+regression, but as we will see, there is a lot more to unpack to understand
+linear regression as a machine learning tool. 
