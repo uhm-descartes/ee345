@@ -17,7 +17,7 @@ morea_experiences:
   - experience-other-sources
 morea_assessments:
 morea_type: module
-morea_icon_url: /morea/example-introduction/introduction.jpg
+morea_icon_url: https://imgs.xkcd.com/comics/machine_learning.png
 morea_start_date: "2023-08-21"
 morea_end_date: "2023-08-22"
 morea_labels:
@@ -25,6 +25,6 @@ morea_sort_order: 01
 ---
 
 Overview of EE 345/L, and some simple initial tasks to get oriented
-and ready for the course.
+and ready for the course. View the full comic [here](https://xkcd.com/1838/)
 
 Add syllabus here
