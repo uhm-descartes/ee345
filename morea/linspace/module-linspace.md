@@ -13,7 +13,7 @@ morea_experiences:
 morea_assessments:
   # - assessment-linspace
 morea_type: module
-morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
+morea_icon_url: /morea/linspace/linspaces.png
 morea_start_date: "2023-09-22"
 morea_end_date: "2023-10-2"
 morea_labels:
