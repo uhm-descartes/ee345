@@ -10,9 +10,30 @@ morea_labels:
 
 # Problems in class
 
-1. Let $$A$$ be a $$m\times n$$ matrix, and let $$P$$ be the matrix
-   whose columns are the columns of $$A$$ in which Gaussian
-   elimination finds a pivot. Show that col($$A$$) = col($$P$$). 
+1. **Solutions of linear systems** Let $$A$$ be a $$m\times n$$
+   matrix, and let $${\bf b}$$ be a $$m\times 1$$ vector. Show that
+   the set of all solutions of $$A{\bf x} = {\bf b}$$ (where $$\bf x$$
+   is considered unknown) is
+   
+   $$S= \{ {\bf x}_p +{\bf z} : {\bf z} \in \textrm{ null}(A) \},$$
+   
+   where $${\bf x}_p$$ is (any) one solution of $$A{\bf x}={\bf b}$$
+   (often called a _particular_ solution). In particular, note that
+   the set $$S$$ remains the same no matter which particular solution
+   we choose. 
+   
+   This reflects what you have seen in EE213 and will see in other
+   classes for solving differential equations. The analogy (sum of
+   particular and homogenous parts) is no accident. We can construct
+   linear spaces out of functions, just as we are doing with vectors
+   in EE 345. Depending on how we construct them, they have inner
+   products, norms, etc. just like vectors, and certain spaces of
+   functions reflect the geometry of the spaces we are studying almost
+   perfectly (Hilbert spaces). But the analogy requires care---many
+   times, spaces of functions we construct have infinite dimension
+   (like a Fourier basis), and this requires some technical care. 
+   
+
 
 2. Suppose $$A$$ is a $$m\times n$$ matrix. 
 
