@@ -20,8 +20,8 @@ morea_assessments:
    - assessment-lr
 morea_type: module
 morea_icon_url: /morea/linear-regression/linear-regression.png
-morea_start_date: "2023-10-27"
-morea_end_date: "2023-11-09"
+morea_start_date: "2023-10-25"
+morea_end_date: "2023-11-06"
 morea_labels:
 morea_sort_order: 40
 ---
