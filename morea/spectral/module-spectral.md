@@ -1,23 +1,23 @@
 ---
-title: "Determinants"
-published: true
+title: "CHANGE ME"
+published: false
 morea_coming_soon: false
 morea_id: module-CHANGE-ME
 morea_prerequisites:
 morea_outcomes:
-   - outcome-det
+  # - outcome-CHANGE-ME
 morea_readings:
-   - reading-text-det
+  # - reading-CHANGE-ME
 morea_experiences:
-   - experience-det-prob
+  # - experience-CHANGE-ME
 morea_assessments:
-  # - assessment-det
+  # - assessment-CHANGE-ME
 morea_type: module
 morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
-morea_start_date: "2023-11-08"
-morea_end_date: "2023-11-14"
+morea_start_date: "2021-07-12"
+morea_end_date: "2021-07-16"
 morea_labels:
-morea_sort_order: 111
+morea_sort_order: 21
 ---
 
-Determinants
+CHANGE ME
