@@ -1,6 +1,6 @@
 ---
 title: "Guide for the Text"
-published: false
+published: true
 morea_id: reading-text-det
 morea_summary: "Chapters 5.1 and 5.2"
 morea_type: reading
