@@ -10,7 +10,7 @@ morea_labels:
 
 # Problems in Class
 
-1. If $$A$$ is a symmetric $$n\times n$$ matrix and $${\bf v}_1\upto {\bf v}_n$$ are an orthonormal basis formed by eigenvectors with eigenvalues $$\lambda_1\ge \cdots \ge \lambda_n$$,
+1. If $$A$$ is a symmetric $$n\times n$$ matrix and $${\bf v}_1,\ldots, {\bf v}_n$$ are an orthonormal basis formed by eigenvectors with eigenvalues $$\lambda_1\ge \cdots \ge \lambda_n$$,
    * Show that $$A = \sum_{i=1}^n \lambda_i {\bf v}_i {\bf v}_i^T. $$
    * Show that for any unit vector $${\bf z}$$, $${\bf z}{\bf z}^T$$
      is the projection operator onto the linear space spanned by $$\bf
@@ -21,11 +21,11 @@ morea_labels:
      $$V_m V_m^T$$. (Quick test: what is $$V_m^T V_m$$?)
    * Show that 
    
-	   $$\argmax_{{\bf x}: ||{\bf x}||=1} {\bf x}^T A {\bf x} = {\bf v}_1$$
+	   $$\arg\max_{{\bf x}: ||{\bf x}||=1} {\bf x}^T A {\bf x} = {\bf v}_1$$
 	   
      and that
 	 
-       $$\argmin_{{\bf x}: ||{\bf x}||=1} {\bf x}^T A {\bf x} = {\bf v}_n$$
+       $$\arg\min_{{\bf x}: ||{\bf x}||=1} {\bf x}^T A {\bf x} = {\bf v}_n$$
 
 	  Why do we only consider unit vectors in the above max/minimization?
 	  
@@ -46,7 +46,7 @@ morea_labels:
 	   greater than or equal to zero).
 	  
 3. In the following, let $$X$$ be a $$n\times p$$ matrix with $$p$$ pivots.
-	 Let $${\bf x}_1 \upto {\bf x}_n$$ be the $$n$$ rows of $$X$$.
+	 Let $${\bf x}_1 ,\ldots, {\bf x}_n$$ be the $$n$$ rows of $$X$$.
 	  * Show that $$X^TX$$ is positive definite. 
 	  * Find best one dimensional linear space that best represents
         the rows of $$X$$ in a mean square sense. Specifically, if
