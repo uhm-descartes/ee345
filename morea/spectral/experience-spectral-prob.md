@@ -21,11 +21,11 @@ morea_labels:
      $$V_m V_m^T$$. (Quick test: what is $$V_m^T V_m$$?)
    * Show that 
    
-	   $$\arg\max_{{\bf x}: ||{\bf x}||=1} {\bf x}^T A {\bf x} = {\bf v}_1$$
+	   $$\arg\max_{ {\bf x}: ||{\bf x}||=1} {\bf x}^T A {\bf x} = {\bf v}_1$$
 	   
      and that
 	 
-       $$\arg\min_{{\bf x}: ||{\bf x}||=1} {\bf x}^T A {\bf x} = {\bf v}_n$$
+       $$\arg\min_{ {\bf x}: ||{\bf x}||=1} {\bf x}^T A {\bf x} = {\bf v}_n$$
 
 	  Why do we only consider unit vectors in the above max/minimization?
 	  
