@@ -1,23 +1,23 @@
 ---
-title: "CHANGE ME"
-published: false
+title: "Spectral Decomposition"
+published: true
 morea_coming_soon: false
-morea_id: module-CHANGE-ME
+morea_id: module-spectral
 morea_prerequisites:
 morea_outcomes:
-  # - outcome-CHANGE-ME
+   - outcome-spectral
 morea_readings:
-  # - reading-CHANGE-ME
+   - reading-text-spectral
 morea_experiences:
-  # - experience-CHANGE-ME
+   - experience-spectral-prob
 morea_assessments:
-  # - assessment-CHANGE-ME
+  # - assessment-spectral
 morea_type: module
 morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
-morea_start_date: "2021-07-12"
-morea_end_date: "2021-07-16"
+morea_start_date: "2023-11-15"
+morea_end_date: "2023-11-22"
 morea_labels:
-morea_sort_order: 21
+morea_sort_order: 111
 ---
 
-CHANGE ME
+Eignevalues, Eigenvectors and Spectral Decomposition

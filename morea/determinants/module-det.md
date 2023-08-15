@@ -17,7 +17,7 @@ morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
 morea_start_date: "2023-11-08"
 morea_end_date: "2023-11-14"
 morea_labels:
-morea_sort_order: 111
+morea_sort_order: 101
 ---
 
 Determinants
