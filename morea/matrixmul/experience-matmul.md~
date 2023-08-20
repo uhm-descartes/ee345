@@ -10,7 +10,7 @@ morea_labels:
 
 # Lab work
 
-The following python [notebook](/morea/matrixmul/lab2.ipynb) that you will work
+The following python [notebook](/morea/lab2.ipynb) that you will work
 in the Lab runs you through basics of working with matrices in
 python/numpy.
 

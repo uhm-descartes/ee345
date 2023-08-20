@@ -1,0 +1,15 @@
+---
+title: "Distance of a point from a plane"
+published: true
+morea_id: experience-vl-prob-dist
+morea_type: experience
+morea_summary: "Problems in class"
+morea_start_date: "2023-08-24"
+morea_labels:
+---
+
+1. **Distance of a point from a plane** Let $${\bf w}\in{\mathbb R}^3$$. From your previous experience in geometry,
+all points $${\bf x}\in{\mathbb R}^3$$ satisfying $${\bf w}^T{\bf x}=0$$ form a ___ (fill up the blank).
+  
+   What is the smallest possible distance of a point $${\bf z} \in {\mathbb R}^3$$ from any point $${\bf x}$$ satisfying $${\bf w}^T{\bf x} = 0$$?
+
