@@ -12,6 +12,9 @@ morea_experiences:
    - experience-vl
    - experience-complex
    - experience-norm
+   - experience-prob-dot
+   - experience-prob-lc
+   - experience-prob-dist
 morea_assessments:
    - assessment-vl
 morea_type: module
