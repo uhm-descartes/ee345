@@ -10,7 +10,7 @@ morea_labels:
 
 # Lab 0+1: Matrices, Vectors, and Linear Combinations
 
-The following python [notebook](/morea/mvl/lab01.ipynb) that you will work
+The following python [notebook](https://uhm-descartes.github.io/ee345/morea/mvl/lab01.ipynb) that you will work
 in the Lab runs you through basics of working with matrices in
 python/numpy.
 
