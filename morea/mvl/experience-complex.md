@@ -1,5 +1,5 @@
 ---
-title: "Complex Numbers"
+title: "Complex Numbers*"
 published: true
 morea_id: experience-complex
 morea_type: experience
@@ -10,9 +10,8 @@ morea_labels:
 
 # Complex Numbers
 
-This material is advanced, and if you are seeing either matrices or 
-complex numbers for the first time, please read this _only_ with my help.
-It is dangerous. Reading this could get you banned in Florida.
+This is advanced material. It is a lot of fun to know and think about,
+but you will not be tested in EE345 about any of the following.
 
 Think of vectors in $${\mathbb R}^2$$, that is vectors with 2
 coordinates.  We saw the inner and outer products of these vectors (in

@@ -9,8 +9,8 @@ morea_labels:
 ---
 
 # Norms 
-This material is advanced, and if you are seeing vectors for the first
-time, please read this _only_ with my help. 
+This is advanced material. It is a lot of fun to know and think about,
+but you will not be tested in EE345 about any of the following.
 
 We have seen that the length of a vector $${\bf x}=\begin{bmatrix} x_1\\\vdots\\ x_n \end{bmatrix}$$ is 
 
