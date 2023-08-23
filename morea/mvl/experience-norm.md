@@ -1,5 +1,5 @@
 ---
-title: "Norms and Dot Products"
+title: "Norms and Dot Products*"
 published: true
 morea_id: experience-norm
 morea_type: experience
