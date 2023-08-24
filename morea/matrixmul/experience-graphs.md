@@ -16,6 +16,7 @@ Here is one example.
 
 The board looks like this:
 
+<img src="tigersgoats.png" alt="Game Board" width="75%">
 
 Pieces can move from any vertex to an adjacent vertex (adjacent means that
 the two vertices are connected by a line, or edge in graph theoretic notation).

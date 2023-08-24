@@ -23,11 +23,11 @@ of $$A$$.
        * How many paths of length 2 are there between vertex 1 and vertex 4?
 	   * How many triangles are there in the graph?
 
-4. Consider the plane formed by the vectors $$\begin{bmatrix} 1\\2\\3
-\end{bmatrix}$$ and $$\begin{bmatrix} 3\\2\\1 \end{bmatrix}$$, where
-the three coordinates are interpreted as the $$x-$$, $$y-$$ and $$z-$$
-coordinates. How do we check if all points on the $$x-$$axis lie in
-the plane?
+4. Consider the plane of all linear combinations of the vectors
+$$\begin{bmatrix} 1\\2\\3 \end{bmatrix}$$ and $$\begin{bmatrix}
+3\\2\\1 \end{bmatrix}$$, where the three coordinates are interpreted
+as the $$x-$$, $$y-$$ and $$z-$$ coordinates. How do we check if all
+points on the $$x-$$axis lie in the plane?
 
 5. Problem in text. Choose the only $$3\times 3$$ matrix $$B$$ such that
 for all matrices $$A$$, 
