@@ -8,6 +8,7 @@ morea_outcomes:
    - outcome-vl
 morea_readings:
    - reading-text
+   - reading-mvl-lec
 morea_experiences:
    - experience-vl
    - experience-complex
