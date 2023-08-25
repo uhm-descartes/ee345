@@ -12,6 +12,8 @@ morea_readings:
 morea_experiences:
    - experience-matmul
    - experience-graphs
+   - experience-matmul-basic-prob
+   - experience-matmul-graph-prob   
 morea_assessments:
    - assessment-matmul
 morea_type: module
