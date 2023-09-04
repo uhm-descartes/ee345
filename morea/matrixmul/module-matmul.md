@@ -11,6 +11,7 @@ morea_readings:
 #   - reading-graph
 morea_experiences:
    - experience-matmul
+   - experience-matmul-lec
    - experience-graphs
    - experience-matmul-basic-prob
    - experience-matmul-graph-prob   
@@ -19,7 +20,7 @@ morea_assessments:
 morea_type: module
 morea_icon_url: /morea/matrixmul/matmul.png
 morea_start_date: "2023-08-30"
-morea_end_date: "2023-09-05"
+morea_end_date: "2023-09-07"
 morea_labels:
 morea_sort_order: 31
 ---

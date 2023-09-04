@@ -1,23 +1,30 @@
 ---
-title: "CHANGE ME"
-published: false
+title: "Matrix Multiplication"
+published: true
 morea_coming_soon: false
-morea_id: module-CHANGE-ME
+morea_id: module-matmul
 morea_prerequisites:
 morea_outcomes:
-  # - outcome-CHANGE-ME
+   - outcome-matmul
 morea_readings:
-  # - reading-CHANGE-ME
+   - reading-text-matmul
+#   - reading-graph
 morea_experiences:
-  # - experience-CHANGE-ME
+   - experience-matmul
+   - experience-graphs
+   - experience-matmul-basic-prob
+   - experience-matmul-graph-prob   
 morea_assessments:
-  # - assessment-CHANGE-ME
+   - assessment-matmul
 morea_type: module
-morea_icon_url: /morea/CHANGE-ME/CHANGE-ME.png
-morea_start_date: "2021-07-12"
-morea_end_date: "2021-07-16"
+morea_icon_url: /morea/matrixmul/matmul.png
+morea_start_date: "2023-08-30"
+morea_end_date: "2023-09-05"
 morea_labels:
-morea_sort_order: 21
+morea_sort_order: 31
 ---
 
-CHANGE ME
+Photo: Josh Alman and Virginia Williams, record holders for fastest
+matrix multiplication algorithm. Our hope is to find a multiplication
+algorithm essentially as fast as just writing out the matrices that go
+into the product.

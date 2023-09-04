@@ -10,14 +10,14 @@ morea_labels:
 
 # Lab work
 
-The following python [notebook](/morea/matrixmul/lab2.ipynb) that you will work
+The following python [notebook](/ee345/morea/matrixmul/lab2.ipynb) that you will work
 in the Lab runs you through basics of working with matrices in
 python/numpy.
 
 The exercises you submit are on linear combinations again, and like in
 the previous module gets you to observe that matrix multiplication
 produces linear combinations. This observation is **that** important
-that both labs emphasize it. All _ matrix multiplication is just a way
+that both labs emphasize it. _All_ matrix multiplication is just a way
 of tracking linear combinations. Here you also note that this concept
 is simply the outer product way of multiplying matrices.
 
