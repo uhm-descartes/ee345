@@ -50,7 +50,11 @@ pivots?
 	 of pivots in $$B$$ is $$\le r$$ (equivalently we could also say rank of $$B$$
 	 is $$\le r$$).
    * (Follows from prior parts, but maybe a little subtle) Show that
-     $$A^T$$ has the same number of pivots as $$A$$. Remember that $$(AB)^T = B^TA^T$$.
+     $$A^T$$ has the same number of pivots as $$A$$. Doing elimination
+     on $$A^T$$ uncovers the row dependencies in $$A$$, so it is very
+     different from doing elimination on $$A$$ (which, as we know,
+     uncovers column dependencies in $$A$$). Remember that $$(AB)^T =
+     B^TA^T$$.
    
    The observation that $$A = P{\tilde R}$$ captures the information
    the reduced row echelon form provides: 
