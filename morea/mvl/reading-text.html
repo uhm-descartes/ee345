@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 345 | Guide for the Text </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee345/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee345/css/style.css">
+  <link rel="stylesheet" href="/ee345/css/syntax.css">
+  <link rel="shortcut icon" href="/ee345/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee345/index.html"> EE 345 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee345/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules/module-vl">Vectors and Linear combinations</a></li>
+        <li class="breadcrumb-item active">Guide for the Text</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <p>The whole course will be about linear combinations of vectors. 
+We will look at progressively more sophisticated ways at looking
+at them. It is important to note that a lot of our methods will
+be applicable beyond vectors. In fact Fourier analysis in 
+EE 315 happens to be a use of these approaches for function spaces
+rather than vector spaces.</p>
+
+<p>In the text, read through 1.1 and 1.2. Parts of Chapter 1.3 will be
+taken up later. Among the highlights in Chapter 1.3, expressing a
+linear combination as matrix-vector (or vector-matrix) multiplication
+is crucial, and is also covered in the lab problems.</p>
+
+<p>To check if a vector is a linear combination of other vectors, we can
+write out a system of linear equations to solve. The ability to write
+it this way is crucial. We will emphasize this aspect in the next
+module, but you probably already see it if you understand how linear
+combinations are multiplications between matrices and vectors.</p>
+
+<p>Solving linear equations, the section on the Inverse Matrix, Cyclic
+Differences, Independence and Dependence are not important right
+away. If you have not seen these concepts before, it is better to skip
+them for now.</p>
+
+<h3 id="a-word-on-geometric-reasoning">A word on geometric reasoning</h3>
+<p>Students often crave visualizations of what is happening, and perhaps
+it is the only way you think about vectors now.  But in a manner of
+speaking, this is also something to unlearn. It does not mean forgetting
+about what you know in geometry in 2- or 3-d. Rather it means distilling
+this into axioms and thinking in terms of axioms (not visualizations).</p>
+
+<p>The reason is that we will be dealing with vectors not with 2 or 3
+coordinates, but with large numbers of coordinates (hundreds or
+thousands in our examples in class, but usually tens of thousands,
+millions, or billions, or even more in real life).  Higher dimensions
+behave very differently from our intuition or drawings in 2- or 3-d.
+Just geometry will not get us far.</p>
+
+<p>To make the leap, you <em>have</em> to develop a more axiomatic way of
+thinking about vectors. It is hard in the beginning, but you <em>must</em>
+drop the training wheels of literal geometric visualization.
+Axiomatic rather than geometric thinking is the point of the course,
+since it turns out to be far more powerful. In this module, we still
+make a few comments on representations of addition, scaling, and
+visualization of simple sets of linear combinations. But the emphasis
+will be on the axioms that will take us quite far.</p>
+
+<p>When you have no recourse to geometry, all you have to fall back on
+are axioms underlying manipulating vectors and linear
+combinations. You are very likely to feel uncomfortable with this
+approach—even more so, if in this module, you do not pay attention
+to axiomatic vector manipulation.</p>
+
+<p>Once you get a little familiar with axiomatic reasoning, we will
+replace geometric visualization with a different sort of rendering
+that captures the essence of this axiomatic approach without being a
+true geometric representation.</p>
+
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee345/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-21 20:23:57 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 11 outcomes
+      
+      
+      | 16 readings
+      
+      
+      | 25 experiences
+      
+      
+      | 3 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

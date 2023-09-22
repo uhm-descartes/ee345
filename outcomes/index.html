@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 345 | Learning Outcomes </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee345/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee345/css/style.css">
+  <link rel="stylesheet" href="/ee345/css/syntax.css">
+  <link rel="shortcut icon" href="/ee345/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee345/index.html"> EE 345 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee345/">Home</a></li>
+        <li class="breadcrumb-item active">Learning Outcomes</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Learning Outcomes <small class="header-small">What you will know</small></h1>
+</div>
+
+<div class="container">
+  <p>This page collects together all of the “outcomes” associated with individual modules. Outcomes identify what students will know and be able to do if they master the material.</p>
+
+<h3 id="course-level-outcomes">Course-level outcomes</h3>
+
+<p>TBD</p>
+
+
+</div>
+
+<div class="section-background-1">
+  <div class="container">
+    <a href="#" style="padding-top: 50px; margin-top: -50px; display: table-caption;" id="outcome-vl"></a><h3>Vectors and Linear Combinations</h3>
+    <p>
+      
+    </p>
+    <ul>
+  <li>You are comfortable with the formal definition of vectors in
+\({\mathbb R}^n\)</li>
+  <li>You understand addition, scaling and linear combinations of vectors</li>
+  <li>You recall the parallelogram law of addition/subtractions</li>
+  <li>You can visualize simple sets of linear combinations geometrically
+(in 2 and 3 dimensions)</li>
+  <li>You understand how to compute the dot product and lengths of vectors</li>
+  <li>You understand how the dot product between vectors correlates with
+angle between them (in 2 and 3 dimensions)</li>
+  <li>You know how to write a system of linear equations that checks if a
+vector can be written as a linear combination of other vectors.</li>
+  <li>You can write code in python+numpy to do all the above</li>
+</ul>
+
+    <p>
+    <em>Referencing modules:</em>
+    
+      <a href="../modules/module-vl">Vectors and Linear combinations</a>
+    
+    </p>
+    
+
+  </div>
+</div>
+
+<div class="section-background-2">
+  <div class="container">
+    <a href="#" style="padding-top: 50px; margin-top: -50px; display: table-caption;" id="outcome-lr"></a><h3>Linear Regression</h3>
+    <p>
+      
+    </p>
+    <ul>
+  <li>Formulate linear least squares from Maximum Likelihood and Bayesian perspectives</li>
+  <li>Understand Bayesian linear least squares and ridge regression</li>
+  <li>Connect Ridge Regression with conditional means of multivariate Gaussians</li>
+  <li>Appreciate the distinction between geometry of regression and generalization</li>
+  <li>Some idea of significance of features ((t-)statistics)</li>
+  <li>Feature selection using LASSO</li>
+</ul>
+
+
+    <p>
+    <em>Referencing modules:</em>
+    
+      <a href="../modules/module-lr">Linear Regression</a>
+    
+    </p>
+    
+
+  </div>
+</div>
+
+<div class="section-background-1">
+  <div class="container">
+    <a href="#" style="padding-top: 50px; margin-top: -50px; display: table-caption;" id="outcome-matmul"></a><h3>Matrix Multiplication</h3>
+    <p>
+      
+    </p>
+    <ul>
+  <li>You can multiply matrices the inner product or outer product way</li>
+  <li>You understand matrix multiplication is the means to track linear combinations</li>
+  <li>You understand row/column operations as matrix multiplication</li>
+  <li>You understand the simple graph algorithms used to illustrate matrix multiplication</li>
+</ul>
+
+    <p>
+    <em>Referencing modules:</em>
+    
+      <a href="../modules/module-matmul">Matrix Multiplication</a>
+    
+    </p>
+    
+
+  </div>
+</div>
+
+<div class="section-background-2">
+  <div class="container">
+    <a href="#" style="padding-top: 50px; margin-top: -50px; display: table-caption;" id="outcome-eq"></a><h3>Setup and Solve Linear Equations</h3>
+    <p>
+      
+    </p>
+    <ul>
+  <li>You understand linear combinations of (column) vectors can be represented as a matrix times the vector of coefficients</li>
+  <li>You can set up a system of equations to check if a vector is a linear combination of other vectors</li>
+  <li>You understand the Elimination algorithm to get to the Reduced Row Echelon Form</li>
+  <li>You understand that you find a pivot in a column during Elimination iff the column is not a linear combination of prior columns</li>
+  <li>You understand how Elimination can solve a set of equations</li>
+  <li>You can figure out how many solutions a system of linear equations has</li>
+  <li>You can implement Elimination using code</li>
+</ul>
+
+    <p>
+    <em>Referencing modules:</em>
+    
+      <a href="../modules/module-eq">Gaussian Elimination</a>
+    
+    </p>
+    
+
+  </div>
+</div>
+
+<div class="section-background-1">
+  <div class="container">
+    <a href="#" style="padding-top: 50px; margin-top: -50px; display: table-caption;" id="outcome-inverses"></a><h3>Inverses</h3>
+    <p>
+      
+    </p>
+    <ul>
+  <li>You understand the special case of elimination on square matrices with a full set of pivots</li>
+  <li>You understand what an inverse is</li>
+  <li>You understand square matrices with a full set of pivots have an inverse</li>
+  <li>You can find via elimination when inverses do not exists</li>
+  <li>You can find the inverse via elimination</li>
+  <li>You understand how to solve certain equations with an inverse</li>
+  <li>You can compute inverses of products of matrices</li>
+</ul>
+
+    <p>
+    <em>Referencing modules:</em>
+    
+      <a href="../modules/module-inverses">Inverses</a>
+    
+    </p>
+    
+
+  </div>
+</div>
+
+<div class="section-background-2">
+  <div class="container">
+    <a href="#" style="padding-top: 50px; margin-top: -50px; display: table-caption;" id="outcome-linspace"></a><h3>Linear Spaces</h3>
+    <p>
+      
+    </p>
+    <ul>
+  <li>You understand what “closed under linear combinations” means</li>
+  <li>You know what a linear space is</li>
+  <li>You know the 4 fundamental spaces of a matrix: the row, column, left and right null spaces</li>
+  <li>\(\textrm{col}(A) = \{ A{\bf x} : \textrm{ all values of }{\bf x} \}\) (column)</li>
+  <li>\(\textrm{null}(A) = \{ {\bf x} : A{\bf x} = {\bf 0} \}\) (right null)</li>
+  <li>row space of \(A\) \(=\) col space of \(A^T\)</li>
+  <li>left null space of \(A\) \(=\) right null space of \(A^T\)</li>
+  <li>If \(A\) is \(m\times n\), number of coordinates of vectors in each of the spaces</li>
+</ul>
+
+    <p>
+    <em>Referencing modules:</em>
+    
+      <a href="../modules/module-linspace">Linear Spaces</a>
+    
+    </p>
+    
+
+  </div>
+</div>
+
+<div class="section-background-1">
+  <div class="container">
+    <a href="#" style="padding-top: 50px; margin-top: -50px; display: table-caption;" id="outcome-linind"></a><h3>Linear Independence</h3>
+    <p>
+      
+    </p>
+    <ul>
+  <li>Linear independence highlights the properties pivot columns have</li>
+  <li>\(\{ {\bf v}_1, \ldots, {\bf v}_n \}\) are linearly independent if
+\(V= \begin{bmatrix} {\bf v}_1 &amp; \cdots &amp; {\bf v}_n
+\end{bmatrix}\) has a pivot in every column</li>
+  <li>The set \(\{ {\bf v}_1, \ldots, {\bf v}_n \}\) of linearly
+independent vectors in a linear space \({\mathcal L}\) is maximal
+for \({\mathcal L}\) if \(\{ {\bf v}_1, \ldots, {\bf v}_n, {\bf
+x}\}\) becomes linearly <em>dependent</em> for any other \(\bf x\) from
+the space \(\mathcal L\)</li>
+  <li>Every vector of a linear space can be written uniquely as a linear
+combination of vectors from a maximally independent set of the linear space</li>
+  <li>Maximal linearly independent sets of a linear space \(=\) basis</li>
+  <li>All bases/maximal linearly independent sets in a linear space have the
+same size</li>
+  <li>The size of a basis/maximal linearly independent set in a linear space
+is a fundamental property of the linear space, called its
+dimension</li>
+</ul>
+
+
+    <p>
+    <em>Referencing modules:</em>
+    
+      <a href="../modules/module-linind">Linear Independence</a>
+    
+    </p>
+    
+
+  </div>
+</div>
+
+<div class="section-background-2">
+  <div class="container">
+    <a href="#" style="padding-top: 50px; margin-top: -50px; display: table-caption;" id="outcome-dim"></a><h3>Bases and Dimension</h3>
+    <p>
+      
+    </p>
+    <ul>
+  <li>Basis = Maximal linearly independent set</li>
+  <li>Natural coordinate basis for \({\mathbb R}^n\): columns of \(I_n\)</li>
+  <li>Dimension of a linear space = Size of the basis</li>
+  <li>Identify basis for fundamental spaces of \(A\) using (pivot)
+rows/columns of \(A\), as well as non-zero rows/cols of rref(\(A\))
+and rref(\(A^T\))</li>
+  <li>Dimension of all fundamental spaces of \(A\) in terms of rank and shape of \(A\)</li>
+</ul>
+
+    <p>
+    <em>Referencing modules:</em>
+    
+      <a href="../modules/module-dim">Bases and dimension</a>
+    
+    </p>
+    
+
+  </div>
+</div>
+
+<div class="section-background-1">
+  <div class="container">
+    <a href="#" style="padding-top: 50px; margin-top: -50px; display: table-caption;" id="outcome-det"></a><h3>Determinants</h3>
+    <p>
+      
+    </p>
+    <ul>
+  <li>Look for functions from square matrices to numbers
+satisfying three axioms (linear function of any row, if all others are held
+fixed; changes sign if rows exchanged; identity matrix assigned
+1)</li>
+  <li>Only one function satisfies all—that function is the determinant</li>
+  <li>If rows are linearly dependent, determinant is 0 (from axioms)</li>
+  <li>Determinant of lower/upper triangular or diagonal matrices: product of diagonal entries (from axioms)</li>
+  <li>determinant = product of pivots</li>
+  <li>Square \(A\) invertible iff determinant(\(A\)) \(=0\) (follows from previous)</li>
+  <li>determinant\((AB)\) = determinant\((A)\) determinant\((B)\) (from axioms)</li>
+  <li>determinant\((A)\) = determinant\((A^T)\) (from elimination written in matrix form)</li>
+  <li>Recursive formula for determinants (from axioms)</li>
+  <li>Cramer’s rule</li>
+</ul>
+
+    <p>
+    <em>Referencing modules:</em>
+    
+      <a href="../modules/module-CHANGE-ME">Determinants</a>
+    
+    </p>
+    
+
+  </div>
+</div>
+
+<div class="section-background-2">
+  <div class="container">
+    <a href="#" style="padding-top: 50px; margin-top: -50px; display: table-caption;" id="outcome-spectral"></a><h3>Spectral Decomposition</h3>
+    <p>
+      
+    </p>
+    <ul>
+  <li>You know how to compute eigenvalues and eigenvectors of a matrix</li>
+  <li>The set of all eigenvectors with the same eigenvalue (plus the all-0 vector) is a linear space, the eigenspace</li>
+  <li>Algebraic multiplicity (AM) and Geometric multiplicities (GM) of eigenvalues  * Similar matrices</li>
+  <li>Specialization to symmetric matrices: real eigenvalues, AM=GM for all eigenvalues, distinct eigenvalues have orthogonal eigenspaces</li>
+  <li>Symmetric matrices: Orthonormal basis using eigenvectors</li>
+</ul>
+
+
+    <p>
+    <em>Referencing modules:</em>
+    
+      <a href="../modules/module-spectral">Spectral Decomposition</a>
+    
+    </p>
+    
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee345/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-21 20:23:57 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 11 outcomes
+      
+      
+      | 16 readings
+      
+      
+      | 25 experiences
+      
+      
+      | 3 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

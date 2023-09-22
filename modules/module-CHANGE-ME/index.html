@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 345 | Determinants </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee345/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee345/css/style.css">
+  <link rel="stylesheet" href="/ee345/css/syntax.css">
+  <link rel="shortcut icon" href="/ee345/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee345/index.html"> EE 345 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee345/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules">Modules</a></li>
+        <li class="breadcrumb-item active">Determinants</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1><small class="header-small">Module: </small> Determinants </h1>
+  <p><p>Determinants</p>
+</p>
+  
+    <p>Dates: Wed, Nov 8 - Tue, Nov 14</p>
+  
+</div>
+
+
+
+
+
+<div class="section-background-1">
+  <div class="container">
+    <h2>Learning Outcomes</h2>
+
+    
+      
+      <h3>Determinants</h3>
+      <p>
+        
+      </p>
+      <ul>
+  <li>Look for functions from square matrices to numbers
+satisfying three axioms (linear function of any row, if all others are held
+fixed; changes sign if rows exchanged; identity matrix assigned
+1)</li>
+  <li>Only one function satisfies all—that function is the determinant</li>
+  <li>If rows are linearly dependent, determinant is 0 (from axioms)</li>
+  <li>Determinant of lower/upper triangular or diagonal matrices: product of diagonal entries (from axioms)</li>
+  <li>determinant = product of pivots</li>
+  <li>Square \(A\) invertible iff determinant(\(A\)) \(=0\) (follows from previous)</li>
+  <li>determinant\((AB)\) = determinant\((A)\) determinant\((B)\) (from axioms)</li>
+  <li>determinant\((A)\) = determinant\((A^T)\) (from elimination written in matrix form)</li>
+  <li>Recursive formula for determinants (from axioms)</li>
+  <li>Cramer’s rule</li>
+</ul>
+
+    
+
+  </div>
+</div>
+
+
+
+
+
+<div class="section-background-2">
+  <div class="container">
+  <h2>Readings</h2>
+
+    <div class="row">
+      
+        
+        <!-- Internal fragment for displaying reading, experience, prereq cards. Prereqs have icons. -->
+<div class="col-md-6 col-lg-4" style="padding-bottom: 20px">
+  <div class="card h-100">
+    
+    <div class="card-body">
+      <h4 class="card-title">Guide for the Text</h4>
+      <p>Chapters 5.1 and 5.2</p>
+
+
+    
+    </div>
+
+    <div style="border-top-color: transparent" class="card-footer bg-body">
+      
+    </div>
+    <a href="/ee345/morea/determinants/reading-text-det.html" class="stretched-link"></a>
+  </div>
+</div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="section-background-1">
+  <div class="container">
+  <h2>Experiential Learning</h2>
+    <div class="row">
+      
+        
+        <!-- Internal fragment for displaying reading, experience, prereq cards. Prereqs have icons. -->
+<div class="col-md-6 col-lg-4" style="padding-bottom: 20px">
+  <div class="card h-100">
+    
+    <div class="card-body">
+      <h4 class="card-title">Problems in Class</h4>
+      <p>Determinants</p>
+
+
+    
+    </div>
+
+    <div style="border-top-color: transparent" class="card-footer bg-body">
+      
+      <span class="badge bg-primary">14 Nov 12:00 AM</span>
+      
+    </div>
+    <a href="/ee345/morea/determinants/experience-det.html" class="stretched-link"></a>
+  </div>
+</div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee345/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-21 20:23:57 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 11 outcomes
+      
+      
+      | 16 readings
+      
+      
+      | 25 experiences
+      
+      
+      | 3 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

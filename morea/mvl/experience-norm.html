@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 345 | Norms and Dot Products* </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee345/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee345/css/style.css">
+  <link rel="stylesheet" href="/ee345/css/syntax.css">
+  <link rel="shortcut icon" href="/ee345/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee345/index.html"> EE 345 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee345/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules/module-vl">Vectors and Linear combinations</a></li>
+        <li class="breadcrumb-item active">Norms and Dot Products*</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="norms">Norms</h1>
+<p>This is advanced material. It is a lot of fun to know and think about,
+but you will not be tested in EE345 about any of the following.</p>
+
+<p>We have seen that the length of a vector \({\bf x}=\begin{bmatrix} x_1\\\vdots\\ x_n \end{bmatrix}\) is</p>
+
+\[|| {\bf x}||^2 = {\bf x} \cdot {\bf x} = {\bf x}^T {\bf x} = \sum_{i=1}^n x_i^2.\]
+
+<p>This is usually called the Euclidean length, or \(\ell_2\) norm. But this is
+not the only way to measure a vector. There are many others we commonly use in
+machine learning, prominent among them being the \(\ell_1\) norm:</p>
+
+\[||{\bf x}||_1 = \sum_{i=1}^n |x_i|,\]
+
+<p>and in general for \(p\ge 1\) the \(\ell_p\) norm (of which the above two are special cases):</p>
+
+\[||{\bf x}||_p = \Biggl(\sum_{i=1}^n |x_i|^p\Biggr)^{1/p}.\]
+
+<p>We also define the \(\ell_\infty\) norm as</p>
+
+\[||{\bf x}||_\infty = \max_{1\le i \le n} x_i,\]
+
+<p>and you can convince yourself that 
+\(\lim_{p\to\infty} ||{\bf x}||_p = ||{\bf x}||_\infty\). These need not be the only way to measure vectors either. We can use any non-negative real-valued function of vectors (which we will call a <em>norm</em>) to measure them—as long as the norm function satisfies the axioms.</p>
+
+<ol>
+  <li>
+    <p>Only the \(\bf 0\) vector has norm 0</p>
+  </li>
+  <li>
+    <p>The norm of \(\lambda {\bf x}\) is \(\mid\lambda\mid\) times the norm of \({\bf x}\)</p>
+  </li>
+  <li>
+    <p>For any vectors \({\bf x}\) and \({\bf y}\), the norm of \({\bf x}+{\bf y}\) is \(\le\) the norm of \({\bf x}\) plus the norm of \({\bf y}\).</p>
+  </li>
+</ol>
+
+<p>If you are wondering why we don’t have a \(\ell_p\) norm for \(p&lt;1\), the answer
+is because for \(0&lt; p &lt; 1\), the function \(\Biggl(\sum_{i=1}^n |x_i|^p\Biggr)^{1/p}\) will not satisfy the third axiom above.</p>
+
+<h1 id="-and-dot-products">.. and Dot Products</h1>
+
+<p>If we have an axiomatic development for norms, perhaps we have
+something like that for dot products too? Indeed we have. Any real
+valued function of two real vectors is an <strong>inner</strong> product if it satisfies
+the following axioms:</p>
+
+<ol>
+  <li>It is symmetric in its two arguments (if we allow complex vectors, we need to relax this).</li>
+  <li>It should be linear in the first argument when the second argument is held fixed (and by symmetry, it is automatically linear in the second if the first is held fixed).</li>
+  <li>The inner product of a non-zero vector with itself must be non-zero.</li>
+</ol>
+
+<p>The inner product we saw in class, the regular dot product \({\bf x}^T {\bf y}\) is not
+the only one we can define. In fact, machine learning uses a different kind of
+dot product to move from linearity to non-linearity. You will see more of this
+in EE 445.</p>
+
+<p>Notice how we defined the \(\ell_p\) norm for \(p \ge 1\). But only for \(p=2\),
+we wrote</p>
+
+\[||{\bf x}||_2^2 = {\bf x}^T{\bf x}.\]
+
+<p>So here, we say the \(\ell_2\) norm is derived from the dot
+product. This dot product gives rise to the geometry we are so
+familiar with. What about other norms? In fact, you can prove that no
+other \(\ell_p\) norm can be derived from any dot product—\(\ell_2\)
+is special among all the \(\ell_p\) norms.</p>
+
+<p>To see this, first note that</p>
+
+<ul>
+  <li>
+    <p>the Parallelogram Law (which we proved in the Problem Set) is a
+necessary consequence of the inner product axioms. Therefore any norm
+derived from a dot product must satisfy the parallelogram law</p>
+  </li>
+  <li>
+    <p>only the \(\ell_2\) norm satisfies the parallelogram law among all
+the \(\ell_p\) norms.</p>
+  </li>
+</ul>
+
+<p>So from this perspective, if you started with \(\sum |x_i|\) as the length of a vector \(\bf x\), you wouldn’t be able to come up with a dot product (hence no question of angles or geometry as we know it). The only way to make geometry 
+happen among these \(\ell_p\) norms is to use the Euclidean length as we know it!</p>
+
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee345/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-21 20:23:57 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 11 outcomes
+      
+      
+      | 16 readings
+      
+      
+      | 25 experiences
+      
+      
+      | 3 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 345 | Problems in Class </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee345/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee345/css/style.css">
+  <link rel="stylesheet" href="/ee345/css/syntax.css">
+  <link rel="shortcut icon" href="/ee345/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee345/index.html"> EE 345 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee345/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules/module-dim">Bases and dimension</a></li>
+        <li class="breadcrumb-item active">Problems in Class</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="problems-in-class">Problems in Class</h1>
+
+<ol>
+  <li>Let \(X\) be a \(n\times p\) matrix with \(k\) pivots.
+    <ul>
+      <li>What are the four fundamental spaces of \(X^TX\) in terms of the spaces of \(X\)?</li>
+      <li>Dimensions of the four fundamental spaces of \(X^TX\)?</li>
+      <li>Repeat the above two problems for \(XX^T\)</li>
+    </ul>
+  </li>
+  <li>Let \(\{ {\bf v}_1 ,\ldots, {\bf v}_n \}\) be a collection of \(n\) mutually
+orthogonal vectors, each vector in \({\mathbb R}^m\) and let \(V =
+\begin{bmatrix} {\bf v}_1 &amp; \cdots &amp; {\bf v}_n \end{bmatrix}\). Clearly \(m\ge n\),
+assume \(m &gt; n\).
+    <ul>
+      <li>What is \(V^TV\)? Is \(VV^T\) equal to an identity matrix?</li>
+      <li>What are the dimension of the four fundamental spaces of
+\(VV^T\)? (Use prior problem)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Suppose \(A\) and \(B\) are any two matrix with \(m\) rows. Let
+\(A\wedge B\) be the matrix obtained by using a basis of the space \(\textrm{col}(A)\cap \textrm{col}(B)\) as its columns and let \(A\vee B\) be the matrix 
+formed the union of columns from \(A\) and \(B\). Show that</p>
+
+\[\textrm{rank}(A) + \textrm{rank}(B) = \textrm{rank}(A\wedge B) + \textrm{rank}(A\vee B).\]
+  </li>
+  <li><strong>Linear Regression</strong> Let \(X\) be any \(n\times p\) matrix.
+    <ul>
+      <li>Show that any \(n\times 1\) vector \({\bf y}\) can be written
+ uniquely as a sum of a vector in the column space and a vector in
+ the left null space, namely as \({\bf x}+{\bf e}\), where \({\bf
+ x}\in\textrm{col}(X)\) and \({\bf e} \in \textrm{null}(X^T)\)</li>
+      <li>Show that any \(p\times 1\) vector \({\bf z}\) can be written uniquely as
+ \({\bf w}+{\bf e}\), where \({\bf w}\in\textrm{col}(X^T)\) and \({\bf e} \in \textrm{null}(X)\)</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>\(t-\)statistics</strong> Let \(X\) be a \(n\times p\) vector with \(p\) pivots, and let
+\({\bf x}_1\) be the first column of \(X\). The set of vectors \({\mathcal L}_1 = \{
+\alpha {\bf x}_1 : \alpha \in {\mathbb R} \}\) is a linear space within
+the column space of \(X\).</p>
+
+    <ul>
+      <li>Show that \(X^TX\) has an inverse</li>
+      <li>Show that \((X^TX)^{-1} = \bigl((X^TX)^{-1}\bigr)^T\)</li>
+      <li>Show that the first column of \(X(X^TX)^{-1}\) is in the column space of \(X\)</li>
+      <li>Show that the first column of \(X(X^TX)^{-1}\) is in the column space of \(X\) is orthogonal to \({\bf x}_1\), the first column of \(X\) (and therefore
+to the linear space \({\mathcal L}_1\) as well).</li>
+    </ul>
+  </li>
+</ol>
+
+<p>In the lab, the last insight is an ingredient that goes into
+ computing the \(t-\)statistic, which in turn estimates the
+ significance of coefficients of a linear model.  To fully appreciate
+ the \(t-\)statistic, you need to know a little about normal
+ distributions from EE 342 as well.</p>
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee345/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-21 20:23:57 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 11 outcomes
+      
+      
+      | 16 readings
+      
+      
+      | 25 experiences
+      
+      
+      | 3 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 345 | Guide for the Text </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee345/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee345/css/style.css">
+  <link rel="stylesheet" href="/ee345/css/syntax.css">
+  <link rel="shortcut icon" href="/ee345/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee345/index.html"> EE 345 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee345/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules/module-inverses">Inverses</a></li>
+        <li class="breadcrumb-item active">Guide for the Text</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <p>The solution of \(A{\bf x}={\bf b}\) is unique if and only if (i)
+\(\bf b\) is a linear combination of the columns of \(A\), and (ii)
+\(A\) has no free columns. \(A\) itself could be square or
+tall-rectangular (it can never be wide-rectangular, why?). The case
+where \(A\) is square is special. If \(A\) is a square \(n\times n\) matrix,
+then the fact that \(A\) has no free columns implies it has \(n\) pivot
+columns, ie, that it has \(n\) pivots.</p>
+
+<p>Chapter 2.5 examines the case when \(A\) is a square matrix with \(n\)
+pivots. In that case, the primary insight is that the action of \(A\)
+can be undone elegantly, by means of what is called the <em>inverse</em> of
+\(A\), denoted by \(A^{-1}\).</p>
+
+<h2 id="textbook-approach">Textbook approach</h2>
+<p>In the text, you will find a prophetic and mysterious definition of
+the inverse in the beginning of Section 2.5. But why should there be
+such a matrix? What if only \(AA^{-1}=I\) and not \(A^{-1}A\) (or the
+other way around)? What is the point of such a matrix? Where does it
+come from? Only the last subsection (Singular and Invertible) resolves
+the mysteries. Instead, in class, we let inverses follow naturally
+from our previous module, Elimination.</p>
+
+<h2 id="class-approach">Class approach</h2>
+<p>There is no reason for a detective novel approach. The idea of an
+inverse follows naturally from Elimination, as do its properties. Here
+is how we approached this in class.</p>
+
+<h3 id="a-is-ntimes-n-matrix-with-n-pivots-iff-there-is-a-matrix-b-such-that-abi">\(A\) is \(n\times n\) matrix with \(n\) pivots iff there is a matrix \(B\) such that \(AB=I\)</h3>
+
+<p>We only prove that if \(A\) is a \(n\times n\) matrix with \(n\)
+pivots, there is a matrix \(B\) such that \(AB=I\) in this
+writeup. The converse is left as an exercise. If you cannot prove the
+converse yourself, I strongly recommend you come to me and learn how
+to prove it.</p>
+
+<p>Not all square \(n\times n\) matrices have \(n\) pivots. But suppose
+\(A\) is a square \(n\times n\) matrix with \(n\) pivots. Then when
+you consider solving \(A{\bf x} = {\bf b}\), the augmented matrix is</p>
+
+\[\begin{bmatrix} A &amp; {\bf b} \end{bmatrix}.\]
+
+<p>When doing elimination on the augmented matrix above, notice that
+we find a pivot in each of the first \(n\) columns because \(A\) has
+a pivot in each column, the presence of the augmented column doesn’t
+change the pivots we obtained for the first \(n\) columns. At the
+end of the \(n'\)th column, we have exhausted all rows, so there are
+no more pivots to be found.</p>
+
+<p>Therefore the last column is a <em>free</em> column, regardless of what \(\bf
+b\) is. Therefore \(A{\bf x}={\bf b}\) has a solution for all \(\bf b\).
+Moreover the solution is unique since \(A\) has no free columns.</p>
+
+<p>For \(1\le i\le n\), let \({\bf e}_i\) be a vector with \(n\)
+coordinates, 1 in the \(i'\)th coordinate and 0 everywhere
+else. Therefore, there exists unique vectors \({\bf x}_i\), \(1\le i\le n\)
+such that</p>
+
+\[\begin{align*} 
+	A{\bf x}_1 &amp;= {\bf e}_1\\
+		\vdots\\
+	A{\bf x}_i &amp;= {\bf e}_i\\		
+		\vdots\\
+	A{\bf x}_n &amp;= {\bf e}_n\\
+\end{align*}\]
+
+<p>Therefore, there is a <em>unique</em> matrix \(B\)</p>
+
+\[B = \begin{bmatrix} {\bf x}_1 &amp; \ldots &amp; {\bf x}_n \end{bmatrix}\]
+
+<p>satisfying</p>
+
+\[A B = \begin{bmatrix} A {\bf x}_1 &amp; \ldots &amp; A{\bf x}_n \end{bmatrix} = 
+\begin{bmatrix} {\bf e}_1 &amp; \ldots &amp; {\bf e}_n \end{bmatrix} = I_n.\]
+
+<p>The converse would be: if there is a matrix \(B\) satisfying \(AB=I\)
+for a \(n\times n\) matrix \(A\), then \(A\) must have \(n\) pivots.</p>
+
+<p>We will not prove it in class due to time constraints, but I strongly
+urge you to prove the converse. In fact, you can prove a stronger
+statement than given: if there is a matrix \(B\) satisfying \(AB=I\)
+for a \(n\times n\) matrix \(A\), then both \(A\) and \(B\) must have
+\(n\) pivots each.</p>
+
+<h3 id="for-all-ntimes-n-matrices-a-with-n-pivots-there-is-a-matrix-c-such-that-cai">For all \(n\times n\) matrices \(A\) with \(n\) pivots, there is a matrix \(C\) such that \(CA=I\)</h3>
+
+<p>This follows from one of the problems in the prior module. Recall that if \(A\)
+is square with \(n\) pivots, Gaussian elimination (row operations) allows us
+to write</p>
+
+\[U_1\cdots U_1 D L_n\cdots L_1 A =I,\]
+
+<p>where \(U_i\) is the matrix that does the row operations to find and eliminate
+every number above the pivot in the \(i'\)th column, \(D\) normalizes
+each of the \(n\) pivots to 1, and \(L_j\) finds and zeros every entry below the
+pivot in the \(j'\)th column. We say “finds” because while tackling any column,
+it may be necessary to perform a row permutation to bring the pivot to its place. Note also that we use \(U_i\) and \(L_j\), but if row permutations were used, they may not correspond to upper-triangular or lower-triangular matrix (we use
+it nevertheless to indicate above/below pivot).</p>
+
+<p>Let</p>
+
+\[C = U_1\cdots U_1 D L_n\cdots L_1.\]
+
+<p>Thus \(CA = I\).</p>
+
+<h3 id="every-ntimes-n-square-a-with-n-pivots-has-a-unique-inverse-a-1-satisfying-aa-1--a-1a--i">Every \(n\times n\) square \(A\) with \(n\) pivots has a unique inverse \(A^{-1}\) satisfying \(AA^{-1} = A^{-1}A = I\).</h3>
+
+<p>We will show that the matrices \(B\) and \(C\) of the prior sections must
+be equal. To see this, note that</p>
+
+\[CAB = (CA)B = IB = B\]
+
+<p>but also</p>
+
+\[CAB = C(AB) = CI = C,\]
+
+<p>so that \(CAB = B = C\), or \(B=C\). Recall also that we observed
+\(B\) was unique, so \(C\) must be as well. We call this unique matrix
+\(B= C= A^{-1}\) as the <em>inverse</em> of \(A\).</p>
+
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee345/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-21 20:23:57 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 11 outcomes
+      
+      
+      | 16 readings
+      
+      
+      | 25 experiences
+      
+      
+      | 3 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

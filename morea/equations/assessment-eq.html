@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 345 | Problems in class </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee345/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee345/css/style.css">
+  <link rel="stylesheet" href="/ee345/css/syntax.css">
+  <link rel="shortcut icon" href="/ee345/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee345/index.html"> EE 345 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee345/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules/module-eq">Gaussian Elimination</a></li>
+        <li class="breadcrumb-item active">Problems in class</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="problems-in-class">Problems in class</h1>
+
+<ol>
+  <li>Write a \(3\times 5\) matrix such that
+    <ul>
+      <li>the first, second and fifth columns are pivot columns, rest free, call this \(A\)</li>
+      <li>the first, third and fifth columns are pivot columns, rest free, call this \(B\)</li>
+      <li>You cannot always get an answer to the second part above by swapping the second and third columns of \(A\). Why?</li>
+    </ul>
+  </li>
+  <li>Let \(M = \begin{bmatrix} I_m &amp; A \\ B &amp; I_n \end{bmatrix}\), where
+\(I_m\) is a \(m\times m\) identity matrix, \(A\) is a \(m\times
+n\) matrix, \(B\) is a \(n\times m\) matrix and \(I_n\) is the
+\(n\times n\) identity matrix.
+    <ul>
+      <li>If you perform elimination on \(M\), what are the first \(m\)
+pivots?</li>
+      <li>What is the matrix you have after you have worked through the first \(m\) columns, just before you start looking for the \(m+1\)‘th pivot?</li>
+    </ul>
+  </li>
+  <li>Find one \(4\times 3\) matrix \(C\) (the same matrix must be used
+for all relevant parts below), and two vectors \(\bf b\) and \(\bf w\) such that
+    <ul>
+      <li>\(C{\bf x} = {\bf b}\) has a unique solution;</li>
+      <li>\(C{\bf x} = {\bf w}\) has no solutions</li>
+      <li>For the matrix \(C\) satisfying the parts above, it possible to find a vector \(\bf z\) such that \(C{\bf x} = {\bf z}\) has infinite solutions?</li>
+      <li>Can you find a different matrix \(D\) such that both equations \(D{\bf x} = {\bf b}\) and \(D{\bf x}={\bf w}\) have infinite solutions?</li>
+    </ul>
+  </li>
+  <li>
+    <p>Let \(A\) be a \(n\times k\) matrix with \(r\) pivots (to
+anticipate a future topic, we will call the number of pivots in
+\(A\) to be is rank). Let \(P\) be the \(n\times r\) matrix whose
+columns are the pivot columns of \(A\). Let \(R\) be the reduced
+row echelon form of \(A\), and let \({\tilde R}\) be the \(r\times
+k\) matrix obtained from \(R\) by dropping its all-zero rows.</p>
+
+    <ul>
+      <li>Show that \(A= P{\tilde R}\). Thus a rank \(r\) matrix \(A\) with size \(n\times k\) can
+be written as a \(n\times r\) matrix multiplied by a \(r\times k\) matrix.</li>
+      <li>Show that if a \(n\times k\) matrix \(B\) is a product of 
+a \(n\times r\) matrix and a \(r\times k\) matrix, then the number
+of pivots in \(B\) is \(\le r\) (equivalently we could also say rank of \(B\)
+is \(\le r\)).</li>
+      <li>(Follows from prior parts, but maybe a little subtle) Show that
+\(A^T\) has the same number of pivots as \(A\). Doing elimination
+on \(A^T\) uncovers the row dependencies in \(A\), so it is very
+different from doing elimination on \(A\) (which, as we know,
+uncovers column dependencies in \(A\)). Remember that \((AB)^T =
+B^TA^T\).</li>
+    </ul>
+
+    <p>The observation that \(A = P{\tilde R}\) captures the information
+the reduced row echelon form provides:</p>
+    <ul>
+      <li>it tells you which columns are pivot columns, and</li>
+      <li>how to get the free columns from the pivot columns as linear
+combinations.</li>
+    </ul>
+
+    <p>Writing \(A = P{\tilde R}\) is an example of matrix factorization.
+Suppose \(A\) is a matrix with only non-negative entries. Many
+applications, in astronomy, computer vision, bioinformatics,
+recommender systems, signal processing and natural language
+processing, require factors of \(A\) whose entries are also all
+non-negative, and in addition with as small a rank as possible.
+The above factorization into rank \(r\) matrices will not cut it,
+since the entries of \(\tilde R\) can be negative even if all the
+entries of \(A\) are non-negative. But \(r\) remains a lower bound
+on the rank of the factors for exact non-negative factorization.</p>
+  </li>
+  <li>
+    <p>Pick \(\bf v\) to be any vector with 3 coordinates. For your vector, perform
+elimination on \(I_3 + {\bf v}{\bf v}^T\), and multiply all the
+pivots. You will find three pivots. Find the product of all the
+pivots, and verify the product equals \(1 + ||{\bf v}||^2\). The
+equality holds no matter what \(\bf v\) you take. In fact, the
+equality can be generalized to vectors with any number of coordinates.</p>
+
+    <p>As you can see from the problems above, you can think far deeper into the Gaussian Elimination algorithm than is apparent.</p>
+  </li>
+</ol>
+
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee345/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-21 20:23:57 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 11 outcomes
+      
+      
+      | 16 readings
+      
+      
+      | 25 experiences
+      
+      
+      | 3 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>

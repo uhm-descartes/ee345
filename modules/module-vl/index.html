@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE 345 | Vectors and Linear combinations </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/ee345/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/ee345/css/style.css">
+  <link rel="stylesheet" href="/ee345/css/syntax.css">
+  <link rel="shortcut icon" href="/ee345/favicon.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/020726ec0d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/ee345/index.html"> EE 345 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/ee345/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/ee345/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/ee345/modules">Modules</a></li>
+        <li class="breadcrumb-item active">Vectors and Linear combinations</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1><small class="header-small">Module: </small> Vectors and Linear combinations </h1>
+  <p><p>Vectors and Linear combinations</p>
+</p>
+  
+    <p>Dates: Wed, Aug 23 - Wed, Aug 30</p>
+  
+</div>
+
+
+
+
+
+<div class="section-background-1">
+  <div class="container">
+    <h2>Learning Outcomes</h2>
+
+    
+      
+      <h3>Vectors and Linear Combinations</h3>
+      <p>
+        
+      </p>
+      <ul>
+  <li>You are comfortable with the formal definition of vectors in
+\({\mathbb R}^n\)</li>
+  <li>You understand addition, scaling and linear combinations of vectors</li>
+  <li>You recall the parallelogram law of addition/subtractions</li>
+  <li>You can visualize simple sets of linear combinations geometrically
+(in 2 and 3 dimensions)</li>
+  <li>You understand how to compute the dot product and lengths of vectors</li>
+  <li>You understand how the dot product between vectors correlates with
+angle between them (in 2 and 3 dimensions)</li>
+  <li>You know how to write a system of linear equations that checks if a
+vector can be written as a linear combination of other vectors.</li>
+  <li>You can write code in python+numpy to do all the above</li>
+</ul>
+
+    
+
+  </div>
+</div>
+
+
+
+
+
+<div class="section-background-2">
+  <div class="container">
+  <h2>Readings</h2>
+
+    <div class="row">
+      
+        
+        <!-- Internal fragment for displaying reading, experience, prereq cards. Prereqs have icons. -->
+<div class="col-md-6 col-lg-4" style="padding-bottom: 20px">
+  <div class="card h-100">
+    
+    <div class="card-body">
+      <h4 class="card-title">Guide for the Text</h4>
+      <p>Chapter 1</p>
+
+
+    
+    </div>
+
+    <div style="border-top-color: transparent" class="card-footer bg-body">
+      
+    </div>
+    <a href="/ee345/morea/mvl/reading-text.html" class="stretched-link"></a>
+  </div>
+</div>
+      
+        
+        <!-- Internal fragment for displaying reading, experience, prereq cards. Prereqs have icons. -->
+<div class="col-md-6 col-lg-4" style="padding-bottom: 20px">
+  <div class="card h-100">
+    
+    <div class="card-body">
+      <h4 class="card-title">Lectures</h4>
+      <p>Lecture notes and recordings</p>
+
+
+    
+    </div>
+
+    <div style="border-top-color: transparent" class="card-footer bg-body">
+      
+    </div>
+    <a href="/ee345/morea/mvl/reading-lectures.html" class="stretched-link"></a>
+  </div>
+</div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="section-background-1">
+  <div class="container">
+  <h2>Experiential Learning</h2>
+    <div class="row">
+      
+        
+        <!-- Internal fragment for displaying reading, experience, prereq cards. Prereqs have icons. -->
+<div class="col-md-6 col-lg-4" style="padding-bottom: 20px">
+  <div class="card h-100">
+    
+    <div class="card-body">
+      <h4 class="card-title">Lab work</h4>
+      <p>Matrices, Vectors and Linear Combinations</p>
+
+
+    
+    </div>
+
+    <div style="border-top-color: transparent" class="card-footer bg-body">
+      
+      <span class="badge bg-primary">24 Aug 12:00 AM</span>
+      
+    </div>
+    <a href="/ee345/morea/mvl/experience-vl.html" class="stretched-link"></a>
+  </div>
+</div>
+      
+        
+        <!-- Internal fragment for displaying reading, experience, prereq cards. Prereqs have icons. -->
+<div class="col-md-6 col-lg-4" style="padding-bottom: 20px">
+  <div class="card h-100">
+    
+    <div class="card-body">
+      <h4 class="card-title">Complex Numbers*</h4>
+      <p>Where do they come from?</p>
+
+
+    
+    </div>
+
+    <div style="border-top-color: transparent" class="card-footer bg-body">
+      
+      <span class="badge bg-primary">24 Aug 12:00 AM</span>
+      
+    </div>
+    <a href="/ee345/morea/mvl/experience-complex.html" class="stretched-link"></a>
+  </div>
+</div>
+      
+        
+        <!-- Internal fragment for displaying reading, experience, prereq cards. Prereqs have icons. -->
+<div class="col-md-6 col-lg-4" style="padding-bottom: 20px">
+  <div class="card h-100">
+    
+    <div class="card-body">
+      <h4 class="card-title">Norms and Dot Products*</h4>
+      <p>The many ways to measure</p>
+
+
+    
+    </div>
+
+    <div style="border-top-color: transparent" class="card-footer bg-body">
+      
+      <span class="badge bg-primary">24 Aug 12:00 AM</span>
+      
+    </div>
+    <a href="/ee345/morea/mvl/experience-norm.html" class="stretched-link"></a>
+  </div>
+</div>
+      
+        
+        <!-- Internal fragment for displaying reading, experience, prereq cards. Prereqs have icons. -->
+<div class="col-md-6 col-lg-4" style="padding-bottom: 20px">
+  <div class="card h-100">
+    
+    <div class="card-body">
+      <h4 class="card-title">Parallelogram Law</h4>
+      <p>Problems in class</p>
+
+
+    
+    </div>
+
+    <div style="border-top-color: transparent" class="card-footer bg-body">
+      
+      <span class="badge bg-primary">24 Aug 12:00 AM</span>
+      
+    </div>
+    <a href="/ee345/morea/mvl/experience-prob-dot.html" class="stretched-link"></a>
+  </div>
+</div>
+      
+        
+        <!-- Internal fragment for displaying reading, experience, prereq cards. Prereqs have icons. -->
+<div class="col-md-6 col-lg-4" style="padding-bottom: 20px">
+  <div class="card h-100">
+    
+    <div class="card-body">
+      <h4 class="card-title">Linear combinations</h4>
+      <p>Problems in class</p>
+
+
+    
+    </div>
+
+    <div style="border-top-color: transparent" class="card-footer bg-body">
+      
+      <span class="badge bg-primary">24 Aug 12:00 AM</span>
+      
+    </div>
+    <a href="/ee345/morea/mvl/experience-prob-lc.html" class="stretched-link"></a>
+  </div>
+</div>
+      
+        
+        <!-- Internal fragment for displaying reading, experience, prereq cards. Prereqs have icons. -->
+<div class="col-md-6 col-lg-4" style="padding-bottom: 20px">
+  <div class="card h-100">
+    
+    <div class="card-body">
+      <h4 class="card-title">Distance of a point from a plane</h4>
+      <p>Problems in class</p>
+
+
+    
+    </div>
+
+    <div style="border-top-color: transparent" class="card-footer bg-body">
+      
+      <span class="badge bg-primary">24 Aug 12:00 AM</span>
+      
+    </div>
+    <a href="/ee345/morea/mvl/experience-prob-dist.html" class="stretched-link"></a>
+  </div>
+</div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="section-background-2">
+  <div class="container">
+    <h2>Assessments</h2>
+    <div class="row">
+    
+      
+    <!-- Internal fragment for displaying reading, experience, prereq cards. Prereqs have icons. -->
+<div class="col-md-6 col-lg-4" style="padding-bottom: 20px">
+  <div class="card h-100">
+    
+    <div class="card-body">
+      <h4 class="card-title">Quizzes and Problems</h4>
+      <p>Linear combinations</p>
+
+
+    
+      <p>
+        <em>Outcome(s) assessed:</em>
+        
+      </p>
+    
+    </div>
+
+    <div style="border-top-color: transparent" class="card-footer bg-body">
+      
+      <span class="badge bg-primary">28 Aug 12:00 AM</span>
+      
+    </div>
+    <a href="/ee345/morea/mvl/assessment-vl.html" class="stretched-link"></a>
+  </div>
+</div>
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/ee345/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Narayana Prasad Santhanam | Electrical and Computer Engineering | University of Hawaii <br />
+nsanthan@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: spacelab)<br>
+      Last update on: <span>2023-09-21 20:23:57 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      1 prerequisites |
+      
+      11 modules
+      
+      | 11 outcomes
+      
+      
+      | 16 readings
+      
+      
+      | 25 experiences
+      
+      
+      | 3 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>
