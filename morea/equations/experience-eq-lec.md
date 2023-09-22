@@ -27,7 +27,7 @@ useful. That is the primary reason this is made available anyway.
 
 Please find the lecture notes and class recordings here:
 
- * Lecture notes [pdf](/ee345/morea/matrixmul/2023-09-11-Note-10-21.pdf)
+ * Lecture notes [pdf](/ee345/morea/equations/2023-09-11-Note-10-21.pdf)
 
 Video recordings for classes on 9/11, 9/13 and 9/15
 
