@@ -27,7 +27,7 @@ pivots?
 
 
 
-4. Find one $$4\times 3$$ matrix $$C$$ (the same matrix must be used
+3. Find one $$4\times 3$$ matrix $$C$$ (the same matrix must be used
    for all relevant parts below), and two vectors $$\bf b$$ and $$\bf w$$ such that
     * $$C{\bf x} = {\bf b}$$ has a unique solution;
     * $$C{\bf x} = {\bf w}$$ has no solutions
@@ -36,19 +36,21 @@ pivots?
 
 
 
-3. Let $$A$$ be a $$n\times k$$ matrix with $$r$$ pivots (rank $$r$$).
-   Let $$P$$ be the $$n\times r$$ matrix whose columns are the pivot
-   columns of $$A$$. Let $$R$$ be the reduced row echelon form of $$A$$,
-   and let $${\tilde R}$$ be the $$r\times m$$ matrix obtained from $$R$$
-   by dropping its all-zero rows. 
+4. Let $$A$$ be a $$n\times k$$ matrix with $$r$$ pivots (to
+   anticipate a future topic, we will call the number of pivots in
+   $$A$$ to be is rank). Let $$P$$ be the $$n\times r$$ matrix whose
+   columns are the pivot columns of $$A$$. Let $$R$$ be the reduced
+   row echelon form of $$A$$, and let $${\tilde R}$$ be the $$r\times
+   k$$ matrix obtained from $$R$$ by dropping its all-zero rows.
 
-* Show that $$A= P{\tilde R}$$. Thus a rank $$r$$ matrix $$A$$ can
+   * Show that $$A= P{\tilde R}$$. Thus a rank $$r$$ matrix $$A$$ with size $$n\times k$$ can
      be written as a $$n\times r$$ matrix multiplied by a $$r\times k$$ matrix.
    * Show that if a $$n\times k$$ matrix $$B$$ is a product of 
-	 a $$n\times r$$ matrix and a $$r\times k$$ matrix, then the rank of $$B$$
-	 is $$\le r$$.
+	 a $$n\times r$$ matrix and a $$r\times k$$ matrix, then the number
+	 of pivots in $$B$$ is $$\le r$$ (equivalently we could also say rank of $$B$$
+	 is $$\le r$$).
    * (Follows from prior parts, but maybe a little subtle) Show that
-     $$A^T$$ has the same number of pivots as $$A$$.
+     $$A^T$$ has the same number of pivots as $$A$$. Remember that $$(AB)^T = B^TA^T$$.
    
    The observation that $$A = P{\tilde R}$$ captures the information
    the reduced row echelon form provides: 
@@ -76,7 +78,6 @@ pivots?
    equality can be generalized to vectors with any shape. 
    
    
-As you can see from the problems above, you can think far deeper into
-the Gaussian Elimination algorithm than is apparent.
+   As you can see from the problems above, you can think far deeper into the Gaussian Elimination algorithm than is apparent.
       
    
