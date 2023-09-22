@@ -74,12 +74,12 @@ pivots?
    on the rank of the factors for exact non-negative factorization.
 
 
-3. Pick $$\bf v$$ to be a vector with 3 coordinates. Perform
+3. Pick $$\bf v$$ to be any vector with 3 coordinates. For your vector, perform
    elimination on $$I_3 + {\bf v}{\bf v}^T$$, and multiply all the
    pivots. You will find three pivots. Find the product of all the
    pivots, and verify the product equals $$1 + ||{\bf v}||^2$$. The
    equality holds no matter what $$\bf v$$ you take. In fact, the
-   equality can be generalized to vectors with any shape. 
+   equality can be generalized to vectors with any number of coordinates.
    
    
    As you can see from the problems above, you can think far deeper into the Gaussian Elimination algorithm than is apparent.
