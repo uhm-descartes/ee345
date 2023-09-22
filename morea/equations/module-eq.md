@@ -11,6 +11,7 @@ morea_readings:
 morea_experiences:
    - experience-lab-eq
    - problems-eq
+   - experience-eq-lec
 morea_assessments:
   # - quiz-eq
 morea_type: module

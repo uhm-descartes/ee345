@@ -1,10 +1,10 @@
 ---
 title: "Lectures"
 published: true
-morea_id: experience-matmul-lec
+morea_id: experience-eq-lec
 morea_type: experience
-morea_summary: "Matrices, Vectors and Linear Combinations"
-morea_start_date: "2023-08-30"
+morea_summary: "Gaussian Elimination"
+morea_start_date: "2023-09-11"
 morea_labels:
 ---
 
@@ -27,9 +27,10 @@ useful. That is the primary reason this is made available anyway.
 
 Please find the lecture notes and class recordings here:
 
- * Lecture notes [pdf](/ee345/morea/matrixmul/2023-08-30-Note-09-37.pdf)
+ * Lecture notes [pdf](/ee345/morea/matrixmul/2023-09-11-Note-10-21.pdf)
 
-Video recordings for classes on 8/30 and 9/1:
+Video recordings for classes on 9/11, 9/13 and 9/15
 
-{% include youtube.html id="nIEOrAKBGN4" %}
-{% include youtube.html id="Tzz4IJnikJU" %}
+{% include youtube.html id="5eTijjB_D6g" %}
+{% include youtube.html id="PcxEQP91xJ0" %}
+{% include youtube.html id="IOL-Kb85XJ8" %}
