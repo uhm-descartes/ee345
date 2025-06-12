@@ -24,7 +24,7 @@ as the $$x-$$, $$y-$$ and $$z-$$ coordinates. How do we check if all
 points on the $$x-$$axis lie in the plane?
 
 5. Problem in text. For each row below, choose the only $$3\times 3$$ matrix $$B$$ such that
-for all matrices $$A$$ the condition given in that row (the answer may be different for different rows)
+for all matrices $$A$$ the condition given in that row (answers may be different for different rows)
    * $$BA = 4A$$
    * $$BA = 4B$$
    * $$BA$$ has rows 1 and 3 of $$A$$ reversed, and row 2 unchanged
