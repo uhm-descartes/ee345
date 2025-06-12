@@ -10,9 +10,9 @@ morea_labels:
 
 # Problems in class
 
-1. Is $$(A+B)^2 = A^2 + 2 AB + B^2?$$ If not, write the correct rule.
+1. Is $$(A+B)^2 = A^2 + 2 AB + B^2?$$ If not, correct the equation.
 
-2. Let $$A$$ be a $$3\times 3$$ matrix. Find a matrix $$E$$ such that both the conditions below are simultaneously satisfied
+2. Let $$A$$ be a $$3\times 3$$ matrix. Find a matrix $$E$$ such that all the conditions below are simultaneously satisfied
     * row two of $$EA$$ is (2 times row 1 of $$A$$ + row 2 of $$A$$),
 	* the first and third rows of $$EA$$ equal the corresponding rows
 of $$A$$.
