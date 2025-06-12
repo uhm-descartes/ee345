@@ -12,7 +12,7 @@ morea_labels:
 
 1. Is $$(A+B)^2 = A^2 + 2 AB + B^2?$$ If not, write the correct rule.
 
-2. Let $$A$$ be a $$3\times 3$$ matrix. Find a matrix $$E$$ such that 
+2. Let $$A$$ be a $$3\times 3$$ matrix. Find a matrix $$E$$ such that both the conditions below are simultaneously satisfied
     * row two of $$EA$$ is (2 times row 1 of $$A$$ + row 2 of $$A$$),
 	* the first and third rows of $$EA$$ equal the corresponding rows
 of $$A$$.
@@ -23,8 +23,8 @@ $$\begin{bmatrix} 1\\2\\3 \end{bmatrix}$$ and $$\begin{bmatrix}
 as the $$x-$$, $$y-$$ and $$z-$$ coordinates. How do we check if all
 points on the $$x-$$axis lie in the plane?
 
-5. Problem in text. Choose the only $$3\times 3$$ matrix $$B$$ such that
-for all matrices $$A$$, 
+5. Problem in text. For each row below, choose the only $$3\times 3$$ matrix $$B$$ such that
+for all matrices $$A$$ the condition given in that row (the answer may be different for different rows)
    * $$BA = 4A$$
    * $$BA = 4B$$
    * $$BA$$ has rows 1 and 3 of $$A$$ reversed, and row 2 unchanged

@@ -1,30 +1,32 @@
 ---
-title: "Lab: Multiplication"
+title: "Problems in Class"
 published: true
-morea_id: experience-matmul
+morea_id: experience-matmul-basic-prob
 morea_type: experience
-morea_summary: "matrix multiplication"
+morea_summary: "Basics"
 morea_start_date: "2023-08-31"
 morea_labels:
 ---
 
-# Lab work
+# Problems in class
 
-The following python [notebook](/morea/matrixmul/lab2.ipynb) that you will work
-in the Lab runs you through basics of working with matrices in
-python/numpy.
+1. Is $$(A+B)^2 = A^2 + 2 AB + B^2?$$ If not, write the correct rule.
 
-The exercises you submit are on linear combinations again, and like in
-the previous module gets you to observe that matrix multiplication
-produces linear combinations. This observation is **that** important
-that both labs emphasize it. All _ matrix multiplication is just a way
-of tracking linear combinations. Here you also note that this concept
-is simply the outer product way of multiplying matrices.
+2. Let $$A$$ be a $$3\times 3$$ matrix. Find a matrix $$E$$ such that 
+    * row two of $$EA$$ is (2 times row 1 of $$A$$ + row 2 of $$A$$),
+	* the first and third rows of $$EA$$ equal the corresponding rows
+of $$A$$.
 
+4. Consider the plane of all linear combinations of the vectors
+$$\begin{bmatrix} 1\\2\\3 \end{bmatrix}$$ and $$\begin{bmatrix}
+3\\2\\1 \end{bmatrix}$$, where the three coordinates are interpreted
+as the $$x-$$, $$y-$$ and $$z-$$ coordinates. How do we check if all
+points on the $$x-$$axis lie in the plane?
 
-## Submission Instructions
-
-All lab reports are due 1 week after you finish the material in
-class. You are welcome to take your TA's help or my help to do the
-labs, or to discuss this in office hours.
+5. Problem in text. Choose the only $$3\times 3$$ matrix $$B$$ such that
+for all matrices $$A$$, 
+   * $$BA = 4A$$
+   * $$BA = 4B$$
+   * $$BA$$ has rows 1 and 3 of $$A$$ reversed, and row 2 unchanged
+   * All rows of $$BA$$ are the same as row 1 of $$A$$
 
