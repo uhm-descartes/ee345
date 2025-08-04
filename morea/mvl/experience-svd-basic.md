@@ -1,9 +1,9 @@
 ---
-title: "Understanding SVD"
+title: "What is a matrix"
 published: true
 morea_id: exp-svd-basic
 morea_type: experience
-morea_summary: "Singular value decompositions"
+morea_summary: "A matrix does something!"
 morea_start_date: "2025-03-25"
 morea_sort_order: 4
 morea_labels:
@@ -77,4 +77,4 @@ Journal 	journal 	 print 	 newspaper 	 Newspaper
 
 Note how each direction collects words of a similar concept together. When information from tokens at the input flows through the language model circuits, they are emphasized/deemphasized along the above concepts. More amazingly, again, no one designed them that way---they just happen to be that way after iteratively tweaking random matrices to align them with behavior we like. Isn't that cool?
 
-Now not all directions are so easily interpretable, but a very important take-away is the following. When you see a matrix, this is what you should see. Not just an arrangement of numbers. Simply seeing a grid of numbers is a fantastic way to miss the forest for the trees.
+Now not all directions are so easily interpretable, but a very important take-away is the following. When you see a matrix, this is how you should think about it. Do not see it as just an arrangement of numbers. Simply seeing a grid of numbers is a fantastic way to miss the forest for the trees.
