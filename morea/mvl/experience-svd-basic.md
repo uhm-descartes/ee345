@@ -1,0 +1,80 @@
+---
+title: "Understanding SVD"
+published: true
+morea_id: exp-svd-basic
+morea_type: experience
+morea_summary: "Singular value decompositions"
+morea_start_date: "2025-03-25"
+morea_sort_order: 4
+morea_labels:
+---
+
+# Motivating perspective
+\\( \newcommand{\u}{\mathbf{u}} \\)
+\\( \newcommand{\v}{\mathbf{v}} \\)
+\\( \newcommand{\upto}{,\ldots,} \\)
+\\( \newcommand{\prob}{\mathbb{P}} \\)
+Use the following [notebook](./demosvd.ipynb) to run the simulations. The anonymized movie preference data is [here](./movieratingsfall23.csv).
+
+## An operational view
+This demo presents an operational view of what matrices really are and what they are truly doing. We will learn the details as we go along, but the demo for now is to let us think of matrices as "information circuits". Just like you would route current through a circuit, matrices can route information. 
+
+To understand this, just like in other courses, remember matrices are linear operators. You should be familiar with the fact that given any orthogonal (pairwise perpendicular) coordinate system, a vector now can be expressed in terms of intercepts on each coordinate. 
+
+Corresponding to each matrix is a coordinate system like this, and these are called the singular directions (we will leave it imprecise for now, but a useful white lie). Assigned to each singular direction is a non-negative number, called a singular value, that corresponds to the amplification corresponding to that direction. If a vector is expressed in this coordinate system, the matrix operation can be then understood as shunting/amplifying the components of the vector in each singular direction, completely shutting out directions where the singular value is zero. This is how information flows through the matrix. We build networks of such matrices in a language model (or most architectures), and these matrices control how information flows through to get what we want. It is even more fascinating, since we don't design these matrices, rather we have a way to let the "training" data iteratively modify these matrices to get the behaviour we would like.
+
+Let us see a toy example first. These are movie ratings by some of the students who have taken this class before. It is a very small database, and we are simply looking at how students have rated the movies.
+
+<img src="./movieprefs.png" alt="Movie ratings" width="900px"/>
+
+Without going into detail yet about how we uncover the details, let us
+look at the singular directions. If the database were truly large, the
+singular directions would correspond to "genres". In fact, that is how
+Netflix does this (their job is complicated by the fact that, like me,
+most people do not really rate most movies). With the small set we
+have, we don't quite that level of detail to separate out genres, but
+we still get something. For example, one singular direction assigns
+the following weights (we have omitted those with small weights):
+
+<img src="./secondeig.png" alt="Weights for movies" width="400px"/>
+
+A cursory post-fact interpretation may be that this direction weights heavy/intense movies at one end of the scale and lighter/relaxing ones at the other end. Not to worry, in larger systems, for example, weights in large language models, we will find much better interpretations and examples. The point is, the decomposition helped us find very interesting patterns in the data.
+
+If we multiply the matrix above by a vector on the right, we may think of the vector as potentially the weights we assign to each movie. Then the action of the matrix would amplify components of the vector along certain directions, one of which will be the above dark/light angle. The output vector would be more aligned to the singular preferences in the matrix above.
+
+Let us now use an actual language model. The following is a GPT-2 (one of the ancestor architectures of chatGPT). These models were relatively small, but they are already show very interesting patterns. The code is [here](./llm2.ipynb), though running the demo right now isn't important. 
+
+In these language models, every word (rather, a token, which is conceptually similar to words, but is usually a part of a word) is represented by a vector. These vectors pass through many layers of matrices (and non-linearities), eventually producing a mathematical model of language. And vice-versa, any direction (in a space of the correct size) corresponds to a probability distribution over words. This makes them particularly human interpretable: we can see what the (highest probability) words corresponding to each singular direction is.
+
+Now, for the demo here, we will examine some specific matrices in the model and
+their singular directions (where they amplify information). For example, one of the matrices in this circuit has the following singular directions
+
+===========================================
+
+ hear 	 listeners 	 hears 	 Hear 	Interstitial 	
+
+ write 	 writing 	 writes 	 written 	 wrote 	
+
+===========================================
+
+ record 	 Record 	record 	Record 	 Records 	
+
+ news 	 television 	News 	 TV 	 News 	
+
+===========================================
+
+ recording 	 recordings 	YouTube 	 Recording 	 recorded 	
+
+ read 	FontSize 	 Readers 	 Image 	 sender 	
+
+===========================================
+
+Journal 	journal 	 print 	 newspaper 	 Newspaper 	
+
+ watch 	 watched 	 watching 	leased 	watch 	
+
+===========================================
+
+Note how each direction collects words of a similar concept together. When information from tokens at the input flows through the language model circuits, they are emphasized/deemphasized along the above concepts. More amazingly, again, no one designed them that way---they just happen to be that way after iteratively tweaking random matrices to align them with behavior we like. Isn't that cool?
+
+Now not all directions are so easily interpretable, but a very important take-away is the following. When you see a matrix, this is what you should see. Not just an arrangement of numbers. Simply seeing a grid of numbers is a fantastic way to miss the forest for the trees.
