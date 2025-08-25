@@ -14,6 +14,7 @@ morea_experiences:
   #- experience-environment-configuration
   #- experience-introduce-yourself
   #- experience-learn-the-command-line
+  - ai-companion
   - experience-other-sources
 morea_assessments:
 morea_type: module
