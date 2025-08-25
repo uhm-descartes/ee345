@@ -27,4 +27,4 @@ morea_sort_order: 01
 
 Overview of EE 345/L, and some simple initial tasks to get oriented
 and ready for the course. View the full comic [here](https://xkcd.com/1838/).
-Syllabus [here](https://uhm-descartes.github.io/ee345/morea/example-introduction/f23syllabus.pdf)
+Syllabus [here](https://uhm-descartes.github.io/ee345/morea/example-introduction/f25syllabus.pdf)
