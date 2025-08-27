@@ -8,3 +8,4 @@ Gemfile.lock
 # Ignore platform specific files
 .DS_Store
 morea/mvl/module-vl.md~
+*.md~
