@@ -5,7 +5,7 @@ morea_type: home
 published: true
 ---
 
-## Welcome to EE 345/L, Fall 2023
+## Welcome to EE 345/L, Fall 2025
 
 EE 345L is an undergraduate level introduction to linear algebra
 developed in preparation for more advanced topics in AI and machine
