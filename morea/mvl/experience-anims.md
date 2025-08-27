@@ -12,7 +12,7 @@ morea_labels:
 
 Here are a few animations to help you recap basic operations with vectors and matrices.
 
-This video shows how to add two vectors (of the same size). You would add any two matrices with the same size by adding corresponding entries similarly.
+The video below shows how to add two vectors (of the same size). You would add any two matrices with the same size by adding corresponding entries similarly.
 
 <video width="640" height="480" controls>
   <source src="VectorAddition.mp4" type="video/mp4">
@@ -20,7 +20,7 @@ This video shows how to add two vectors (of the same size). You would add any tw
 </video>
 
 
-This video shows how to scale a vector by a real number (scalar). 
+The following video shows how to scale a vector by a real number (scalar). 
 
 <video width="640" height="480" controls>
   <source src="ScalarTimesVector.mp4" type="video/mp4">
