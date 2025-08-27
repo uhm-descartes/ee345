@@ -1,5 +1,5 @@
 ---
-title: "Vectors and Linear combinations"
+title: "Matrices, Vectors and Linear combinations"
 published: true
 morea_coming_soon: false
 morea_id: module-vl
@@ -10,6 +10,7 @@ morea_readings:
    - reading-text
    - reading-mvl-lec
 morea_experiences:
+   - exp-svd-basic
    - experience-vl
    - experience-complex
    - experience-norm

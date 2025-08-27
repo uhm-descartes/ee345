@@ -10,6 +10,7 @@ morea_readings:
    - reading-text
    - reading-mvl-lec
 morea_experiences:
+   - experience-anims
    - exp-svd-basic
    - experience-vl
    - experience-complex
