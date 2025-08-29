@@ -26,8 +26,8 @@ useful. That is the primary reason this is made available anyway.
 
 Please find the lecture notes and class recordings here:
 
- * Lecture notes [pdf](/ee345/morea/mvl/2023-08-23-Note-10-27.pdf)
+ * Lecture notes [pdf](/ee345/morea/mvl/2025/2025-08-27-classboard.pdf)
 
 Video recording:
 
-{% include youtube.html id="_erGsWHO6KA" %}
+{% include youtube.html id="b7NllBp4d9U" %}
