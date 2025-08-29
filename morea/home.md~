@@ -35,6 +35,8 @@ important parts. Modules have:
   * [Experiential learning activities](https://uhm-descartes.github.io/ee345/experiences), providing a structured set of challenges enabling you to acquire mastery of material.
   * [Assessments](https://uhm-descartes.github.io/ee345/assessments), which help you determine if you have acquired mastery of the material.
 
+New in Fall 2025: Please use this following (menehune)[https://ai-class-companion-538528720963.us-central1.run.app] (requires UH login) as your companion for learning. Use this as your primary AI source for the class. This is still being built, so if something goes wrong or unexpected, immediately email me. 
+
 ## About the instructor
 
 [Narayana Prasad Santhanam](https://ee.hawaii.edu/faculty/profile?usr=63) is a Professor of Electrical and Computer Engineering at the University of Hawaii. My research interests are at the intersection of machine learning, information theory and statistics. A particular focus is on high dimensional and complex problems, that are not amenable to traditional statistical methods and guarantees.
