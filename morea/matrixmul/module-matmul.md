@@ -8,6 +8,7 @@ morea_outcomes:
    - outcome-matmul
 morea_readings:
    - reading-text-matmul
+   - reading-matmul-lec
 #   - reading-graph
 morea_experiences:
    - experience-matmul

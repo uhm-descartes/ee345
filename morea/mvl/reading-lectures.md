@@ -33,3 +33,8 @@ Please find the lecture notes and class recordings here:
  * 8/29 Lecture notes [pdf](/ee345/morea/mvl/2025/2025-08-29-classboard.pdf) and video recording
 
 {% include youtube.html id="hoYV4S9zI5M" %}
+
+ * 9/3 Lecture notes [pdf](/ee345/morea/mvl/2025/2025-09-03-classboard.pdf) and video recording
+
+{% include youtube.html id="B97OdsKvoKE" %}
+
