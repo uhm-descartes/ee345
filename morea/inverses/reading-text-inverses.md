@@ -36,19 +36,70 @@ inverse follows naturally from Elimination, as do its properties. Here
 is how we approached this in class.
 
 
-### $$A$$ is $$n\times n$$ matrix with $$n$$ pivots iff there is a matrix $$B$$ such that $$BA=I$$
+### If $$A$$ is $$n\times n$$ matrix with $$n$$ pivots, there is a matrix $$B$$ such that $$BA=I$$
 
-If $$A$$ has $$n$$ pivots
+If $$A$$ has $$n$$ pivots, all columns are pivot columns. Therefore
 
-### $$A$$ is $$n\times n$$ matrix with $$n$$ pivots iff there is a matrix $$B$$ such that $$AB=I$$
+$$\text{rref}(A) = I.$$
+
+Now we perform a series of reversible row operations to get $$A$$ into the rref forms, and as we understood in the elimination module, each such reversible row operation is a **matrix multiplication on the left**. 
+
+Let the operations we perform correspond to $$R_1, R_2, \ldots R_k$$ in sequence (meaning we perform row operation $$R_1$$ first, $$R_k$$ last). Then the process of transforming $$A$$ into its reduced row echelon form is 
+
+$$ R_k R_{k-1} \cdots R_1 A = I.\tag{(1)}$$
+
+Letting 
+
+$$B \stackrel{\text{def}}{=} R_k R_{k-1} \cdots R_1, \tag{(2)}$$ 
+
+we have $$BA=I$$. The converse is true too, but we will show it after the next step.
 
 
-We only prove that if $$A$$ is a $$n\times n$$ matrix with $$n$$
-pivots, there is a matrix $$B$$ such that $$AB=I$$ in this
-writeup. The converse is left as an exercise. If you cannot prove the
-converse yourself, I strongly recommend you come to me and learn how
-to prove it.
+### If $$A$$ is $$n\times n$$ matrix with $$n$$ pivots, if there is a matrix $$B$$ such that $$AB=I$$
 
+We will actually show that the same matrix $$B$$ from Equation~{(2)} will satisfy $$AB=I$$. Start from Equation~(1). Note that each row operation we perform is reversible by another row operation (for example, add 2 $$\times$ row 1 to row 2 is reversed by subtract 2 $$\times$$ row 1 from row2), and denote the reversal of operation $$R_i$$ by $$R_i^{-1}$$. In matrix form, the reversal is another multiplication on the left, so we have for all $$i$$,
+
+$$R_i^{-1} R_i =I.$$ 
+
+Then (note that you have to undo the last operation first---if you wear socks and shoes, you have to remove shoes first then socks):
+
+$$ A = R_1^{-1} \cdots R_{k}^{-1}. $$
+
+Now it is simple to verify that using Equation~(2) and the associative
+law of multiplication (if you have a series of matrices you are
+multiplying, you can multiply any two adjacent matrices first and
+replace them with their product, as long as you do not mess up the
+order of matrices):
+
+$$ AB = (R_1^{-1} \cdots R_{k}^{-1}) (R_k R_{k-1} \cdots R_1) = I $$
+
+The matrix $$B$$ above is called the **inverse** of $$A$$ and is denoted
+by $$A^{-1}$$.
+
+### If for any square $$n\times n$$ matrix $$A$$, there is another matrix $$B$$ such that $$AB=I$$, then $$A$$ has $$n$$ pivots.
+
+This is a result that follows from combining ideas in elimination and
+matrix multiplication. Because $$AB=I$$, every column of $$I$$ is a
+linear combination of the columns of $$A$$. Furthermore any vector
+$${\bf b}$$ is a linear combination of the columns of the identity matrix.
+
+Therefore, consider elimination of the following matrix
+
+$$\begin{bmatrix} A & I & {\bf b} \end{bmatrix}$$
+
+Where are the pivots? Since every column of $$I$$ is known to be a linear
+combination of the columns of $$A$$, they are all free. 
+
+The last column cannot be a pivot column no matter how we choose $$\bf
+b$$ since they are definitely a linear combination of the columns of
+$$I$$ (note, to note that $$\bf b$$ will be a free columns, we don't
+need to worry if they are linear combinations of the columns of
+$$A$$!). 
+
+So no matter how we choose the vector $$\bf b$$, we cannot have a pivot in
+that column. The only way this can happen is if all $$n$$ __rows__ of the augmented matrix above have pivots before we come to the final column. Since the pivots were not in the columns of $$I$$, they must have been in $$A$$. Therefore $$A$$ has $$n$$ pivots.
+
+### Another operational way to find inverses
 Not all square $$n\times n$$ matrices have $$n$$ pivots. But suppose
 $$A$$ is a square $$n\times n$$ matrix with $$n$$ pivots. Then when
 you consider solving $$A{\bf x} = {\bf b}$$, the augmented matrix is
