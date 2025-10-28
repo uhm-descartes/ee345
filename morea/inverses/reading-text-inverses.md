@@ -99,7 +99,7 @@ columns of $$A$$!).
 So no matter how we choose the vector $$\bf b$$, we cannot have a pivot in
 that column. The only way this can happen is if all $$n$$ __rows__ of the augmented matrix above have pivots before we come to the final column. Since the pivots were not in the columns of $$I$$, they must have been in $$A$$. Therefore $$A$$ has $$n$$ pivots.
 
-### Another operational way to find inverses
+### An operational way to find inverses
 Not all square $$n\times n$$ matrices have $$n$$ pivots. But suppose
 $$A$$ is a square $$n\times n$$ matrix with $$n$$ pivots. Then we saw
 there is a matrix $$A^{-1}$$ such that $$AA^{-1}=I$$. The form of the 
@@ -114,7 +114,9 @@ $$\begin{bmatrix} {\bf e}_1 & \cdots & {\bf e}_n \end{bmatrix}
 = I = AA^{-1} = A\begin{bmatrix} {\bf x}_1 &\cdots & {\bf x}_n \end{bmatrix},$$
 
 where we think of the $$n$$ columns of $$A^{-1}$$ as 
-$${\bf x}_1, \cdots, {\bf x}_n$$ respectively. Of course, rewriting,
+$${\bf x}_1, \cdots, {\bf x}_n$$ respectively. Of course, rewriting the above, we have
+
+
 $$\begin{bmatrix} {\bf e}_1 & \cdots & {\bf e}_n \end{bmatrix}
 =
 I 
