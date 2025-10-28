@@ -46,18 +46,18 @@ Now we perform a series of reversible row operations to get $$A$$ into the rref 
 
 Let the operations we perform correspond to $$R_1, R_2, \ldots R_k$$ in sequence (meaning we perform row operation $$R_1$$ first, $$R_k$$ last). Then the process of transforming $$A$$ into its reduced row echelon form is 
 
-$$ R_k R_{k-1} \cdots R_1 A = I.\tag{(1)}$$
+$$ R_k R_{k-1} \cdots R_1 A = I.\tag{1}$$
 
 Letting 
 
-$$B \stackrel{\text{def}}{=} R_k R_{k-1} \cdots R_1, \tag{(2)}$$ 
+$$B \stackrel{\text{def}}{=} R_k R_{k-1} \cdots R_1, \tag{2}$$ 
 
 we have $$BA=I$$. The converse is true too, but we will show it after the next step.
 
 
 ### If $$A$$ is $$n\times n$$ matrix with $$n$$ pivots, if there is a matrix $$B$$ such that $$AB=I$$
 
-We will actually show that the same matrix $$B$$ from Equation~{(2)} will satisfy $$AB=I$$. Start from Equation~(1). Note that each row operation we perform is reversible by another row operation (for example, add 2 $$\times$ row 1 to row 2 is reversed by subtract 2 $$\times$$ row 1 from row2), and denote the reversal of operation $$R_i$$ by $$R_i^{-1}$$. In matrix form, the reversal is another multiplication on the left, so we have for all $$i$$,
+We will actually show that the same matrix $$B$$ from Equation~{(2)} will satisfy $$AB=I$$. Start from Equation~(1). Note that each row operation we perform is reversible by another row operation (for example, add 2 $$\times$$ row 1 to row 2 is reversed by subtract 2 $$\times$$ row 1 from row2), and denote the reversal of operation $$R_i$$ by $$R_i^{-1}$$. In matrix form, the reversal is another multiplication on the left, so we have for all $$i$$,
 
 $$R_i^{-1} R_i =I.$$ 
 
@@ -91,10 +91,10 @@ Where are the pivots? Since every column of $$I$$ is known to be a linear
 combination of the columns of $$A$$, they are all free. 
 
 The last column cannot be a pivot column no matter how we choose $$\bf
-b$$ since they are definitely a linear combination of the columns of
-$$I$$ (note, to note that $$\bf b$$ will be a free columns, we don't
-need to worry if they are linear combinations of the columns of
-$$A$$!). 
+b$$, since they are definitely a linear combination of the columns of
+$$I$$ (to note that $$\bf b$$ will be a free columns, we really don't
+need to care at this point if they are linear combinations of the
+columns of $$A$$!).
 
 So no matter how we choose the vector $$\bf b$$, we cannot have a pivot in
 that column. The only way this can happen is if all $$n$$ __rows__ of the augmented matrix above have pivots before we come to the final column. Since the pivots were not in the columns of $$I$$, they must have been in $$A$$. Therefore $$A$$ has $$n$$ pivots.
