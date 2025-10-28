@@ -137,21 +137,7 @@ $$\begin{align*}
 Each equation above has a unique solution since $$A$$ has no free columns.
 Therefore, we get for free that $$A^{-1}$$ must be unique.
 
-### Every $$n\times n$$ square $$A$$ with $$n$$ pivots has a unique inverse $$A^{-1}$$ satisfying $$AA^{-1} = A^{-1}A = I$$.
-
-We will show that the matrices $$B$$ and $$C$$ of the prior sections must
-be equal. To see this, note that
-
-$$CAB = (CA)B = IB = B$$
-
-but also
-
-$$CAB = C(AB) = CI = C,$$
-
-so that $$CAB = B = C$$, or $$B=C$$. Recall also that we observed
-$$B$$ was unique, so $$C$$ must be as well. We call this unique matrix
-$$B= C= A^{-1}$$ as the _inverse_ of $$A$$.
-
-
+The above is a more self contained, logical and pedagogical (rather than encyclopediac) enunciation of the concept of inverses. The point here is that inverses
+are not a mysterious or complicated new concept---it is just an observation of what happens when a square matrix has a full set of pivots. 
 
 
