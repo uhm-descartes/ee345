@@ -21,8 +21,6 @@ triangular matrix in the Gaussian elimination module, we went on to get
 to the reduced row echelon form, which is only introduced now in Chapter 3.2.
 
 ## Column and row spaces
-$$\newcommand{\cL}{{\mathcal L}}$$
-$$\newcommand{\x}{{\bf x}}$$
 $$\newcommand{\u}{{\bf u}}$$
 $$\newcommand{\v}{{\bf v}}$$
 $$\newcommand{\sets}[1]{\left\{ #1 \right\}}
@@ -32,8 +30,8 @@ Instead when we see a bunch of vectors, we also think of every
 vector that can be formed by linear combinations of the given vectors. This
 is the motivation behind why we define linear spaces.
 
-A linear space $$\cL$$ is a set of vectors that are **closed under linear combinations**. This means that if you take any finite set of vectors $$\sets{\x_1\upto x_n}\subseteq \cL$$, then for all numbers $$\alpha_1\upto \alpha_n$$, the linear combination
+A linear space $${\mathcal L}$$ is a set of vectors that are **closed under linear combinations**. This means that if you take any finite set of vectors $$\left\{{\bf x}_1\upto {\bf x}_n \right\}\subseteq {\mathcal L}$$, then for all numbers $$\alpha_1\upto \alpha_n$$, the linear combination
 
-$$\alpha_1 \x_1 + \cdots + \alpha_n \x_n$$
+$$\alpha_1 {\bf x}_1 + \cdots + \alpha_n {\bf x}_n$$
 
-is also in $$\cL$$. So we cannot generate an element out of the set $$\cL$$ by making linear combinations of elements from $$\cL$$.
+is also in $${\mathcal L}$$. So we cannot generate an element out of the set $${\mathcal L}$$ by making linear combinations of elements from $${\mathcal L}$$.
