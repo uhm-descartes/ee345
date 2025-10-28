@@ -35,7 +35,13 @@ There is no reason for a detective novel approach. The idea of an
 inverse follows naturally from Elimination, as do its properties. Here
 is how we approached this in class.
 
+
+### $$A$$ is $$n\times n$$ matrix with $$n$$ pivots iff there is a matrix $$B$$ such that $$BA=I$$
+
+If $$A$$ has $$n$$ pivots
+
 ### $$A$$ is $$n\times n$$ matrix with $$n$$ pivots iff there is a matrix $$B$$ such that $$AB=I$$
+
 
 We only prove that if $$A$$ is a $$n\times n$$ matrix with $$n$$
 pivots, there is a matrix $$B$$ such that $$AB=I$$ in this
