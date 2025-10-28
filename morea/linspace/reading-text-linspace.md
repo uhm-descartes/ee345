@@ -42,6 +42,27 @@ $$ \text{col}(A) = \left\{ A{\bf w} : {\bf w} \in {\mathbb R}^n \right\}, $$
 
 and every element of col$$(A)$$ is a vector with $$m$$ coordinates, i.e. col$$(A)\subseteq {\mathbb R}^m$$.
 
-Why is this a linear space? Let $${\bf u}_1, \cdots {\bf u}_n$$ be $$n$$ elements of the column space. Since each vector is a linear combination of the columns of $$A$$, $${\bf u}_i = A{\bf w}_i$$ for some $${\bf w}_i\in{\mathbb R}^n$$. Therefore, 
+Why is this a linear space? Let $${\bf u}_1, \cdots {\bf u}_n$$ be $$n$$ elements of the column space. Now, any linear combination of $${\bf u}_1, \cdots {\bf u}_n$$ is
 
-$$\begin{bmatrix 
+$$\begin{bmatrix} {\bf u}_1 & \cdots & {\bf u}_n \end{bmatrix} {\bf z},$$
+
+where $$\bf z$$ is a vector with $$n$$ coordinates. But
+since each vector is a linear combination of the columns of $$A$$, $${\bf u}_i = A{\bf w}_i$$ for some $${\bf w}_i\in{\mathbb R}^n$$, we have
+
+$$\begin{bmatrix} {\bf u}_1 & \cdots & {\bf u}_n \end{bmatrix}{\bf z}
+=
+\begin{bmatrix} A{\bf w}_1 & \cdots & A{\bf w}_n \end{bmatrix}{\bf z}
+=
+A\begin{bmatrix} {\bf w}_1 & \cdots & {\bf w}_n \end{bmatrix}{\bf z}
+= AW{\bf z} = A{\bf c},
+$$
+
+where $$W$$ is the matrix $$\begin{bmatrix} {\bf w}_1 & \cdots & {\bf w}_n \end{bmatrix}$$ and $$\bf c$$ is the vector $$W{\bf z}$$. But $$A{\bf c}$$ is simply a linear combination of the columns of $$A$$ again, thus it belongs to the column space of $$A$$. 
+
+Therefore we showed that any linear combination of vectors in the column space of $$A$$ is simply another linear combination of the columsn of $$A$$, thus a member of the column space of $$A$$ again. Therefore the column space of $$A$$ is a linear space.
+
+## Null space of $$A$$
+
+The null space of $$A$$ borrows ideas from elimination. The idea is that every time a (free) column is a linear combination of the prior columns, we can write a vector $$\bf z$$ that is both non-zero and that satisfies $$A{\bf z}={\bf 0}$$.
+
+Why? 
