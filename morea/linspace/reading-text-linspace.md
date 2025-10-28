@@ -35,3 +35,13 @@ A linear space $${\mathcal L}$$ is a set of vectors that are **closed under line
 $$\alpha_1 {\bf x}_1 + \cdots + \alpha_n {\bf x}_n$$
 
 is also in $${\mathcal L}$$. So we cannot generate an element out of the set $${\mathcal L}$$ by making linear combinations of elements from $${\mathcal L}$$.
+
+We went over multiple examples in class. The most important are the fundamental spaces of a matrix. The first is the column space of $$A$$, which is the set of all linear combinations of the columns of $$A$$. In other words, if $$A$$ is a $$m\times n$$ matrix, 
+
+$$ \text{col}(A) = \left\{ A{\bf w} : {\bf w} \in {\mathbb R}^n \right\}, $$
+
+and every element of col$$(A)$$ is a vector with $$m$$ coordinates, i.e. col$$(A)\subseteq {\mathbb R}^m$$.
+
+Why is this a linear space? Let $${\bf u}_1, \cdots {\bf u}_n$$ be $$n$$ elements of the column space. Since each vector is a linear combination of the columns of $$A$$, $${\bf u}_i = A{\bf w}_i$$ for some $${\bf w}_i\in{\mathbb R}^n$$. Therefore, 
+
+$$\begin{bmatrix 
