@@ -101,27 +101,21 @@ that column. The only way this can happen is if all $$n$$ __rows__ of the augmen
 
 ### Another operational way to find inverses
 Not all square $$n\times n$$ matrices have $$n$$ pivots. But suppose
-$$A$$ is a square $$n\times n$$ matrix with $$n$$ pivots. Then when
-you consider solving $$A{\bf x} = {\bf b}$$, the augmented matrix is
+$$A$$ is a square $$n\times n$$ matrix with $$n$$ pivots. Then we saw
+there is a matrix $$A^{-1}$$ such that $$AA^{-1}=I$$. The form of the 
+above equation is also a simple recipe to find $$A^{-1}$$.
 
-$$ \begin{bmatrix} A & {\bf b} \end{bmatrix}. $$
-
-When doing elimination on the augmented matrix above, notice that
-we find a pivot in each of the first $$n$$ columns because $$A$$ has
-a pivot in each column, the presence of the augmented column doesn't
-change the pivots we obtained for the first $$n$$ columns. At the
-end of the $$n'$$th column, we have exhausted all rows, so there are
-no more pivots to be found. 
-
-Therefore the last column is a _free_ column, regardless of what $$\bf
-b$$ is. Therefore $$A{\bf x}={\bf b}$$ has a solution for all $$\bf b$$.
-Moreover the solution is unique since $$A$$ has no free columns. 
-
-For $$1\le i\le n$$, let $${\bf e}_i$$ be a vector with $$n$$
+For $$1\le i\le n$$, let $${\bf e}_i$$ be the $$i'$$th column of the
+identity matrix $$I$$, a vector with $$n$$
 coordinates, 1 in the $$i'$$th coordinate and 0 everywhere
-else. Therefore, there exists unique vectors $${\bf x}_i$$, $$1\le i\le n$$
-such that
+else. So we are seeing $$AA^{-1}=I$ as
 
+$$\begin{bmatrix} {\bf e}_1 & \cdots & {\bf e}_n \end{bmatrix}
+= I = AA^{-1} = A\begin{bmatrix} {\bf x}_1 &\cdots & {\bf x}_n \end{bmatrix},$$
+
+where we think of the $$n$$ columns of $$A^{-1}$$ as 
+$${\bf x}_1, \cdots, {\bf x}_n$$ respectively. Then we immediately see that the
+columns of $$A^{-1}$$ are respectively solutions of the equations 
 $$\begin{align*} 
 	A{\bf x}_1 &= {\bf e}_1\\
 		\vdots\\
@@ -130,44 +124,8 @@ $$\begin{align*}
 	A{\bf x}_n &= {\bf e}_n\\
 \end{align*}$$
 
-Therefore, there is a _unique_ matrix $$B$$
-
-$$ B = \begin{bmatrix} {\bf x}_1 & \ldots & {\bf x}_n \end{bmatrix} $$
-
-satisfying
-
-$$A B = \begin{bmatrix} A {\bf x}_1 & \ldots & A{\bf x}_n \end{bmatrix} = 
-\begin{bmatrix} {\bf e}_1 & \ldots & {\bf e}_n \end{bmatrix} = I_n. $$
-
-The converse would be: if there is a matrix $$B$$ satisfying $$AB=I$$
-for a $$n\times n $$ matrix $$A$$, then $$A$$ must have $$n$$ pivots.
-
-We will not prove it in class due to time constraints, but I strongly
-urge you to prove the converse. In fact, you can prove a stronger
-statement than given: if there is a matrix $$B$$ satisfying $$AB=I$$
-for a $$n\times n $$ matrix $$A$$, then both $$A$$ and $$B$$ must have
-$$n$$ pivots each.
-
-### For all $$n\times n$$ matrices $$A$$ with $$n$$ pivots, there is a matrix $$C$$ such that $$CA=I$$
-
-This follows from one of the problems in the prior module. Recall that if $$A$$
-is square with $$n$$ pivots, Gaussian elimination (row operations) allows us
-to write
-
-$$ U_1\cdots U_1 D L_n\cdots L_1 A =I, $$
-
-where $$U_i$$ is the matrix that does the row operations to find and eliminate
-every number above the pivot in the $$i'$$th column, $$D$$ normalizes
-each of the $$n$$ pivots to 1, and $$L_j$$ finds and zeros every entry below the
-pivot in the $$j'$$th column. We say "finds" because while tackling any column,
-it may be necessary to perform a row permutation to bring the pivot to its place. Note also that we use $$U_i$$ and $$L_j$$, but if row permutations were used, they may not correspond to upper-triangular or lower-triangular matrix (we use
-it nevertheless to indicate above/below pivot).
-
-Let 
-
-$$ C = U_1\cdots U_1 D L_n\cdots L_1. $$
-
-Thus $$CA = I$$.
+Each equation above has a unique solution since $$A$$ has no free columns.
+Therefore, we get for free that $$A^{-1}$$ must be unique.
 
 ### Every $$n\times n$$ square $$A$$ with $$n$$ pivots has a unique inverse $$A^{-1}$$ satisfying $$AA^{-1} = A^{-1}A = I$$.
 
