@@ -57,7 +57,7 @@ we have $$BA=I$$. The converse is true too, but we will show it after the next s
 
 ### If $$A$$ is $$n\times n$$ matrix with $$n$$ pivots, if there is a matrix $$B$$ such that $$AB=I$$
 
-We will actually show that the same matrix $$B$$ from Equation~{(2)} will satisfy $$AB=I$$. Start from Equation~(1). Note that each row operation we perform is reversible by another row operation (for example, add 2 $$\times$$ row 1 to row 2 is reversed by subtract 2 $$\times$$ row 1 from row2), and denote the reversal of operation $$R_i$$ by $$R_i^{-1}$$. In matrix form, the reversal is another multiplication on the left, so we have for all $$i$$,
+We will actually show that the same matrix $$B$$ from Equation (2) will satisfy $$AB=I$$. Start from Equation (1). Note that each row operation we perform is reversible by another row operation (for example, add 2 $$\times$$ row 1 to row 2 is reversed by subtract 2 $$\times$$ row 1 from row2), and denote the reversal of operation $$R_i$$ by $$R_i^{-1}$$. In matrix form, the reversal is another multiplication on the left, so we have for all $$i$$,
 
 $$R_i^{-1} R_i =I.$$ 
 
@@ -108,14 +108,24 @@ above equation is also a simple recipe to find $$A^{-1}$$.
 For $$1\le i\le n$$, let $${\bf e}_i$$ be the $$i'$$th column of the
 identity matrix $$I$$, a vector with $$n$$
 coordinates, 1 in the $$i'$$th coordinate and 0 everywhere
-else. So we are seeing $$AA^{-1}=I$ as
+else. So we are seeing $$AA^{-1}=I$$ as
 
 $$\begin{bmatrix} {\bf e}_1 & \cdots & {\bf e}_n \end{bmatrix}
 = I = AA^{-1} = A\begin{bmatrix} {\bf x}_1 &\cdots & {\bf x}_n \end{bmatrix},$$
 
 where we think of the $$n$$ columns of $$A^{-1}$$ as 
-$${\bf x}_1, \cdots, {\bf x}_n$$ respectively. Then we immediately see that the
+$${\bf x}_1, \cdots, {\bf x}_n$$ respectively. Of course, rewriting,
+$$\begin{bmatrix} {\bf e}_1 & \cdots & {\bf e}_n \end{bmatrix}
+=
+I 
+=
+A\begin{bmatrix} {\bf x}_1 &\cdots & {\bf x}_n \end{bmatrix} = 
+\begin{bmatrix} A{\bf x}_1 &\cdots & A{\bf x}_n \end{bmatrix} .
+$$
+
+Then we immediately see that the
 columns of $$A^{-1}$$ are respectively solutions of the equations 
+
 $$\begin{align*} 
 	A{\bf x}_1 &= {\bf e}_1\\
 		\vdots\\
