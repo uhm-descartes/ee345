@@ -5,6 +5,7 @@ morea_id: reading-text-linspace
 morea_summary: "Chapters 3.1 and 3.2"
 morea_type: reading
 morea_labels:
+render_with_liquid: false
 ---
 
 We primarily focus on the definitions of the linear spaces here. You have
@@ -21,6 +22,12 @@ triangular matrix in the Gaussian elimination module, we went on to get
 to the reduced row echelon form, which is only introduced now in Chapter 3.2.
 
 ## Column and row spaces
+<<<<<<< HEAD
+=======
+$$\newcommand{\u}{{\bf u}}$$
+$$\newcommand{\v}{{\bf v}}$$
+$$\newcommand{\sets}[1]{\left\{ #1 \right\}}$$
+>>>>>>> 54249c4eede4bdbb46bdd8f626e4c4440cdafc4a
 We have been seeing matrices in terms of its rows and columns, but to really
 use the power of the ideas we are developing, we have to go beyond even this.
 Instead when we see a bunch of vectors, we also think of every
@@ -46,7 +53,8 @@ $$\begin{bmatrix} {\bf u}_1 & \cdots & {\bf u}_n \end{bmatrix} {\bf z},$$
 where $$\bf z$$ is a vector with $$n$$ coordinates. But
 since each vector is a linear combination of the columns of $$A$$, $${\bf u}_i = A{\bf w}_i$$ for some $${\bf w}_i\in{\mathbb R}^n$$, we have
 
-$$\begin{bmatrix} {\bf u}_1 & \cdots & {\bf u}_n \end{bmatrix}{\bf z}
+$$
+\begin{bmatrix} {\bf u}_1 & \cdots & {\bf u}_n \end{bmatrix}{\bf z}
 =
 \begin{bmatrix} A{\bf w}_1 & \cdots & A{\bf w}_n \end{bmatrix}{\bf z}
 =
