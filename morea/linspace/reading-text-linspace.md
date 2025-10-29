@@ -34,7 +34,7 @@ Instead when we see a bunch of vectors, we also think of every
 vector that can be formed by linear combinations of the given vectors. This
 is the motivation behind why we define linear spaces.
 
-A linear space $${\mathcal L}$$ is a set of vectors that are **closed under linear combinations**. This means that if you take any finite set of vectors $$\left\{{\bf x}_1\upto {\bf x}_n \right\}\subseteq {\mathcal L}$$, then for all numbers $$\alpha_1\upto \alpha_n$$, the linear combination
+A linear space $${\mathcal L}$$ is a set of vectors that are **closed under linear combinations**. This means that if you take any finite set of vectors $$\left\{{\bf x}_1, \cdots, {\bf x}_n \right\}\subseteq {\mathcal L}$$, then for all numbers $$\alpha_1,\ldots, \alpha_n$$, the linear combination
 
 $$\alpha_1 {\bf x}_1 + \cdots + \alpha_n {\bf x}_n$$
 
