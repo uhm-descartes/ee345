@@ -22,12 +22,6 @@ triangular matrix in the Gaussian elimination module, we went on to get
 to the reduced row echelon form, which is only introduced now in Chapter 3.2.
 
 ## Column and row spaces
-<<<<<<< HEAD
-=======
-$$\newcommand{\u}{{\bf u}}$$
-$$\newcommand{\v}{{\bf v}}$$
-$$\newcommand{\sets}[1]{\left\{ #1 \right\}}$$
->>>>>>> 54249c4eede4bdbb46bdd8f626e4c4440cdafc4a
 We have been seeing matrices in terms of its rows and columns, but to really
 use the power of the ideas we are developing, we have to go beyond even this.
 Instead when we see a bunch of vectors, we also think of every
