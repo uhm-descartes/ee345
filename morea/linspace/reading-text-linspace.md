@@ -40,7 +40,7 @@ $$ \text{col}(A) = \left\{ A{\bf w} : {\bf w} \in {\mathbb R}^n \right\}, $$
 
 and every element of col$$(A)$$ is a vector with $$m$$ coordinates, i.e. col$$(A)\subseteq {\mathbb R}^m$$.
 
-Why is this a linear space? Let $${\bf u}_1, \cdots {\bf u}_n$$ be $$n$$ elements of the column space. Now, any linear combination of $${\bf u}_1, \cdots {\bf u}_n$$ is
+Why is this a linear space? Let $${\bf u}_1, \cdots {\bf u}_n$$ be $$n$$ elements of the column space. Now, any linear combination of $${\bf u}_1, \cdots {\bf u}_n$$ is the product
 
 $$\begin{bmatrix} {\bf u}_1 & \cdots & {\bf u}_n \end{bmatrix} {\bf z},$$
 
@@ -72,5 +72,7 @@ So the relation between columns just translated to a linear combination above of
 
 $$ A \begin{bmatrix} -1 \\ -1\\ 1\\ 0 \\ 0 \end{bmatrix} = {\bf 0}.$$
 
-Similarly, every time anyone gives us a non-zero vector $$\bf z$$ such that $$A{\bf z} = 0$$, we can see it equivalently as a non-trivial dependency among the columns of the matrix. 
+Similarly, every time anyone gives us a non-zero vector $$\bf z$$ such that $$A{\bf z} = 0$$, we can see it equivalently as a non-trivial dependency among the columns of the matrix. This is the most fundamental meaning of vectors in null spaces: they just capture how free columns are linear combinations of pivot columns.
+
+You should be very comfortable in translating column dependencies to vectors in the null spaces. 
 
