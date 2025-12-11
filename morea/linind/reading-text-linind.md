@@ -33,5 +33,10 @@ column (from the rref).
 ## Additional insights
 
 $$\newcommand{\upto}{,\cdots,}$$
-$$\newcommand{\v}{{\bf v}}$$
-If you have $$n$$ linearly independent vectors $$\v_1\upto \v_n$$,
+$$\newcommand{\vee}{{\bf v}}$$
+$$\newcommand{\reals}{{\mathbb R}}$$
+If you have $$n$$ linearly independent vectors $$\vee_1\upto \vee_n \in \reals^d$$, let
+
+$$ V = \begin{bmatrix} \vee_1 & \ldots & \vee_n \end{bmatrix}$$
+
+be the $d\times n$ matrix that places all the $$n$$ vectors as its columns. 
