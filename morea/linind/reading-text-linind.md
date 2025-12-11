@@ -32,11 +32,13 @@ column (from the rref).
 
 ## Additional insights
 
-$$\newcommand{\upto}{,\cdots,}$$
-$$\newcommand{\vee}{{\bf v}}$$
-$$\newcommand{\reals}{{\mathbb R}}$$
+$$\newcommand{\upto}{,\cdots,}
+\newcommand{\vee}{{\bf v}}
+\newcommand{\reals}{{\mathbb R}}$$
+
 If you have $$n$$ linearly independent vectors $$\vee_1\upto \vee_n \in \reals^d$$, let
 
 $$ V = \begin{bmatrix} \vee_1 & \ldots & \vee_n \end{bmatrix}$$
 
-be the $d\times n$ matrix that places all the $$n$$ vectors as its columns. 
+be the $d\times n$ matrix that places all the $$n$$ vectors as its columns. By definition of linear independence all columns are pivot columns. One of the first insights is that any reordering of the columns of $$V$$ (where all columns are pivots) still keeps all
+columns to be pivot columns. 
