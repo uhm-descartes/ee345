@@ -62,7 +62,7 @@ Therefore we showed that any linear combination of vectors in the column space o
 
 ## Null space of $$A$$
 
-The null space of $$A$$ borrows ideas from elimination. The idea is that every time a (free) column is a linear combination of the prior columns, we can write a vector $$\bf z$$ that is both non-zero and that satisfies $$A{\bf z}={\bf 0}$$.
+The null space of $$A$$ borrows ideas from elimination. The idea is that every time a (free) column is a linear combination of the prior columns, we can write a vector $$\bf z$$ that is both non-zero and that satisfies $$A{\bf z}={\bf 0}$$. This is the most elementary and operational way to understand vectors in the null space: they capture column dependencies in the matrix.  
 
 Why? Suppose we have a matrix $$A$$ with 5 columns, where column 3 is free, and is the sum of the prior two columns. Then, we have (writing $${\bf c}_i$$ for column $$i$$)
 
@@ -73,6 +73,8 @@ So the relation between columns just translated to a linear combination above of
 $$ A \begin{bmatrix} -1 \\ -1\\ 1\\ 0 \\ 0 \end{bmatrix} = {\bf 0}.$$
 
 Similarly, every time anyone gives us a non-zero vector $$\bf z$$ such that $$A{\bf z} = 0$$, we can see it equivalently as a non-trivial dependency among the columns of the matrix. This is the most fundamental meaning of vectors in null spaces: they just capture how free columns are linear combinations of pivot columns.
+
+Indeed, we can get one such non-zero vector for every free column. These non-zero vectors (for distinct free columns), as we will see in the next module are all linearly independent (meaning none of them can be written as linear combinations of others). What is more, they are also maximal, meaning that every other vector in the null space is simply a linear combination of these vectors.
 
 You should be very comfortable in translating column dependencies to vectors in the null spaces. 
 
