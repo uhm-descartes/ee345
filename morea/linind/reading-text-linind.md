@@ -32,15 +32,16 @@ column (from the rref).
 
 ## Additional insights
 
-$$\newcommand{\upto}{,\cdots,}
-\renewcommand{\v}{{\bf v}}
-\newcommand{\reals}{{\mathbb R}}$$
+$$\newcommand{\upto}{,\cdots,}$$
+$$\renewcommand{\v}{{\bf v}}$$
+$$\providecommand{\reals}{{\mathbb R}}$$
 
 If you have $$n$$ linearly independent vectors $$\v_1\upto \v_n \in \reals^d$$, let
 
-$$ V = \begin{bmatrix} \v_1 & \ldots & \v_n \end{bmatrix}$$
+$$ V = \begin{bmatrix} \v_1 & \cdots & \v_n \end{bmatrix}$$
 
 be the $d\times n$ matrix that places all the $$n$$ vectors as its columns. By definition of linear independence all columns are pivot columns. One of the first insights is that any reordering of the columns of $$V$$ (where all columns are pivots) still keeps all
 columns to be pivot columns. Can you see (by contradiction) why this should be so?
 
 Now this means (using our way of solving equations by putting the target as the last column of an augmented matrix) that no vector $$\v_i$$ can be written as a linear combination of the other $$n-1$$ vectors.
+
