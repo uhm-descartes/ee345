@@ -30,4 +30,8 @@ columns).  In fact, you also know how to get the exact linear
 combination of the prior columns that yields that particular free
 column (from the rref).
 
+## Additional insights
 
+$$\newcommand{\upto}{,\cdots,}$$
+$$\newcommand{\v}{{\bf v}}$$
+If you have $$n$$ linearly independent vectors $$\v_1\upto \v_n$$,
