@@ -1,0 +1,74 @@
+NewQuestion,MS,,,
+ID,ECE345-001,,,
+Title,Eigenvalues and zero eigenvalues,,,
+QuestionText,Let \(A\) be an \(n\times n\) real matrix. Which statements are true,,,
+Points,10,,,
+Difficulty,2,,,
+Image,,,,
+Scoring,RightAnswers,,,
+Option,1,If \(0\) is an eigenvalue of \(A\) then \(A\) is non invertible,,Correct
+Option,1,If \(A\) is non invertible then \(0\) is an eigenvalue of \(A\),,Correct
+Option,1,If \(A\) has a zero row then \(0\) must be an eigenvalue of \(A\),,Correct
+Option,1,If \(A\) has a zero eigenvalue then \(\det(A)=0\),,Correct
+Hint,Think about how the determinant relates to eigenvalues,,,
+Feedback ,Zero determinant and zero eigenvalue are tightly related,,,
+
+NewQuestion,MS,,,
+ID,ECE345-002,,,
+Title,Maximum of xT A x for unit x,,,
+QuestionText,Let \(A\) be symmetric with eigenvalues \(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_n\). What is true about \(\max_{\|x\|=1} x^TAx\),,,
+Points,10,,,
+Difficulty,3,,,
+Image,,,,
+Scoring,RightAnswers,,,
+Option,1,The maximum equals \(\lambda_1\),,Correct
+Option,1,It is attained exactly at eigenvectors corresponding to \(\lambda_1\),,Correct
+Option,0,It depends on the choice of basis,,Incorrect
+Option,1,For all unit \(x\) we have \(x^TAx\le \lambda_1\),,Correct
+Hint,Recall the Rayleigh quotient for symmetric matrices,,,
+Feedback ,This is the Rayleigh Ritz characterization of the top eigenvalue,,,
+
+NewQuestion,MS,,,
+ID,ECE345-003,,,
+Title,Eigenvalues of powers of a symmetric matrix,,,
+QuestionText,Let \(A\) be symmetric with eigenpairs \((\lambda_i,v_i)\). Which statements are true about \(A^k\) for an integer \(k\ge 1\),,,
+Points,10,,,
+Difficulty,3,,,
+Image,,,,
+Scoring,RightAnswers,,,
+Option,1,The eigenvalues of \(A^k\) are \(\lambda_i^k\),,Correct
+Option,1,Every eigenvector of \(A\) is an eigenvector of \(A^k\),,Correct
+Option,0,The eigenvalue multiplicities are always preserved for all integers \(k\ge 1\),,Incorrect
+Option,1,The matrix \(A^k\) is diagonalizable if and only if \(A\) is diagonalizable,,Correct
+Hint,Use the spectral decomposition of \(A\) and raise it to the power \(k\),,,
+Feedback ,Diagonalization makes the effect of powers on eigenvalues and eigenvectors transparent,,,
+
+NewQuestion,MS,,,
+ID,ECE345-004,,,
+Title,Relating eigenvectors of A^T A and A A^T,,,
+QuestionText,Let \(A\) be an \(m\times n\) real matrix. Suppose \(\sigma^2>0\) is a nonzero eigenvalue of both \(A^TA\) and \(AA^T\). Which statements are true,,,
+Points,10,,,
+Difficulty,4,,,
+Image,,,,
+Scoring,RightAnswers,,,
+Option,1,If \(v\) is an eigenvector of \(A^TA\) with eigenvalue \(\sigma^2\) then \(Av\) is an eigenvector of \(AA^T\) with eigenvalue \(\sigma^2\),,Correct
+Option,1,If \(u\) is an eigenvector of \(AA^T\) with eigenvalue \(\sigma^2\) then \(A^Tu\) is an eigenvector of \(A^TA\) with eigenvalue \(\sigma^2\),,Correct
+Option,1,The nonzero eigenvalues of \(A^TA\) and \(AA^T\) always coincide and are counted with multiplicity,,Correct
+Option,1,If \(v\) is an eigenvector of \(A^TA\) with eigenvalue \(\sigma^2>0\) then \(Av\neq 0\) and if \(u\) is an eigenvector of \(AA^T\) with eigenvalue \(\sigma^2>0\) then \(A^Tu\neq 0\),,Correct
+Hint,Think about the singular value decomposition and how it connects these two matrices,,,
+Feedback ,Nonzero eigenvalues of \(A^TA\) and \(AA^T\) correspond to squared singular values and share linked eigenvectors,,,
+
+NewQuestion,MS,,,
+ID,ECE345-005,,,
+Title,Spectral decomposition of a symmetric matrix,,,
+QuestionText,Let \(A\) be a real symmetric \(n\times n\) matrix with spectral decomposition \(A = V\Lambda V^T\). Which statements are true,,,
+Points,10,,,
+Difficulty,3,,,
+Image,,,,
+Scoring,RightAnswers,,,
+Option,1,Columns of \(V\) can be chosen to form an orthonormal basis of \(\mathbb{R}^n\),,Correct
+Option,1,The diagonal entries of \(\Lambda\) are eigenvalues of \(A\) listed with algebraic multiplicity,,Correct
+Option,1,If all eigenvalues of \(A\) are distinct then the decomposition is unique up to signs of the eigenvectors,,Correct
+Option,0,For a symmetric matrix \(A\) it may happen that there is no orthogonal \(V\) and diagonal \(\Lambda\) such that \(A = V\Lambda V^T\),,Incorrect
+Hint,Recall the spectral theorem for real symmetric matrices,,,
+Feedback ,The spectral theorem guarantees an orthogonal eigenbasis and a decomposition \(A = V\Lambda V^T\),,,
