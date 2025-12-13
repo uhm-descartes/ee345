@@ -69,6 +69,7 @@ of $${\bf v}_1,\cdots, {\bf v}_n$$.
 Conversely, if every vecotr $$\bf x$$ in a linear space can be written as a linear combination of a set of linearly independent vectors $${\bf v}_1,\cdots, {\bf v}_n$$, then 
 the set is maximal by definition. 
 
+
 ## Column and row spaces
 
 The above discussion implies that if $$A$$ is a matrix with rref $$R$$, the pivot columns of $$A$$ are a maximal linearly independent set in the column space of $$A$$. In general, the pivot columns of $$R$$, the rref of $$A$$, are not necessarily a maximal linearly independent in the column space of $$A$$ (in fact, they may not even be in the column space of $$A$$). Can you see this?
