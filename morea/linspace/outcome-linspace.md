@@ -10,7 +10,7 @@ morea_sort_order: 70
   * You know what a linear space is
   * You know the 4 fundamental spaces of a matrix: the row, column, left and right null spaces
   * $$\textrm{col}(A) = \{ A{\bf x} : \textrm{ all values of }{\bf x} \}$$ (column)
-  * $$\textrm{null}(A) = \{ {\bf x} : A{\bf x} = {\bf 0} \}$$ (right null)
+  * $$\textrm{null}(A) = \{ {\bf x} : A{\bf x} = {\bf 0} \}$$ 
   * row space of $$A$$ $$=$$ col space of $$A^T$$
-  * left null space of $$A$$ $$=$$ right null space of $$A^T$$
-  * If $$A$$ is $$m\times n$$, number of coordinates of vectors in each of the spaces
+  * column (row respectively) space of $$A$$ is set of all linear combinations of columns of $$A$$ ($$A^T$$ respectively)
+  * null space of $$A$$ captures how columns depend on each other
