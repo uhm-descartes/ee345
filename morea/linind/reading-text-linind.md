@@ -22,46 +22,45 @@ text, the term/concept "dimension" is not yet defined, and you have to
 wait till Chapter 3.5 to know what is meant. Also, as we showed in
 class, a minor miracle is that the row space of $$A$$ has the same
 dimension.
-$$\providecommand{\reals}{{\mathbb R}}$$
+
 The development in class goes from Chapter 3.5 $$\to$$ Chapter 3.3. A lot
 of insights in Chapter 3.3 must be familiar to you even before you get
 here (for eg. Every free column is a combination of earlier pivot
 columns).  In fact, you also know how to get the exact linear
 combination of the prior columns that yields that particular free
 column (from the rref).
-$$\renewcommand{\v}{{\bf v}}$$
 
 ## Additional insights
 
 $$\newcommand{\upto}{,\cdots,}$$
-If you have $$n$$ linearly independent vectors $$\v_1\upto \v_n \in \reals^d$$, let
+If you have $$n$$ linearly independent vectors $${\bf v}_1\upto {\bf v}_n \in {\mathbb R}^d$$, let
 
 
 
-$$ V = \begin{bmatrix} \v_1 & \cdots & \v_n \end{bmatrix}$$
+$$ V = \begin{bmatrix} {\bf v}_1 & \cdots & {\bf v}_n \end{bmatrix}$$
 
 be the $d\times n$ matrix that places all the $$n$$ vectors as its columns. By definition of linear independence all columns are pivot columns. One of the first insights is that any reordering of the columns of $$V$$ (where all columns are pivots) still keeps all
 columns to be pivot columns. Can you see (by contradiction) why this should be so?
 
 Now this means (using our way of solving equations by putting the
 target as the last column of an augmented matrix) that no vector
-$$\v_i$$ can be written as a linear combination of the other $$n-1$$
+$${\bf v}_i$$ can be written as a linear combination of the other $$n-1$$
 vectors. 
 
 As we discussed in class, in every linear space $$\mathcal L$$, a set
-of linearly independent vectors $$\v_1\upto \v_n$$ is \emph{maximal}
+of linearly independent vectors $${\bf v}_1\upto {\bf v}_n$$ is \emph{maximal}
 if we cannot expand this set using any other vector $${\bf x} \in
 \mathcal L$$ and still preserve the linear independence
 property. Specifically, this can only happen if for all $${\bf x} \in
 \mathcal L$$,
 
-$$ \begin{bmatrix} \v_1 & \cdots & \v_n & {\bf x} \end{bmatrix}$$
+$$ \begin{bmatrix} {\bf v}_1 & \cdots & {\bf v}_n & {\bf x} \end{bmatrix}$$
 
 has a free column. The only way the matrix above can have a free column is
 if the last column is free (since we know the matrix $$V$$ above does not have
-free columns by definition of linear independence of $$\v_1,\cdots, \v_n$$. But
-this means that $$\bf x$$ is a linear combination of $$\v_1,\cdots, \v_n$$!
+free columns by definition of linear independence of $${\bf v}_1,\cdots, {\bf v}_n$$. But
+this means that $$\bf x$$ is a linear combination of $${\bf v}_1,\cdots, {\bf v}_n$$!
 
-So if $$\v_1,\cdots, \v_n$$ is a maximal set of linearly independent vectors
+So if $${\bf v}_1,\cdots, {\bf v}_n$$ is a maximal set of linearly independent vectors
 in $$\mathcal L$$, every vector $${\bf x}\in \mathcal L$$ is a linear combination
-of $$\v_1,\cdots, \v_n$$. 
+of $${\bf v}_1,\cdots, {\bf v}_n$$. 
