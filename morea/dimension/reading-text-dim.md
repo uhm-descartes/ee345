@@ -74,6 +74,8 @@ Now $$R \cup N$$ (the union of the sets) has $$k + (n-k) =n$$ vectors. They are 
 
 This means the dimension of the null space of $$A$$ is _exactly_ $$n-k$$. Similarly the dimension of the null space of $$A^T$$ is $$m-k$$, by applying the abbove arguments to $$A^T$$.
 
+We call the row space of $$A$$ and the null space of $$A$$ to be _orthogonal complements_. They are orthogonal spaces, that together provide a complete basis for $${\mathbb R}^n$$. Note however that their union is _not_ $${\mathbb R}^n$$ (only that every element in $${\mathbb R}^n$$ is a sum of one vector in the row space of $$A$$ and one vector in the null space of $$A$$). Similarly, the row space of $$A^T$$ (ie column space of $$A$$) and the null space of $$A^T$$ are also orthogonal complements by using the same arguments above for the matrix $$A^T$$.
+
 ## Preview of linear regression
 
 Given that $$R\cup N$$ is a basis for $${\mathbb R}^n$$, we notice that every vector $${\bf x} \in {\mathbb R}^n$$ can be written 
