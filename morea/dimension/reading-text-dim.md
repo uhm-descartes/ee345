@@ -70,3 +70,16 @@ Let us pool together the basis for the row space of $$A$$ and these $$n-k$$ line
 
 Now $$R \cup N$$ (the union of the sets) has $$k + (n-k) =n$$ vectors. They are all linearly independent (why?). But the basis for the set of all vectors in $${\mathbb R}^n$$ must have only $$n$$ vectors, so $$R\cup N$$ is a basis for $${\mathbb R}^n$$. Therefore $$R\cup N$$ is maximal, meaning $$N$$ must be maximal in the null space of $$A$$ as well!
 
+## Preview of linear regression
+
+Given that $$R\cup N$$ is a basis for $${\mathbb R}^n$$, we notice that every vector $${\bf x} \in {\mathbb R}^n$$ can be written 
+
+$${\bf x} = {\bf r} + {\bf n},$$
+
+where $$\bf r$$ is the component built from the basis vectors in $$R$$, namely a vector in row($A$) and a vector $$\bf n$$ is the component built from basis vectors in $$N$$, a vector in the null space of $$A$$. So one vector in the row space and one vector in the null space.
+
+Similarly any vector $$\y \in {\mathbb R}^m$$ can be written as 
+
+$${\bf y} = {\bf c} + {\bf e},$$
+
+where $$\bf c$$ is a vector in the row space of $$A^T$$ (so column space of $$A$$) and $$\bf e$$ is in the null space of $$A^T$$. This is the picture we will develop in the next module as linear regression.
