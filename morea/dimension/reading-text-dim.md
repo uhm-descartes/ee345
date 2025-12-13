@@ -68,7 +68,7 @@ If $$A$$ is $$m\times n$$ and has $$k$$ pivot columns, it means $$A$$ has $$n-k$
 
 Are there more? The answer is no. The reason comes from noting that the null space of $$A$$ and the row space of $$A$$ are orthogonal spaces, meaning for each $${\bf v}\in \text{null}(A)$$ and each $${\bf w} \in \text{row}(A)$$, $${\bf v}^T{\bf w} =0$$. 
 
-Let us pool together the basis for the row space of $$A$$ and these $$n-k$$ linearly independent vectors in the null space, $$N$$, that we constructed above. The basis for the row space of $$A$$ has $$k$$ vectors, call that set $$R$$. 
+Let us pool together the basis for the row space of $$A$$ and these $$n-k$$ linearly independent vectors in the null space, $$N$$, that we constructed above. Any basis for the row space of $$A$$ has $$k$$ vectors, call one such set $$R$$. 
 
 Now $$R \cup N$$ (the union of the sets) has $$k + (n-k) =n$$ vectors. They are all linearly independent (why?). But the basis for the set of all vectors in $${\mathbb R}^n$$ must have only $$n$$ vectors, so $$R\cup N$$ is a basis for $${\mathbb R}^n$$. Therefore $$R\cup N$$ is maximal, meaning $$N$$ must be maximal in the null space of $$A$$ as well!
 
@@ -82,7 +82,7 @@ $${\bf x} = {\bf r} + {\bf n},$$
 
 where $$\bf r$$ is the component built from the basis vectors in $$R$$, namely a vector in row($A$) and a vector $$\bf n$$ is the component built from basis vectors in $$N$$, a vector in the null space of $$A$$. So one vector in the row space and one vector in the null space.
 
-Similarly any vector $$\y \in {\mathbb R}^m$$ can be written as 
+Similarly any vector $${\bf y} \in {\mathbb R}^m$$ can be written as 
 
 $${\bf y} = {\bf c} + {\bf e},$$
 
