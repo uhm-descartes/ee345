@@ -29,7 +29,7 @@ Now let $$V = \begin{bmatrix} {\bf v}_1 & \cdots & {\bf v}_n \end{bmatrix}$$ and
 
 $$V = WT$$
 
-where $$V$$ has $$n$$ columns, $$W$$ has $$m$$ columns, so $$T$$ is $$m\times n$$. Recall $$m\le n$$, so $T$$ has more columns than rows. From our basic understanding of elimination, there is a free column in $$T$$ since no row can have more than one pivot. But this means there is a vector $$\x \ne {\bf 0}$$ with $$n$$ coordinates such that $$T\x ={\bf 0}$$. From the equation above 
+where $$V$$ has $$n$$ columns, $$W$$ has $$m$$ columns, so $$T$$ is $$m\times n$$. Recall $$m\le n$$, so $$T$$ has more columns than rows. From our basic understanding of elimination, there is a free column in $$T$$ since no row can have more than one pivot. But this means there is a vector $$\x \ne {\bf 0}$$ with $$n$$ coordinates such that $$T\x ={\bf 0}$$. From the equation above 
 
 $$ V \x = WT\x = W(T\x) = {\bf 0} $$
 
