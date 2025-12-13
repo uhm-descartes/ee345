@@ -25,7 +25,7 @@ We showed in class that all maximal linearly independent sets have the same shap
 
 Suppose the assertion was false. There are linearly independent sets, {$${\bf v}_1, \cdots , {\bf v}_n$$} as well as {$${\bf w}_1, \cdots , {\bf w}_m$$}, both maximal in a linear space $$\mathcal L$$, and with sizes $$n\ne m$$. One of the sets is larger than another, without loss of generality, let $$n \ge m$$. 
 
-Now let $$V = \begin{bmatrix} {\bf v}_1 & \cdots & {\bf v}_n \end{bmatrix}$$ and $$W = \begin{bmatrix} {\bf w}_1 & \cdots & {\bf w}_m \end{bmatrix}$$. Now since $$W$$ contains a maximal linearly independent set for its columns, any vector in the linear space $$\mathcal L$$, including $${\bf v}_1, \cdots , {\bf v}_n$$ be written as a linear combination of the columsn of $$W$$. Therefore, there is a matrix $$T$$ such that
+Now let $$V = \begin{bmatrix} {\bf v}_1 & \cdots & {\bf v}_n \end{bmatrix}$$ and $$W = \begin{bmatrix} {\bf w}_1 & \cdots & {\bf w}_m \end{bmatrix}$$. Now since $$W$$ contains a maximal linearly independent set in $$\mathcal L$$ for its columns, any vector in the linear space $$\mathcal L$$, including the vectors $${\bf v}_1, \cdots , {\bf v}_n$$, be written as linear combinations of the columsn of $$W$$. Therefore, there is a matrix $$T$$ such that
 
 $$V = WT$$
 
@@ -71,6 +71,8 @@ Are there more? The answer is no. The reason comes from noting that the null spa
 Let us pool together the basis for the row space of $$A$$ and these $$n-k$$ linearly independent vectors in the null space, $$N$$, that we constructed above. The basis for the row space of $$A$$ has $$k$$ vectors, call that set $$R$$. 
 
 Now $$R \cup N$$ (the union of the sets) has $$k + (n-k) =n$$ vectors. They are all linearly independent (why?). But the basis for the set of all vectors in $${\mathbb R}^n$$ must have only $$n$$ vectors, so $$R\cup N$$ is a basis for $${\mathbb R}^n$$. Therefore $$R\cup N$$ is maximal, meaning $$N$$ must be maximal in the null space of $$A$$ as well!
+
+This means the dimension of the null space of $$A$$ is _exactly_ $$n-k$$. Similarly the dimension of the null space of $$A^T$$ is $$m-k$$, by applying the abbove arguments to $$A^T$$.
 
 ## Preview of linear regression
 
