@@ -13,5 +13,5 @@ morea_sort_order: 80
     rows/columns of $$A$$, as well as non-zero rows/cols of rref($$A$$)
 	and rref($$A^T$$)
   * Dimension of all fundamental spaces of $$A$$ in terms of rank and shape of $$A$$
-  * If $$A$$ is $$m\times n$$ has rank $k$, column and row space of $$A$$ have dimension $$k$$
-  * If $$A$$ is $$m\times n$$ has rank $k$, null space $$A$$ has dimension $$n-k$$, null space of $$A^T$$ has dimension $$m-k$$
+  * If $$A$$ is $$m\times n$$ has rank $$k$$, column and row space of $$A$$ have dimension $$k$$
+  * If $$A$$ is $$m\times n$$ has rank $$k$$, null space $$A$$ has dimension $$n-k$$, null space of $$A^T$$ has dimension $$m-k$$

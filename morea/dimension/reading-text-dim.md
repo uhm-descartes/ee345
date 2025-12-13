@@ -80,7 +80,7 @@ Given that $$R\cup N$$ is a basis for $${\mathbb R}^n$$, we notice that every ve
 
 $${\bf x} = {\bf r} + {\bf n},$$
 
-where $$\bf r$$ is the component built from the basis vectors in $$R$$, namely a vector in row($A$) and a vector $$\bf n$$ is the component built from basis vectors in $$N$$, a vector in the null space of $$A$$. So one vector in the row space and one vector in the null space.
+where $$\bf r$$ is the component built from the basis vectors in $$R$$, namely a vector in row($$A$$) and a vector $$\bf n$$ is the component built from basis vectors in $$N$$, a vector in the null space of $$A$$. So one vector in the row space and one vector in the null space.
 
 Similarly any vector $${\bf y} \in {\mathbb R}^m$$ can be written as 
 
