@@ -64,3 +64,16 @@ this means that $$\bf x$$ is a linear combination of $${\bf v}_1,\cdots, {\bf v}
 So if $${\bf v}_1,\cdots, {\bf v}_n$$ is a maximal set of linearly independent vectors
 in $$\mathcal L$$, every vector $${\bf x}\in \mathcal L$$ is a linear combination
 of $${\bf v}_1,\cdots, {\bf v}_n$$. 
+
+
+Conversely, if every vecotr $$\bf x$$ in a linear space can be written as a linear combination of a set of linearly independent vectors $${\bf v}_1,\cdots, {\bf v}_n$$, then 
+the set is maximal by definition. 
+
+## Column and row spaces
+
+The above discussion implies that if $$A$$ is a matrix with rref $$R$$, the pivot columns of $$A$$ are a maximal linearly independent set in the column space of $$A$$. In general, the pivot columns of $$R$$, the rref of $$A$$, are obviously not a maximal linearly independent in the column space of $$A$$ (in fact, they may not even be in the column space of $$A$$). Can you see this?
+
+Similarly the non-zero rows of $$R$$, the rref of $$A$$, will be a maximal linearly independent set in the row space of $$A$$. 
+
+Looking at the transpose of $$A$$, $$A^T$$. Let the rref of $$A^T$$ be $$R_1$$. Now $$R_1$$ and $$R$$ are not transposes of each other in general. Using the above observations, the pivot columsn of $$A^T$$ is a maximal linearly independent set for the column space of $$A^T$$, ie., the row space of $$A$$. Similarly the non-zero rows of $$R_1$$, the rref of $$A^T$$, will be a maximal linearly independent set in the row space of $$A^T$$, ie the column space of $$A$$.
+
