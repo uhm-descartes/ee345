@@ -6,7 +6,9 @@ morea_summary: "Class notes"
 morea_type: reading
 morea_labels:
 ---
-\\( \newcommand{\w}{{\bf w}} \\)
+\\( \newcommand{\w}{\bf w} \\)
+\\( \newcommand{\E}{\mathbf E} \\)
+\\( \newcommand{\cov}{\textbf{cov}} \\)
 
 In linear regression, we have a real valued measurement \\(Y\\) of a
 signal \\(\w\\) (potentially a vector) that we want to measure,
@@ -67,11 +69,10 @@ $$\cov(W, Y) = (\E WW^T) X^T =  \Sigma X^T $$
 and similarly
 $$\cov (Y,Y) = X\Sigma Y^T + \nu^2 I .$$
 Therefore,
-\begin{align*}
- A &= \frac1{\nu^2}\Sigma X^T (\frac 1{\nu^2} X\Sigma X^T + I)^{-1}\\
- &= \Sigma(I + \frac1{\nu^2}X^TX \Sigma )^{-1} \frac1{\nu^2}X^T\\
- &= (X^TX + \Sigma^{-1}\nu^2 )^{-1} X^T
-\end{align*}
+$$A = \frac1{\nu^2}\Sigma X^T (\frac 1{\nu^2} X\Sigma X^T + I)^{-1}$$
+$$ = \Sigma(I + \frac1{\nu^2}X^TX \Sigma )^{-1} \frac1{\nu^2}X^T$$
+$$= (X^TX + \Sigma^{-1}\nu^2 )^{-1} X^T$$
+
 Can you prove the last and the second to last equalities? They are very
 useful, and form part of the series of equalities that go into the Matrix
 Inversion Lemma. The second equality states for any \\(X\\) and \\(Y\\) such
