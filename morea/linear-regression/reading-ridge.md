@@ -28,7 +28,11 @@ yourself with the frequentist (Maximum Likelihood) approach first.
 
 We posit, as in the Maximum Likelihood case that the target \\(Y\\) are
 linear measurements \\(X\\) of the unknown signal \\(W\\), written
-compactly as $$ Y = XW + Z,$$ where specifically, \\(Y\\) is a vector of
+compactly as 
+
+$$ Y = XW + Z,$$ 
+
+where specifically, \\(Y\\) is a vector of
 the \\(n\\) targets, \\(X\\) is the \\(n\times p\\) measurement matrix, \\(W\\)
 is the random vector with \\(p\\) coordinates that we want to measure,
 and \\(Z\\) is a vector of discrepancies. Here again we assume \\(Z\\) is
@@ -41,56 +45,77 @@ and \\(Z\\) are independent). We assume \\(W\\) has a non-degenerate pdf,
 \ie \\(\Sigma\\) is invertible.
 
 The best estimate of \\(W\\) from \\(Y\\) in the mean square sense,
-namely $$ {\hat W} = \arg \min_{f(Y)} \E ||W - f(Y)||^2, $$ where
-$\hat W$ is our estimate (which in turn in a function of the
-measurement $Y$, so henceforth we will write it as ${\hat W}(Y)$). The minimizer is over any function of the
-observations \\(Y\\), and from your basic probability/statistics class,
-is given by
-$$ \hat W(Y) = \E [W| Y]. $$ 
+namely 
+
+$$ {\hat W} = \arg \min_{f(Y)} \E ||W - f(Y)||^2, $$ 
+
+where $\hat W$ is our estimate, which in turn in a function of the
+measurement $Y$. Henceforth we will write it as \\({\hat W}(Y)\\). The
+minimizer is over any function of the observations \\(Y\\), and from
+your basic probability/statistics class, is given by 
+
+$$ \hat W(Y) = \E [W| Y]. $$
 
 Of course, the conditional mean \\(\E [W|Y]\\) has a special form for
 Gaussians, and we can reuse the insights from multivariate Gaussians.
 
-\subsection{Gaussians and ridge regression}
-\label{sec:org9f1eb22}
+## Gaussians and ridge regression
+
 Find the answers to the (why?) questions in the Gaussian module or by elementary
 manipulations.
 
 Since \\(W\\) and \\(Y\\) are jointly Gaussian, we know therefore that \\(\E[W|Y]\\)
 is a linear function of \\(Y\\) (why?). Furthermore since \\(\E W=\E Z={\bf 0}\\) by
 assumption, we have \\(\E Y ={\bf 0}\\) by linearity of expectation (can you write out a full proof?). Therefore, 
+
 $$ \E [ W| Y] = AY, $$
+
 and the orthogonality
 principle that says the error must be uncorrelated (``orthogonal'') to the signal,
-$$ \E [ (W - AY)Y^T ] = {\bf 0}$$
-yields,
-$$A = \cov(W,Y) \cov(Y,Y)^{-1}$$
-Now, show that 
-$$\cov(W, Y) = (\E WW^T) X^T =  \Sigma X^T $$
-and similarly
-$$\cov (Y,Y) = X\Sigma Y^T + \nu^2 I .$$
-Therefore,
-$$A = \frac1{\nu^2}\Sigma X^T (\frac 1{\nu^2} X\Sigma X^T + I)^{-1}$$
-$$ = \Sigma(I + \frac1{\nu^2}X^TX \Sigma )^{-1} \frac1{\nu^2}X^T$$
-$$= (X^TX + \Sigma^{-1}\nu^2 )^{-1} X^T$$
 
-Can you prove the last and the second to last equalities? They are very
+$$ \E [ (W - AY)Y^T ] = {\bf 0}$$
+
+yields,
+
+$$A = \cov(W,Y) \cov(Y,Y)^{-1}$$
+
+Now, show that 
+
+$$\cov(W, Y) = (\E WW^T) X^T =  \Sigma X^T $$
+
+and similarly
+
+$$\cov (Y,Y) = X\Sigma Y^T + \nu^2 I .$$
+
+Therefore,
+
+\begin{align}
+A &= \frac1{\nu^2}\Sigma X^T (\frac 1{\nu^2} X\Sigma X^T + I)^{-1}\\
+  &= \Sigma(I + \frac1{\nu^2}X^TX \Sigma )^{-1} \frac1{\nu^2}X^T\\
+ &= (X^TX + \Sigma^{-1}\nu^2 )^{-1} X^T
+\end{align}
+
+Can you prove the last and the second-last equalities above? They are very
 useful, and form part of the series of equalities that go into the Matrix
 Inversion Lemma. The second equality states for any \\(X\\) and \\(Y\\) such
 that both \\(XY\\) and \\(YX\\) exist, and \\(I+XY\\) is invertible, we will have
 that \\(I+YX\\) is also invertible and
+
 $$ (I+YX)^{-1}Y= Y(1+XY)^{-1}. $$
+
 The last equality is simple manipulations using \\((AB)^{-1} = B^{-1} A^{-1}\\) and
 noting that \\(\Sigma\\) is invertible.
 
 Therefore, our estimate of \\(W\\) in the Bayesian sense is
+
 \begin{equation}
 \label{eq:bayes} (X^TX + \nu^2\Sigma^{-1})^{-1} X^T Y, 
 \end{equation}
+
 which actually looks quite close to the OLS estimate of \\((X^TX)^{-1} X^T Y\\),
 differing only by the \\(\nu^2\Sigma^{-1}\\) term within the inverse.
 
-\paragraph{Regularization view}
+### Regularization view
 To get a little more insight into this, let \\(\Sigma = \sigma^2 I\\). The
 expression for the BAyesian estimate of \\(W\\) reduces to
 $$ (X^TX + \frac{\nu^2}{\sigma^2}I )^{-1} X^T Y.$$
