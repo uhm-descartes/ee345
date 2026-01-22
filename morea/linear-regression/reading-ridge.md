@@ -9,6 +9,7 @@ morea_labels:
 \\( \newcommand{\w}{\bf w} \\)
 \\( \newcommand{\E}{\mathbf E} \\)
 \\( \newcommand{\cov}{\textbf{cov}} \\)
+\\( \newcommand{\cN}{\mathcal N} \\)
 
 In linear regression, we have a real valued measurement \\(Y\\) of a
 signal \\(\w\\) (potentially a vector) that we want to measure,
@@ -28,14 +29,14 @@ yourself with the frequentist (Maximum Likelihood) approach first.
 We posit, as in the Maximum Likelihood case that the target \\(Y\\) are
 linear measurements \\(X\\) of the unknown signal \\(W\\), written
 compactly as $$ Y = XW + Z,$$ where specifically, \\(Y\\) is a vector of
-the \\(n\\) targets, \\(X\\) is the \\(n\times p\\) measurement matrix, $W$
+the \\(n\\) targets, \\(X\\) is the \\(n\times p\\) measurement matrix, \\(W\\)
 is the random vector with \\(p\\) coordinates that we want to measure,
 and \\(Z\\) is a vector of discrepancies. Here again we assume \\(Z\\) is
 a vector of \\(n\\) Gaussian random variables. But now we assume
 something more, that \\(W\\) is a multivariate Gaussian as well,
 independent of \\(Z\\). Therefore, \\(W\\), \\(Y\\) and \\(Z\\) are all
 jointly Gaussian. Specifically, we assume
-\\(W\sim \cN(\bf 0}, \Sigma)\\), \\(Z\sim \cN(0, \nu^2 I)\\) (and \\(W\\)
+\\(W\sim \cN({\bf 0}, \Sigma)\\), \\(Z\sim \cN({\bf 0}, \nu^2 I)\\) (and \\(W\\)
 and \\(Z\\) are independent). We assume \\(W\\) has a non-degenerate pdf,
 \ie \\(\Sigma\\) is invertible.
 
