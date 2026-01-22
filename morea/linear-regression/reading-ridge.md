@@ -141,10 +141,10 @@ also the global minima because the objective being minimized is
 
 Therefore, the Bayesian framework is equivalent to minimizing
 Equation\textasciitilde{}\eqref{eq:opt}. Notice the objective we are minimizing is the
-least squares loss (\\(||Y-X{\w}||^2\\)), but we add to it a term that
-depends on the length squared of \\({\w}\\), \ie \\(||{\w}||^2\\). 
+least squares loss \\(||Y-X{\w}||^2\\), but we add to it a term that
+depends on the length squared of \\({\w}\\), i.e. \\(||{\w}||^2\\). 
 
-If \\( {\w}_{b} \\) is the Bayes optimal solution, we must have
+If \\( {\w}_b \\) is the Bayes optimal solution, we must have
 
 \begin{equation}
 \label{eq:ineq} ||Y- X{\w}_b||^2 + \frac{\nu^2}{\sigma^2} ||{\w}_b||^2 
