@@ -123,21 +123,26 @@ Now consider solving the following problem
 
 \begin{equation}
 \label{eq:opt} 
-\arg \min_{{\w}} ||Y- X{\w} ||^2 + \frac{\nu^2}{\sigma^2} ||{\w}||^2. 
+\arg \min_{\w} ||Y- X{\w} ||^2 + \frac{\nu^2}{\sigma^2} ||{\w}||^2. 
 \end{equation}
 We would take the gradient of the expression above with respect to \\({\w}\\), and
 this turns out to be 
 
 $$ 2X^T (X{\w} - Y ) + \frac{\nu^2}{\sigma^2} 2{\w}. $$
+
 Setting the gradient to \\(\bf 0\\) and rearranging we get
+
 $$ (X^TX + \frac{\nu^2}{\sigma^2}I ) {\w} = X^T Y, $$
+
 and solving for \\({\w}\\) gives us the Bayesian optimal solution. You can verify that
 the Hessian, 
+
 $$ (X^TX + \frac{\nu^2}{\sigma^2} I )^T = (X^TX + \frac{\nu^2}{\sigma^2}I ) $$
+
 is always positive definite, therefore the Bayesian optimal solution
 \\((X^T X + \frac{\nu^2}{\sigma^2} I )^{-1} X^T Y\\) is a minima. It is
 also the global minima because the objective being minimized is
-\emph{convex} (over a convex domain) and we can have only one minimum.
+_convex_ (over a convex domain) and we can have only one minimum.
 
 Therefore, the Bayesian framework is equivalent to minimizing
 Equation\textasciitilde{}\eqref{eq:opt}. Notice the objective we are minimizing is the
@@ -146,10 +151,10 @@ depends on the length squared of \\({\w}\\), i.e. \\(||{\w}||^2\\).
 
 If \\( {\w}_b \\) is the Bayes optimal solution, we must have
 
-\begin{equation}
-||Y- X{\w}_b||^2 + \frac{\nu^2}{\sigma^2} ||{\w}_b||^2 
-\le ||Y- X\w_{OLS}||^2 + \frac{\nu^2}{\sigma^2} ||\w_{OLS}||^2,
-\end{equation}
+$$||Y- X{\w}_b||^2 + \frac{\nu^2}{\sigma^2} ||{\w}_b||^2 
+\le 
+||Y- X{\w}_{OLS}||^2 + \frac{\nu^2}{\sigma^2} ||{\w}_{OLS}||^2,
+$$
 
 because, of course, \\({\w}_b\\) is the minima of~\eqref{eq:opt}. In fact, we usually have
 $$ || Y - X{\w}_b ||^2 > || Y - X{\w}_{OLS}||^2 $$
