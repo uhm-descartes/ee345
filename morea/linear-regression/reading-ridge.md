@@ -147,8 +147,8 @@ depends on the length squared of \\({\w}\\), i.e. \\(||{\w}||^2\\).
 If \\( {\w}_b \\) is the Bayes optimal solution, we must have
 
 \begin{equation}
-\label{eq:ineq} ||Y- X{\w}_b||^2 + \frac{\nu^2}{\sigma^2} ||{\w}_b||^2 
-\le ||Y- X{\w}_{OLS}||^2 + \frac{\nu^2}{\sigma^2} ||{\w}_{OLS}||^2,
+||Y- X{\w}_b||^2 + \frac{\nu^2}{\sigma^2} ||{\w}_b||^2 
+\le ||Y- X\w_{OLS}||^2 + \frac{\nu^2}{\sigma^2} ||\w_{OLS}||^2,
 \end{equation}
 
 because, of course, \\({\w}_b\\) is the minima of~\eqref{eq:opt}. In fact, we usually have
