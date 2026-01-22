@@ -1,11 +1,11 @@
 ---
-title: "Geometry of Linear Regression"
+title: "Bayesian Formulation/Ridge Regression"
 published: true
-morea_id: reading-lr-geometry
+morea_id: reading-lr-ridge
 morea_summary: "Class notes"
-morea_url: morea/linear-regression/LR-geometry.pdf
+morea_url: /morea/linear-regression/LR-ridge.pdf
 morea_type: reading
 morea_labels:
 ---
 
-Ordinary Least Squares and Maximum Likelihood formulations of Least Squares
+Bayesian Least Squares formulation or Ridge Regression
