@@ -89,11 +89,11 @@ $$\cov (Y,Y) = X\Sigma Y^T + \nu^2 I .$$
 
 Therefore,
 
-\begin{align}
-A &= \frac1{\nu^2}\Sigma X^T (\frac 1{\nu^2} X\Sigma X^T + I)^{-1}\\
-  &= \Sigma(I + \frac1{\nu^2}X^TX \Sigma )^{-1} \frac1{\nu^2}X^T\\
- &= (X^TX + \Sigma^{-1}\nu^2 )^{-1} X^T
-\end{align}
+\begin{equation}
+A = \frac1{\nu^2}\Sigma X^T (\frac 1{\nu^2} X\Sigma X^T + I)^{-1}
+  = \Sigma(I + \frac1{\nu^2}X^TX \Sigma )^{-1} \frac1{\nu^2}X^T
+ = (X^TX + \Sigma^{-1}\nu^2 )^{-1} X^T
+\end{equation}
 
 Can you prove the last and the second-last equalities above? They are very
 useful, and form part of the series of equalities that go into the Matrix
@@ -124,15 +124,15 @@ Now consider solving the following problem
 
 \begin{equation}
 \label{eq:opt} 
-\arg \min_{\x} ||Y- X\w||^2 + \frac{\nu^2}{\sigma^2} ||\w||^2. 
+\arg \min_{\x} ||Y- X{\w} ||^2 + \frac{\nu^2}{\sigma^2} ||{\w}||^2. 
 \end{equation}
 We would take the gradient of the expression above with respect to \\(\x\\), and
 this turns out to be 
 
-$$ 2X^T (X\w - Y ) + \frac{\nu^2}{\sigma^2} 2\w. $$
+$$ 2X^T (X{\w} - Y ) + \frac{\nu^2}{\sigma^2} 2{\w}. $$
 Setting the gradient to \\(\bf 0\\) and rearranging we get
-$$ (X^TX + \frac{\nu^2}{\sigma^2}I ) \w = X^T Y, $$
-and solving for \\(\w\\) gives us the Bayesian optimal solution. You can verify that
+$$ (X^TX + \frac{\nu^2}{\sigma^2}I ) {\w} = X^T Y, $$
+and solving for \\({\w}\\) gives us the Bayesian optimal solution. You can verify that
 the Hessian, 
 $$ (X^TX + \frac{\nu^2}{\sigma^2} I )^T = (X^TX + \frac{\nu^2}{\sigma^2}I ) $$
 is always positive definite, therefore the Bayesian optimal solution
@@ -142,32 +142,32 @@ also the global minima because the objective being minimized is
 
 Therefore, the Bayesian framework is equivalent to minimizing
 Equation\textasciitilde{}\eqref{eq:opt}. Notice the objective we are minimizing is the
-least squares loss (\\(||Y-X\w||^2\\)), but we add to it a term that
-depends on the length squared of \\(\w\\), \ie \\(||\w||^2\\). 
+least squares loss (\\(||Y-X{\w}||^2\\)), but we add to it a term that
+depends on the length squared of \\({\w}\\), \ie \\(||{\w}||^2\\). 
 
-If \\(\w_{b}\\) is the Bayes optimal solution, we must have
+If \\({\w}_{b}\\) is the Bayes optimal solution, we must have
 \begin{equation}
-\label{eq:ineq} ||Y- X\w_b||^2 + \frac{\nu^2}{\sigma^2} ||\w_b||^2 
-\le ||Y- X\w_{OLS}||^2 + \frac{\nu^2}{\sigma^2} ||\w_{OLS}||^2,
+\label{eq:ineq} ||Y- X{\w}_b||^2 + \frac{\nu^2}{\sigma^2} ||{\w}_b||^2 
+\le ||Y- X{\w}_{OLS}||^2 + \frac{\nu^2}{\sigma^2} ||{\w}_{OLS}||^2,
 \end{equation}
-because, of course, \\(\w_b\\) is the minima of~\eqref{eq:opt}. In fact, we usually have
-$$ || Y - X\w_b ||^2 > || Y - X\w_{OLS}||^2 $$
+because, of course, \\({\w}_b\\) is the minima of~\eqref{eq:opt}. In fact, we usually have
+$$ || Y - X{\w}_b ||^2 > || Y - X{\w}_{OLS}||^2 $$
 but 
-$$||\w_b||^2  < || \w_{OLS} ||^2,$$
+$$||{\w}_b||^2  < || {\w}_{OLS} ||^2,$$
 while satisfying Equation\textasciitilde{}\eqref{eq:ineq}.
 
-Therefore the Bayes optimal solution \\(\w_b\\) shrinks the OLS estimate. Estimates
+Therefore the Bayes optimal solution \\({\w}_b\\) shrinks the OLS estimate. Estimates
 like this, where we give preference to solutions that have some simplicity (here
 by simplicity we mean smaller Euclidean length), are called \emph{regularized}
-estimates. Here the term \\(||\w||^2\\) in the objective function of\textasciitilde{}\eqref{eq:opt}
+estimates. Here the term \\(||{\w}||^2\\) in the objective function of\textasciitilde{}\eqref{eq:opt}
 is called the regularization penalty, and since this is the \\(\ell_2\\) norm of
-\\(\w\\), this sort of regularization is called \\(\ell_2\\) regularization or Ridge
+\\({\w}\\), this sort of regularization is called \\(\ell_2\\) regularization or Ridge
 regression.
 
 \paragraph{Problem} Show that the general Bayes optimal solution in Equation\textasciitilde{}\eqref{eq:bayes}
 is the solution of the optimization problem
 
-$$\arg \min_{\x} ||Y- X\w||^2 + \frac1{\nu^2} \w^T \Sigma^{-1} \w, $$
+$$\arg \min_{\x} ||Y- X{\w}||^2 + \frac1{\nu^2} {\w}^T \Sigma^{-1} {\w}, $$
 where \\(\Sigma\\) is symmetric and
 positive definite).
 \paragraph{Problem} Find answers to all the (why?) questions in the handout.
