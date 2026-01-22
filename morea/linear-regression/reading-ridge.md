@@ -95,11 +95,10 @@ A = \frac1{\nu^2}\Sigma X^T (\frac 1{\nu^2} X\Sigma X^T + I)^{-1}
  = (X^TX + \Sigma^{-1}\nu^2 )^{-1} X^T
 \end{equation}
 
-Can you prove the last and the second-last equalities above? They are very
-useful, and form part of the series of equalities that go into the Matrix
-Inversion Lemma. The second equality states for any \\(X\\) and \\(Y\\) such
-that both \\(XY\\) and \\(YX\\) exist, and \\(I+XY\\) is invertible, we will have
-that \\(I+YX\\) is also invertible and
+Can you prove the last and the second-last equalities above? The second-last
+equation forms part of a series of equalities commonly known as the Matrix
+Inversion Lemma. It states for any \\(X\\) and \\(Y\\) such
+that both \\(XY\\) and \\(YX\\) exist, if \\(I+XY\\) is invertible, \\(I+YX\\) is also invertible and
 
 $$ (I+YX)^{-1}Y= Y(1+XY)^{-1}. $$
 
@@ -124,9 +123,9 @@ Now consider solving the following problem
 
 \begin{equation}
 \label{eq:opt} 
-\arg \min_{\x} ||Y- X{\w} ||^2 + \frac{\nu^2}{\sigma^2} ||{\w}||^2. 
+\arg \min_{{\w}} ||Y- X{\w} ||^2 + \frac{\nu^2}{\sigma^2} ||{\w}||^2. 
 \end{equation}
-We would take the gradient of the expression above with respect to \\(\x\\), and
+We would take the gradient of the expression above with respect to \\({\w}\\), and
 this turns out to be 
 
 $$ 2X^T (X{\w} - Y ) + \frac{\nu^2}{\sigma^2} 2{\w}. $$
@@ -145,11 +144,13 @@ Equation\textasciitilde{}\eqref{eq:opt}. Notice the objective we are minimizing 
 least squares loss (\\(||Y-X{\w}||^2\\)), but we add to it a term that
 depends on the length squared of \\({\w}\\), \ie \\(||{\w}||^2\\). 
 
-If \\({\w}_{b}\\) is the Bayes optimal solution, we must have
+If \\( {\w}_{b} \\) is the Bayes optimal solution, we must have
+
 \begin{equation}
 \label{eq:ineq} ||Y- X{\w}_b||^2 + \frac{\nu^2}{\sigma^2} ||{\w}_b||^2 
 \le ||Y- X{\w}_{OLS}||^2 + \frac{\nu^2}{\sigma^2} ||{\w}_{OLS}||^2,
 \end{equation}
+
 because, of course, \\({\w}_b\\) is the minima of~\eqref{eq:opt}. In fact, we usually have
 $$ || Y - X{\w}_b ||^2 > || Y - X{\w}_{OLS}||^2 $$
 but 
@@ -167,7 +168,7 @@ regression.
 \paragraph{Problem} Show that the general Bayes optimal solution in Equation\textasciitilde{}\eqref{eq:bayes}
 is the solution of the optimization problem
 
-$$\arg \min_{\x} ||Y- X{\w}||^2 + \frac1{\nu^2} {\w}^T \Sigma^{-1} {\w}, $$
+$$\arg \min_{{\w}} ||Y- X{\w}||^2 + \frac1{\nu^2} {\w}^T \Sigma^{-1} {\w}, $$
 where \\(\Sigma\\) is symmetric and
 positive definite).
 \paragraph{Problem} Find answers to all the (why?) questions in the handout.
