@@ -39,8 +39,10 @@ morea_labels:
    * Show that if any row of $$A$$ is a linear combination of other rows
 	 of $$A$$, then $$A$$ has no inverse
 	 
-5. **Matrix Inversion Lemma** Show that if $$I+XY$$ is square and has an inverse, 
-   * $$I+YX$$ also has an inverse 
+5. **Matrix Inversion Lemma** Show that if $$X$$ and $$Y$$ are
+   matrices such that $$XY$$ and $$YX$$ both exist (so both $$XY$$ and $$YX$$
+   are square matrices), then if $$I+XY$$ has an inverse,
+   * $$I+YX$$ also has an inverse (Hint: start with elimination on $$\begin{bmatrix} I & -Y\\ X & I \end{bmatrix}$$
    * Show that $$(I+XY)^{-1}X = X(I+YX)^{-1}$$
    * Show that $$(I+Z)^{-1} = I - (I+Z)^{-1} Z$$
    * Using the above, show that
